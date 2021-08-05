@@ -1,6 +1,6 @@
-# Upload, download, and query data in a non-relational data store
+# Manage Azure Cosmos DB
 
-In this exercise, you'll upload data to these data stores. You'll run queries against the data in the Cosmos DB database. Finally, you'll download and view the images and documents held in Azure Storage.
+In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how to upload data to a Cosmos DB database, and configure Cosmos DB to support bulk loading.
 
 
-### Task 1: Upload product data to Cosmos DB
+### Task 1: Load data using the Cosmos DB Data Migration tool
