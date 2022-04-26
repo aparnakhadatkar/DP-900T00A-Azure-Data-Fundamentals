@@ -2,9 +2,6 @@
 
 In this exercise, you'll use Microsoft Power BI Desktop to create a data model and a report containing interactive data visualizations.
 
-# Visualize data with Power BI
-
-In this exercise, you'll use Microsoft Power BI Desktop to create a data model and a report containing interactive data visualizations.
 ## Exercise 1 : Visualize data with Power BI
 
 ### Task 1 : Import data
