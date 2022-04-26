@@ -14,10 +14,6 @@ To use Azure Synapse Analytics, you must provision an Azure Synapse Analytics Wo
 
 1.  Open the Azure portal at  [https://portal.azure.com](https://portal.azure.com/), and sign in using the credentials associated with your Azure subscription.
     
-    Tip
-    
-    Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory. Note that if you previously used a Microsoft Learn sandbox subscription, the portal may have defaulted to the  _Microsoft Learn Sandbox_  directory. If so, you'll need to switch to your own directory.
-    
 2.  In the Azure portal, on the  **Home**  page, use the  **＋ Create a resource**  icon to create a new resource.
     
 3.  Search for  _Azure Synapse Analytics_, and create a new  **Azure Synapse Analytics**  resource with the following settings:
