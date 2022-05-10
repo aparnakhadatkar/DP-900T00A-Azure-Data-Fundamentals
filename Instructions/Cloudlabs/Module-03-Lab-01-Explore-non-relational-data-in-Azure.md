@@ -23,9 +23,9 @@ The first step in using Azure Storage is to provision an Azure Storage account i
     -   **Performance**:  _Standard_
     -   **Redundancy**:  _Locally-redundant storage (LRS)_
 
-3.  Select  **Next: Advanced >**  and view the advanced configuration options. In particular, note that this is where you can enable hierarchical namespace to support Azure Data Lake Storage Gen2. Leave this option  **unselected**  (you'll enable it later), and then select  **Next: Networking >**  to view the networking options for your storage account.
+3.  Select  **Next: Advanced >**  and view the advanced configuration options. This is where you can enable hierarchical namespace to support Azure Data Lake Storage Gen2. Under **Data Lake Storage Gen2**, check the **Enable hierarchical namespace** option, and then select  **Next: Networking >**  to view the networking options for your storage account.
     
-4.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later when you enable hierarchical namespace.
+4.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
     
 5.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review + Create**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
     
@@ -83,27 +83,23 @@ Azure Data Lake Store Gen2 support enables you to use hierarchical folders to or
 
 1.  Download the  [product2.json](https://aka.ms/product2.json)  JSON file from  `https://aka.ms/product2.json`  and save it on your computer in the same folder where you downloaded  **product1.json**  previously - you'll upload it to blob storage later).
 
-2.  In the Azure portal page for your storage container, on the left side, scroll down to the  **Settings**  section, and select  **Data Lake Gen2 upgrade**.
+2. In the pane on the left side, in the top section, select  **Storage browser (preview)**  and navigate back to the root of your  **data**  blob container, which still contains the  **product_data**  folder.
 
-3.  In the  ****Data Lake Gen2 upgrade****  page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.
+3.  Select the  **product_data**  folder, and verify it still contains the  **product1.json**  file you uploaded previously.
 
-4.  When the upgrade is complete, in the pane on the left side, in the top section, select  **Storage browser (preview)**  and navigate back to the root of your  **data**  blob container, which still contains the  **product_data**  folder.
+4.  Use the  **⤒ Upload**  button to open the  **Upload blob**  panel.
 
-5.  Select the  **product_data**  folder, and verify it still contains the  **product1.json**  file you uploaded previously.
+5.  In the  **Upload blob**  panel, select the  **product2.json**  file you saved on your local computer. Then select the  **Upload**  button.
 
-6.  Use the  **⤒ Upload**  button to open the  **Upload blob**  panel.
+6.  Close the  **Upload blob**  panel if it's still open, and verify that a  **product_data**  folder now contains the  **product2.json**  file.
 
-7.  In the  **Upload blob**  panel, select the  **product2.json**  file you saved on your local computer. Then select the  **Upload**  button.
+7.  On the left side, in the  **Data storage**  section, select  **Containers**.
 
-8.  Close the  **Upload blob**  panel if it's still open, and verify that a  **product_data**  folder now contains the  **product2.json**  file.
+8.  Open the  **data**  container, and verify that the  **product_data**  folder you created is listed.
 
-9.  On the left side, in the  **Data storage**  section, select  **Containers**.
+9.  Select the  **‧‧‧**  icon at the right-end of the folder, and note that with hierarchical namespace enabled, you can perform configuration tasks at the folder-level; including renaming folders and setting permissions.
 
-10.  Open the  **data**  container, and verify that the  **product_data**  folder you created is listed.
-
-11.  Select the  **‧‧‧**  icon at the right-end of the folder, and note that with hierarchical namespace enabled, you can perform configuration tasks at the folder-level; including renaming folders and setting permissions.
-
-12.  Use the  **X**  icon at the top right in the  **data**  page to close the page and return to the  **Containers**  page.
+10.  Use the  **X**  icon at the top right in the  **data**  page to close the page and return to the  **Containers**  page.
 
 ### Task 4 :  Explore Azure Files
 
