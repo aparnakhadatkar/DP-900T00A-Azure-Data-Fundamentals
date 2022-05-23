@@ -1,51 +1,16 @@
 # Explore Azure Synapse Analytics
 
-In this exercise, you'll provision an Azure Synapse Analytics workspace in your Azure subscription, and use it to ingest and query data.
+In this exercise, you'll use the already provisioned Azure Synapse Analytics workspace in your Azure subscription, to ingest and query data.
 
 ## Exercise 1 : Explore Azure Synapse Analytics
 
-In this exercise, you'll create an Azure Synapse Analytics workspace and use it to ingest and analyze some data.
+In this exercise, you'll use the Azure Synapse Analytics workspace to ingest and analyze some data.
 
 The exercise is designed to familiarize you with some key elements of a modern data warehousing solution, not as a comprehensive guide to performing advanced data analysis with Azure Synapse Analytics. 
 
-### Task 1 : Provision an Azure Synapse Analytics workspace
+### Task 1 : Explore an Azure Synapse Analytics workspace
 
-To use Azure Synapse Analytics, you must provision an Azure Synapse Analytics Workspace resource in your Azure subscription.
-
-1.  Open the Azure portal at  [https://portal.azure.com](https://portal.azure.com/), and sign in using the credentials associated with your Azure subscription.
-    
-2.  In the Azure portal, on the  **Home**  page, use the  **＋ Create a resource**  icon to create a new resource.
-    
-3.  Search for  _Azure Synapse Analytics_, and create a new  **Azure Synapse Analytics**  resource with the following settings:
-    
-    -   **Subscription**:  _Your Azure subscription_
-        -   **Resource group**:  _Create a new resource group with a suitable name, like "synapse-rg"_
-        -   **Managed resource group**:  _Enter an appropriate name, for example "synapse-managed-rg"_.
-    -   **Workspace name**:  _Enter a unique workspace name, for example "synapse-ws-<your_name>"_.
-    -   **Region**:  _Select any of the following regions_:
-        -   Australia East
-        -   Central US
-        -   East US 2
-        -   North Europe
-        -   South Central US
-        -   Southeast Asia
-        -   UK South
-        -   West Europe
-        -   West US
-        -   WestUS 2
-    -   **Select Data Lake Storage Gen 2**: From subscription
-        -   **Account name**:  _Create a new account with a unique name, for example "datalake<your_name>"_.
-        -   **File system name**:  _Create a new file system with a unique name, for example "fs<your_name>"_.
-    
-> **Note**: 
-    
-    A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
-    
-4.  When you've entered these details, select  **Review + create**, and then select  **Create**  to create the workspace.
-    
-5.  Wait for the workspace to be created - this may take five minutes or so.
-    
-6.  When deployment is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and a Data Lake storage account.
+1.  Open the resource group **DP-900-Module-4**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
     
 7.  Select your Synapse workspace, and in its  **Overview**  page, in  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
     
@@ -102,7 +67,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
         -   **Test connection**: To linked service
 8.  After creating the connection, on the  **Target/Dataset**  step, ensure the following settings are selected, and then select  **Next >**:
     
-    -   **Folder path**:  _Browse to your file system folder_
+    -   **Folder path**:  _Browse to your file system folder and select **defaultfs**_
     -   **File name**: products.csv
     -   **Copy behavior**: None
     -   **Max concurrent connections**:  _Leave blank_
@@ -164,45 +129,12 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 4.  On the toolbar, use the  **▷ Run**  button to run the SQL code, and review the results, which should look similar to this:
     
-    C1
-    
-    c2
-    
-    c3
-    
-    c4
-    
-    ProductID
-    
-    ProductName
-    
-    Category
-    
-    ListPrice
-    
-    771
-    
-    Mountain-100 Silver, 38
-    
-    Mountain Bikes
-    
-    3399.9900
-    
-    772
-    
-    Mountain-100 Silver, 42
-    
-    Mountain Bikes
-    
-    3399.9900
-    
-    ...
-    
-    ...
-    
-    ...
-    
-    ...
+| C1     | c2 | c3     | c4       | 
+| :---        |    :----:   |    :----:     |  ---:       |
+| ProductID      | ProductName       | Category   | ListPrice |
+| 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
+| 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
+| ...   | ...        | ...      |  ...   |
     
 5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
     
@@ -222,38 +154,13 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     ```
     
     Now the results look like this:
+
+    | ProductID      | ProductName       | Category   | ListPrice |
+    | :---        |    :----:   |    :----:     |  ---:       |
+    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
+    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
+    | ...   | ...        | ...      |  ...   |
     
-    ProductID
-    
-    ProductName
-    
-    Category
-    
-    ListPrice
-    
-    771
-    
-    Mountain-100 Silver, 38
-    
-    Mountain Bikes
-    
-    3399.9900
-    
-    772
-    
-    Mountain-100 Silver, 42
-    
-    Mountain Bikes
-    
-    3399.9900
-    
-    ...
-    
-    ...
-    
-    ...
-    
-    ...
     
 6.  Modify the query as follows (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system):
     
@@ -275,21 +182,11 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 7.  Run the modified query, which should return a resultset that contains the number products in each category, like this:
     
-    Category
-    
-    ProductCount
-    
-    Bib Shorts
-    
-    3
-    
-    Bike Racks
-    
-    1
-    
-    ...
-    
-    ...
+    | Category      | ProductCount      |
+    | :---        |  ---:       |
+    | Bib Shorts	   | 3        | 
+    | Bike Racks	   | 1        | 
+    | ...   | ...        | ...      |  ...   |
     
 8.  In the  **Properties**  pane for  **SQL Script 1**, change the  **Name**  to  **Count Products by Category**. Then in the toolbar, select  **Publish**  to save the script.
     
@@ -319,22 +216,11 @@ The resulting chart should resemble this:
 
 While SQL is a common language for querying structured datasets, many data analysts find languages like Python useful to explore and prepare data for analysis. In Azure Synapse Analytics, you can run Python (and other) code in a  _Spark pool_; which uses a distributed data processing engine based on Apache Spark.
 
-1.  In Synapse Studio, select the  **Manage**  page.
+1.  In Synapse Studio, on the  **Data**  page, browse to the file system for your Synapse workspace. Then right-click  **products.csv**, point to  **New notebook**, and select  **Load to DataFrame**.
     
-2.  Select the  **Apache Spark pools**  tab, and then use the  **＋ New**  icon to create a new Spark pool with the following settings:
+2.  In the  **Notebook 1**  pane that opens, in the  **Attach to**  list, select the  **spark**  Spark pool to created previously and ensure that the  **Language**  is set to  **PySpark (Python)**.
     
-    -   **Apache Spark pool name**: spark
-    -   **Node size family**: Memory Optimized
-    -   **Node size**: Small (4 vCores / 32 GB)
-    -   **Autoscale**: Enabled
-    -   **Number of nodes**  3----3
-3.  Review and create the Spark pool, and then wait for it to deploy (which may take a few minutes).
-    
-4.  When the Spark pool has been deployed, in Synapse Studio, on the  **Data**  page, browse to the file system for your Synapse workspace. Then right-click  **products.csv**, point to  **New notebook**, and select  **Load to DataFrame**.
-    
-5.  In the  **Notebook 1**  pane that opens, in the  **Attach to**  list, select the  **spark**  Spark pool to created previously and ensure that the  **Language**  is set to  **PySpark (Python)**.
-    
-6.  Review the code in the first (and only) cell in the notebook, which should look like this:
+3.  Review the code in the first (and only) cell in the notebook, which should look like this:
 
     ```
     %%pyspark
@@ -346,56 +232,22 @@ While SQL is a common language for querying structured datasets, many data analy
     
     ```
     
-7.  Use the  **▷**  icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
+4.  Use the  **▷**  icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
     
 
-> **Note**: 
+    > **Note**: 
+    If an error occurs because the Python Kernel isn't available yet, run the cell again.
 
-If an error occurs because the Python Kernel isn't available yet, run the cell again.
-
-8.  Eventually, the results should appear below the cell, and they should be similar to this:
+5.  Eventually, the results should appear below the cell, and they should be similar to this:
     
-    _c0_
+    | c0     | c1 | c2     | c3       | 
+    | :---        |    :----:   |    :----:     |  ---:       |
+    | ProductID      | ProductName       | Category   | ListPrice |
+    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
+    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
+    | ...   | ...        | ...      |  ...   |
     
-    _c1_
-    
-    _c2_
-    
-    _c3_
-    
-    ProductID
-    
-    ProductName
-    
-    Category
-    
-    ListPrice
-    
-    771
-    
-    Mountain-100 Silver, 38
-    
-    Mountain Bikes
-    
-    3399.9900
-    
-    772
-    
-    Mountain-100 Silver, 42
-    
-    Mountain Bikes
-    
-    3399.9900
-    
-    ...
-    
-    ...
-    
-    ...
-    
-    ...
-    
-9.  Uncomment the  _,header=True_  line (because the products.csv file has the column headers in the first line), so your code looks like this:
+6.  Uncomment the  _,header=True_  line (because the products.csv file has the column headers in the first line), so your code looks like this:
     
     PythonCopy
     
@@ -409,72 +261,35 @@ If an error occurs because the Python Kernel isn't available yet, run the cell a
     
     ```
     
-10.  Rerun the cell and verify that the results look like this:
+7.  Rerun the cell and verify that the results look like this:
     
-     ProductID
-    
-     ProductName
-    
-     Category
-    
-     ListPrice
-    
-     771
-    
-     Mountain-100 Silver, 38
-    
-     Mountain Bikes
-    
-     3399.9900
-    
-     772
-    
-     Mountain-100 Silver, 42
-    
-     Mountain Bikes
-    
-     3399.9900
-    
-     ...
-    
-     ...
-    
-     ...
-    
-     ...
+    | ProductID      | ProductName       | Category   | ListPrice |
+    | :---        |    :----:   |    :----:     |  ---:       |
+    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
+    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
+    | ...   | ...        | ...      |  ...   |
     
     Notice that running the cell again takes less time, because the Spark pool is already started.
     
-11.  Under the results, use the  **＋ Code**  icon to add a new code cell to the notebook.
+8.  Under the results, use the  **＋ Code**  icon to add a new code cell to the notebook.
     
-12.  In the new empty code cell, add the following code:
+9.  In the new empty code cell, add the following code:
 
     ```
     df_counts = df.groupby(df.Category).count()
     display(df_counts)
-    
     ```
     
-13.  Run the new code cell by clicking its  **▷**  icon, and review the results, which should look similar to this:
+10.  Run the new code cell by clicking its  **▷**  icon, and review the results, which should look similar to this:
+
+        | Category      | ProductCount      |
+        | :---        |  ---:       |
+        | Headsets	   | 3        | 
+        | Wheels	   | 14        | 
+        | ...   | ...        | ...      |  ...   |
     
-     Category
-    
-     count
-    
-     Headsets
-    
-     3
-    
-     Wheels
-    
-     14
-    
-     ...
-    
-     ...
-    
-14.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
+11.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
     
 ![Image showing category count chart view](media/bar-chart.png)
     
-15.  Close the  **Notebook 1**  pane and discard your changes.
+12.  Close the  **Notebook 1**  pane and discard your changes.
