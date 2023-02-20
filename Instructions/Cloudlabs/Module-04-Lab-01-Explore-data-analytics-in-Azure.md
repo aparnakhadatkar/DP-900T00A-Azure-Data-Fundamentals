@@ -56,7 +56,8 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     -   **Compression type**: None
 7.  On the  **Destination**  step, in the  **Dataset**  substep, select the following settings:
     
-    -   **Destination type**: Azure Data Lake Storage Gen 2 =  **Connection**:  _Create a new connection with the following properties:_
+    -   **Destination type**: Azure Data Lake Storage Gen 2 
+    -   **Connection**:  _Create a new connection with the following properties:_
         -   **Name**: Products
         -   **Description**: Product list
         -   **Connect via integration runtime**: AutoResolveIntegrationRuntime
@@ -97,7 +98,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
 14.  On the  **Data**  page, select the  **Linked**  tab and expand the  **Azure Data Lake Storage Gen 2**  hierarchy until you see the file storage for your Synapse workspace. Then select the file storage to verify that a file named  **products.csv**  has been copied to this location, as shown here:
     
-![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](media/synapse-storage.png)
+     ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](media/synapse-storage.png)
     
 
 ### Task 3 : Use a SQL pool to analyze data
@@ -129,13 +130,14 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 4.  On the toolbar, use the  **▷ Run**  button to run the SQL code, and review the results, which should look similar to this:
     
-| C1     | c2 | c3     | c4       | 
-| :---        |    :----:   |    :----:     |  ---:       |
-| ProductID      | ProductName       | Category   | ListPrice |
-| 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
-| 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
-| ...   | ...        | ...      |  ...   |
-    
+    | C1     | c2 | c3     | c4       | 
+    | :---        |    :----:   |    :----:     |  ---:       |
+    | ProductID      | ProductName       | Category   | ListPrice |
+    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
+    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
+    | ...   | ...        | ...      |  ...   |
+
+
 5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
     
 
@@ -207,9 +209,9 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
      -   **Legend (series) maximum**:  _Leave blank_
      -   **Category label**:  _Leave blank_
     
-The resulting chart should resemble this:
+     The resulting chart should resemble this:
     
-![Image showing the product count chart view](media/column-chart.png)
+     ![Image showing the product count chart view](media/column-chart.png)
     
 
 ### Task 4 : Use a Spark pool to analyze data
@@ -234,7 +236,6 @@ While SQL is a common language for querying structured datasets, many data analy
     
 4.  Use the  **▷**  icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
     
-
     > **Note**: 
     If an error occurs because the Python Kernel isn't available yet, run the cell again.
 
@@ -290,6 +291,6 @@ While SQL is a common language for querying structured datasets, many data analy
     
 11.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
     
-![Image showing category count chart view](media/bar-chart.png)
+     ![Image showing category count chart view](media/bar-chart.png)
     
 12.  Close the  **Notebook 1**  pane and discard your changes.
