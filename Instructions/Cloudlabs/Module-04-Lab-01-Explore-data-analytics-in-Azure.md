@@ -54,9 +54,9 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     -   **Row delimiter**: Line feed (\n)
     -   **First row as header**: Selected
     -   **Compression type**: None
-7.  On the  **Target**  step, in the  **Dataset**  substep, select the following settings:
+7.  On the  **Destination**  step, in the  **Dataset**  substep, select the following settings:
     
-    -   **Target type**: Azure Data Lake Storage Gen 2 =  **Connection**:  _Create a new connection with the following properties:_
+    -   **Destination type**: Azure Data Lake Storage Gen 2 =  **Connection**:  _Create a new connection with the following properties:_
         -   **Name**: Products
         -   **Description**: Product list
         -   **Connect via integration runtime**: AutoResolveIntegrationRuntime
@@ -65,7 +65,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
             -   **Azure subscription**:  _select your subscription_
             -   **Storage account name**:  _Select your storage account_
         -   **Test connection**: To linked service
-8.  After creating the connection, on the  **Target/Dataset**  step, ensure the following settings are selected, and then select  **Next >**:
+8.  After creating the connection, on the  **Destination/Dataset**  step, ensure the following settings are selected, and then select  **Next >**:
     
     -   **Folder path**:  _Browse to your file system folder and select **defaultfs**_
     -   **File name**: products.csv
