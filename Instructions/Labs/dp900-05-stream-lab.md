@@ -64,7 +64,7 @@ You'll need an [Azure subscription](https://azure.microsoft.com/free) in which y
 
 ## Use the resources to analyze streaming data
 
-1. At the top of the **Overview** page for the Stream Analytics job, select the **&#9655; Start** button, and then in the **Start job** pane, select **Start** to start the job.
+1. At the top of the **Overview** page search for the Stream Analytics job, select the **&#9655; Start** button, and then in the **Start job** pane, select **Start** to start the job.
 2. Wait for a notification that the streaming job started successfully.
 3. Switch back to the Azure Cloud Shell, and enter the following command to simulate a device that sends data to the IoT Hub.
 
@@ -92,7 +92,7 @@ You'll need an [Azure subscription](https://azure.microsoft.com/free) in which y
     ...
     ```
 
-11. Use the **&#8635; Refresh** button to refresh the file, noting that additional results are written to the file as Stream Analytics job processes the device data in real time as it is streamed from the device to the IoT Hub.
+11. Use the **&#8635; Refresh** button to refresh the file, nothing that additional results are written to the file as Stream Analytics job processes the device data in real time as it is streamed from the device to the IoT Hub.
 12. Return to the Azure Cloud Shell and wait for the device simulation to finish (it should run for around 3 minutes).
 13. Back in the Azure portal, refresh the file one more time to see the full set of results that were produced during the simulation.
 14. Return to the **learn*xxxxxxxxxxxxxxxxx...*** resource group, and re-open the **stream*xxxxxxxxxxxxx*** Stream Analytics job.
