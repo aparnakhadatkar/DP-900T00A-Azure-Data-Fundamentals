@@ -27,7 +27,7 @@ The first step in using Azure Storage is to provision an Azure Storage account i
     
 4.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
     
-5.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review + Create**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
+5.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
     
 6.  Wait for deployment to complete. Then go to the resource that was deployed.
     
@@ -36,17 +36,17 @@ The first step in using Azure Storage is to provision an Azure Storage account i
 
 Now that you have an Azure Storage account, you can create a container for blob data.
 
-1.  Download the  [product1.json](https://aka.ms/product1.json)  JSON file from  `https://aka.ms/product1.json`  and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
+1.   Download the product1.json JSON file from https://aka.ms/product1.json and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
     
     _If the JSON file is displayed in your browser, save the page as  **product1.json**._
     
-2.  In the Azure portal page for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
+2.  In the Azure portal page go to the newly created storage account for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
     
 3.  In the  **Containers**  page, select  **＋ Container**  and add a new container named  **data**  with a public access level of  **Private (no anonymous access)**.
     
 4.  When the  **data**  container has been created, verify that it's listed in the  **Containers**  page.
     
-5.  In the pane on the left side, in the top section, select  **Storage browser (preview)**. This page provides a browser-based interface that you can use to work with the data in your storage account.
+5.  Go back to the storage account, in the pane on the left side, in the top section, select  **Storage browser**. This page provides a browser-based interface that you can use to work with the data in your storage account.
     
 6.  In the storage browser page, select  **Blob containers**  and verify that your  **data**  container is listed.
     
@@ -81,9 +81,9 @@ Now that you have an Azure Storage account, you can create a container for blob 
 
 Azure Data Lake Store Gen2 support enables you to use hierarchical folders to organize and manage access to blobs. It also enables you to use Azure blob storage to host distributed file systems for common big data analytics platforms.
 
-1.  Download the  [product2.json](https://aka.ms/product2.json)  JSON file from  `https://aka.ms/product2.json`  and save it on your computer in the same folder where you downloaded  **product1.json**  previously - you'll upload it to blob storage later).
+1.  Download the product2.json JSON file from https://aka.ms/product2.json and save it on your computer in the same folder where you downloaded product1.json previously - you'll upload it to blob storage later).
 
-2. In the pane on the left side, in the top section, select  **Storage browser (preview)**  and navigate back to the root of your  **data**  blob container, which still contains the  **product_data**  folder.
+2. In the pane on the left side, in the top section, select  **Storage browser**  and navigate back to the root of your  **data**  blob container, which still contains the  **product_data**  folder.
 
 3.  Select the  **product_data**  folder, and verify it still contains the  **product1.json**  file you uploaded previously.
 
@@ -123,7 +123,7 @@ Azure Tables provide a key/value store for applications that need to store data 
     
 2.  On the  **Tables**  page, select  **＋ Table**  and create a new table named  **products**.
     
-3.  After the  **products**  table has been created, in the pane on the left side, in the top section, select  **Storage browser (preview)**.
+3.  After the  **products**  table has been created, in the pane on the left side, in the top section, select  **Storage browser**.
     
 4.  In storage explorer, select  **Tables**  and verify that the  **products**  table is listed.
     
@@ -137,72 +137,30 @@ Azure Tables provide a key/value store for applications that need to store data 
     -   **RowKey**: 1
 8.  Select  **Add property**, and create a new property with the following values:
     
-    Property name
-    
-    Type
-    
-    Value
-    
-    Name
-    
-    String
-    
-    Widget
+    |Property name | Type | Value |
+    | ------------ | ---- | ----- |
+    | Name | String | Widget |
     
 9.  Add a second property with the following values:
-    Property name
     
-    Type
-    
-    Value
-    
-    Price
-    
-    Double
-    
-    2.99
+   |Property name | Type | Value |
+   | ------------ | ---- | ----- |
+   | Price | Double | 2.99 |
+
     
 10.  Select  **Insert**  to insert a row for the new entity into the table.
     
 11.  In storage browser, verify that a row has been added to the  **products**  table, and that a  **Timestamp**  column has been created to indicate when the row was last modified.
     
 12.  Add another entity to the  **products**  table with the following properties:
-    
-	    Property name
-    
-	    Type
-    
-	    Value
-    
-	    PartitionKey
-    
-	    String
-    
-	    1
-    
-	   RowKey
-    
-	    String
-    
-	    2
-    
-	    Name
-    
-	    String
-    
-	    Kniknak
-    
-	    Price
-    
-	    Double
-    
-	    1.99
-    
-	    Discontinued
-    
-	    Boolean
-    
-	    true
+
+    |Property name | Type | Value |
+    | ------------ | ---- | ----- |
+    | PartitionKey | String | 1 |
+    | RowKey | String | 2 |
+    | Name | String | Kniknak |
+    | Price | Double | 1.99 |
+    | Discontinued | Boolean | true |
     
 13.  After inserting the new entity, verify that a row containing the discontinued product is shown in the table.
     

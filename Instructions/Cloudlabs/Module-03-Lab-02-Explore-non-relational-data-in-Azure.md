@@ -10,7 +10,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 1.  In the Azure portal, select  **+ Create a resource**  at the top left, and search for  _Azure Cosmos DB_. In the results, select  **Azure Cosmos DB**  and select  **Create**.
 
-2.  In the  **Core (SQL) - Recommended**  tile, select  **Create**.
+2.  In the  **Azure Cosmos DB for NoSQL**  tile, select  **Create**.
 
 3.  Enter the following details, and then select  **Review + Create**:
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
@@ -27,11 +27,12 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ### Task 2 : Create a sample database
 
-1.  On the page for your new Cosmos DB account, in the pane n the left, select  **Data Explorer**.
+*Throughout this procedure, close any tips that are displayed in the portal*.
 
-2.  In the  **Data Explorer**  page, select  **Start with Sample**  and then observe the status in the panel at the bottom of the screen until the  **SampleDB**  database and the sample  **Persons**  container has been created (which may take a minute or so).
-
-3.  Select  **Close**  on the notification message.
+1. On the page for your new Cosmos DB account, in the pane on the left, select **Data Explorer**.
+1. In the **Data Explorer** page, select **Launch quick start**.
+1. In the **New container** tab, review the pre-populated settings for the sample database, and then select **OK**.
+1. Observe the status in the panel at the bottom of the screen until the **SampleDB** database and its **SampleContainer** container has been created (which may take a minute or so)..
 
 ### Task 3 : View and create items
 
