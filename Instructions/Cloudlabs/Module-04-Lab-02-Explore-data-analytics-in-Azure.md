@@ -64,14 +64,14 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
     If you are using the learn sandbox, the resource group may also contain a second  _Storage account_  named  **cloudshell_xxxxxxxx_**, which is used to store data for the Azure Cloud Shell you used to run the setup script.
     
-3.  Select the  **stream_xxxxxxxxxxxxx_**  Stream Analytics job and view the information on its  **Overview**  page, noting the following details:
+3.  Select the  **stream_xxxxxxxxxxxxx_**  Stream Analytics job and view the information on its  **Overview**  page, nothing the following details:
     
     -   The job has one  _input_  named  **iotinput**, and one  _output_  named  **bloboutput**. These reference the IoT Hub and Storage account created by the setup script.
     -   The job has a  _query_, which reads data from the  **iotinput**  input, and aggregates it by counting the number of messages processed every 10 seconds; writing the results to the  **bloboutput**  output.
 
 ## Use the resources to analyze streaming data
 
-1.  At the top of the  **Overview**  page for the Stream Analytics job, select the  **▷ Start**  button, and then in the  **Start job**  pane, select  **Start**  to start the job.
+1.  At the top of the  **Overview**  page of the Stream Analytics job, select the  **▷ Start**  button, and then in the  **Start job**  pane, select  **Start**  to start the job.
     
 2.  Wait for a notification that the streaming job started successfully.
     
@@ -115,7 +115,7 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
     ```
     
-11.  Use the  **↻ Refresh**  button to refresh the file, noting that additional results are written to the file as Stream Analytics job processes the device data in real time as it is streamed from the device to the IoT Hub.
+11.  Use the  **↻ Refresh**  button to refresh the file, nothing that additional results are written to the file as Stream Analytics job processes the device data in real time as it is streamed from the device to the IoT Hub.
     
 12.  Return to the Azure Cloud Shell and wait for the device simulation to finish (it should run for around 3 minutes).
     
