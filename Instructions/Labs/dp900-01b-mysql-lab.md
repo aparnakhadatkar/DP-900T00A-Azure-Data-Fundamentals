@@ -2,8 +2,6 @@
 
 In this exercise you'll provision an Azure Database for MySQL resource in your Azure subscription.
 
-This lab will take approximately **5** minutes to complete.
-
 ## Provision an Azure Database for MySQL resource
 
 In this exercise, you'll provision an Azure Database for MySQL resource.
