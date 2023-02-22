@@ -14,7 +14,7 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
 2. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 3. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
-        - **Resource group**: *Create a new resource group with a suitable name, like "synapse-rg"*
+        - **Resource group**: *Choose an existing resource group with a suitable name, like "synapse-rg"*
         - **Managed resource group**: *Enter an appropriate name, for example "synapse-managed-rg"*.
     - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<your_name>*.
     - **Region**: *Select any available region*.
@@ -49,7 +49,7 @@ To use Spark to process streaming data, you need to add a Spark pool to your Azu
 
 To explore stream processing with Spark, you'll use a notebook that contains Python code and notes to help you perform some basic stream processing with Spark Structured Streaming and delta tables.
 
-1. Download the [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb) notebook to your local computer (if the notebook is opened as a text file in your browser, save it to a local folder; being careful to save it as **Structured Streaming and Delta Tables.ipynb**, not as a .txt file)
+1. Download the [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb) notebook to your local computer (if the notebook is opened as a text file in your browser, save it to a local folder then open the downloaded file in **File Explorer** then click on **View** check the box of **File name extensions** then rename the file and remove .txt)
 2. In Synapse Studio, select the **Develop** page.
 3. On the **&#65291;** menu, select **&#8612; Import**, and select the **Structured Streaming and Delta Tables.ipynb** file on your local computer.
 4. Follow the instructions in the notebook to attach it to your Spark pool and run the code cells it contains to explore various ways to use Spark for stream processing.
