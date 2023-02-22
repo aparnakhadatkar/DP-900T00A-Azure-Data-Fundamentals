@@ -17,7 +17,7 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
 
 1. Enter the following values on the **Create SQL Database** page:
     - **Subscription**: Select your Azure subscription.
-    - **Resource group**: Create a new resource group with a name of your choice.
+    - **Resource group**: Choose the resource group  start with **dp-900-lab01b**
     - **Server name**: Enter a unique name.
     - **Region**: Any available location near you.
     - **MySQL Version**: Leave unchanged.
