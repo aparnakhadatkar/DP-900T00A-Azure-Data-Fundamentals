@@ -2,7 +2,7 @@
   {
     "Name": "Lab 01a : Explore Azure Database for PostgreSQL",
     "Language": "English",
-    "BaseURL": "https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/tree/prod-new/Instructions/Cloudlabs",
+    "BaseURL": "https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/tree/prod-new/Instructions/Labs",
     "Files": [
       {
         "RawFilePath": "https://raw.githubusercontent.com/alwinvw23/CloudLabs/master/LabIntro.md",
