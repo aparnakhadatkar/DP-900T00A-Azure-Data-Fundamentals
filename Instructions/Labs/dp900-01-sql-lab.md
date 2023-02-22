@@ -12,7 +12,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
 2. Review the Azure SQL options that are available, and then in the  **SQL databases**  tile, ensure  **Single database**  is selected and select  **Create**.
     
-   ![Screenshot of the Azure portal showing the Azure SQL page.](media/azure-sql-portal.png)
+   ![Screenshot of the Azure portal showing the Azure SQL page.](images//azure-sql-portal.png)
     
 3. Enter the following values on the  **Create SQL Database**  page:
     
@@ -33,7 +33,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
 8. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
     
-   ![Screenshot of the Azure portal showing the SQL Database page.](media/sql-database-portal.png)
+   ![Screenshot of the Azure portal showing the SQL Database page.](images//sql-database-portal.png)
     
 9. In the pane on the left side of the page, select  **Query editor (preview)**, and then sign in using the administrator login and password you specified for your server.
     
@@ -41,7 +41,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
    The query editor looks like this:
     
-   ![Screenshot of the Azure portal showing the query editor.](media/query-editor.png)
+  ![Screenshot of the Azure portal showing the query editor.](images//query-editor.png)
     
 10. Expand the  **Tables**  folder to see the tables in the database.
     
@@ -51,7 +51,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
 12. Select  **▷ Run**  above the query to run it and view the results, which should include all columns for all rows in the  **SalesLT.Product**  table as shown here:
     
-    ![Screenshot of the Azure portal showing the query editor with query results.](media/sql-query-results.png)
+     ![Screenshot of the Azure portal showing the query editor.](media/query-editor.png)
     
 13. Replace the SELECT statement with the following code, and then select **&#9655; Run** to run the new query and review the results (which includes only the **ProductID**, **Name**, **ListPrice**, **ProductCategoryID** columns):
 
