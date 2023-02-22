@@ -38,7 +38,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
 
 1.   Download the product1.json JSON file from https://aka.ms/product1.json and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
     
-    _If the JSON file is displayed in your browser, save the page as  **product1.json**._
+    *If the JSON file is displayed in your browser, save the page as **product1.json**.*
     
 2.  In the Azure portal page go to the newly created storage account for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
     
@@ -143,16 +143,16 @@ Azure Tables provide a key/value store for applications that need to store data 
     
 9.  Add a second property with the following values:
     
-   |Property name | Type | Value |
-   | ------------ | ---- | ----- |
-   | Price | Double | 2.99 |
+     |Property name | Type | Value |
+     | ------------ | ---- | ----- |
+     | Price | Double | 2.99 |
 
     
 10.  Select  **Insert**  to insert a row for the new entity into the table.
     
 11.  In storage browser, verify that a row has been added to the  **products**  table, and that a  **Timestamp**  column has been created to indicate when the row was last modified.
     
-12.  Add another entity to the  **products**  table with the following properties:
+12. Add another entity to the **products** table with the following properties:
 
     |Property name | Type | Value |
     | ------------ | ---- | ----- |
@@ -161,7 +161,7 @@ Azure Tables provide a key/value store for applications that need to store data 
     | Name | String | Kniknak |
     | Price | Double | 1.99 |
     | Discontinued | Boolean | true |
-    
-13.  After inserting the new entity, verify that a row containing the discontinued product is shown in the table.
+
+13. After inserting the new entity, verify that a row containing the discontinued product is shown in the table.
     
    You have manually entered data into the table using the storage browser interface. In a real scenario, application developers can use the Azure Storage Table API to build applications that read and write values to tables, making it a cost effective and scalable solution for NoSQL storage.
