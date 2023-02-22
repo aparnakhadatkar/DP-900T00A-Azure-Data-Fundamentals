@@ -1,18 +1,7 @@
----
-lab:
-    title: 'Explore Azure Synapse Data Explorer'
-    module: 'Explore fundamentals of real-time analytics'
----
 
 # Explore Azure Synapse Data Explorer
 
 In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
-
-This lab will take approximately **25** minutes to complete.
-
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
 
 ## Provision a Synapse Analytics workspace
 
