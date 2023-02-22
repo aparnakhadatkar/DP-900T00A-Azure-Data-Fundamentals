@@ -53,18 +53,22 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
     ![Screenshot of the Azure portal showing the query editor with query results.](media/sql-query-results.png)
     
-13.  Replace the SELECT statement with the following code, and then select  **▷ Run**  to run the new query and review the results (which includes only the  **ProductID**,  **Name**,  **ListPrice**,  **ProductCategoryID**  columns):
+13. Replace the SELECT statement with the following code, and then select **&#9655; Run** to run the new query and review the results (which includes only the **ProductID**, **Name**, **ListPrice**, **ProductCategoryID** columns):
 
+    ```sql
     SELECT ProductID, Name, ListPrice, ProductCategoryID
     FROM SalesLT.Product;
+    ```
 
-    
-14. Now try the following query, which uses a JOIN to get the category name from the  **SalesLT.ProductCategory**  table:
+14. Now try the following query, which uses a JOIN to get the category name from the **SalesLT.ProductCategory** table:
 
+    ```sql
     SELECT p.ProductID, p.Name AS ProductName,
-           c.Name AS Category, p.ListPrice
+            c.Name AS Category, p.ListPrice
     FROM SalesLT.Product AS p
     JOIN [SalesLT].[ProductCategory] AS c
         ON p.ProductCategoryID = c.ProductCategoryID;
-  
+    ```
+
 15. Close the query editor pane, discarding your edits.
+  
