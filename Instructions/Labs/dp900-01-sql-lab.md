@@ -41,7 +41,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
    The query editor looks like this:
     
-  ![Screenshot of the Azure portal showing the query editor.](images//query-editor.png)
+   ![Screenshot of the Azure portal showing the query editor.](images//query-editor.png)
     
 10. Expand the  **Tables**  folder to see the tables in the database.
     
