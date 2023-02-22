@@ -1,17 +1,6 @@
----
-lab:
-    title: 'Explore Azure Cosmos DB'
-    module: 'Explore fundamentals of Azure Cosmos DB'
----
 # Explore Azure Cosmos DB
 
 In this exercise you'll provision an Azure Cosmos DB database in your Azure subscription, and explore the various ways you can use it to store non-relational data.
-
-This lab will take approximately **15** minutes to complete.
-
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
 
 ## Create a Cosmos DB account
 
