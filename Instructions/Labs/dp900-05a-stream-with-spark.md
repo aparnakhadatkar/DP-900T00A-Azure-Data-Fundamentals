@@ -1,18 +1,7 @@
----
-lab:
-    title: 'Explore Spark Streaming in Azure Synapse Analytics'
-    module: 'Explore fundamentals of real-time analytics'
----
-
 # Explore Spark Streaming in Azure Synapse Analytics
 
 In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in Azure Synapse Analytics to process streaming data.
 
-This lab will take approximately **15** minutes to complete.
-
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
 
 ## Provision a Synapse Analytics workspace
 
@@ -65,14 +54,3 @@ To explore stream processing with Spark, you'll use a notebook that contains Pyt
 3. On the **&#65291;** menu, select **&#8612; Import**, and select the **Structured Streaming and Delta Tables.ipynb** file on your local computer.
 4. Follow the instructions in the notebook to attach it to your Spark pool and run the code cells it contains to explore various ways to use Spark for stream processing.
 
-## Delete Azure resources
-
-> **Note**: If you intend to complete other exercises that use Azure Synapse Analytics, you can skip this section. Otherwise, follow the steps below to avoid unnecessary Azure costs.
-
-1. Close the Synapse Studio browser tab, without saving any changes, and return to the Azure portal.
-1. On the Azure portal, on the **Home** page, select **Resource groups**.
-1. Select the resource group for your Synapse Analytics workspace (not the managed resource group), and verify that it contains the Synapse workspace, storage account, and Data Explorer pool for your workspace (if you completed the previous exercise, it will also contain a Spark pool).
-1. At the top of the **Overview** page for your resource group, select **Delete resource group**.
-1. Enter the resource group name to confirm you want to delete it, and select **Delete**.
-
-    After a few minutes, your Azure Synapse workspace and the managed workspace associated with it will be deleted.
