@@ -51,8 +51,8 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
 12. Select  **▷ Run**  above the query to run it and view the results, which should include all columns for all rows in the  **SalesLT.Product**  table as shown here:
     
-     ![Screenshot of the Azure portal showing the query editor.](media/query-editor.png)
-    
+     ![Screenshot of the Azure portal showing the query editor with query results.](images//sql-query-results.png)
+     
 13. Replace the SELECT statement with the following code, and then select **&#9655; Run** to run the new query and review the results (which includes only the **ProductID**, **Name**, **ListPrice**, **ProductCategoryID** columns):
 
     ```sql
