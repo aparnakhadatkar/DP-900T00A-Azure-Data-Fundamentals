@@ -1,18 +1,6 @@
----
-lab:
-    title: 'Explore Azure Storage'
-    module: 'Explore Azure Storage for non-relational data'
----
-
 # Explore Azure Storage
 
 In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
-
-This lab will take approximately **15** minutes to complete.
-
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
 
 ## Provision an Azure Storage account
 
