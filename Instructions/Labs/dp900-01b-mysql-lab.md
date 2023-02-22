@@ -8,7 +8,7 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
 
 1. In the Azure portal, select **&#65291; Create a resource** from the upper left-hand corner and search for **Azure Database for MySQL**. From the marketplace select the **Azure Database for MySQ Flexible Server**.
  
-    ![Screenshot of Azure Database for MySQL deployment options](images/mysql-options1.png)
+    ![Screenshot of Azure Database for MySQL deployment options](images/mysql01.png)
 
 1. On the **Azure Database for MySQ Flexible Server** select **Create**.
     
