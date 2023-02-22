@@ -1,18 +1,8 @@
----
-lab:
-    title: 'Explore Azure Database for MySQL'
-    module: 'Explore relational data in Azure'
----
-
 # Explore Azure Database for MySQL
 
 In this exercise you'll provision an Azure Database for MySQL resource in your Azure subscription.
 
 This lab will take approximately **5** minutes to complete.
-
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
 
 ## Provision an Azure Database for MySQL resource
 
