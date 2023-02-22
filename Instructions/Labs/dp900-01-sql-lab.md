@@ -1,18 +1,8 @@
----
-lab:
-    title: 'Explore Azure SQL Database'
-    module: 'Explore relational data in Azure'
----
+
 
 # Explore Azure SQL Database
 
 In this exercise you'll provision an Azure SQL Database resource in your Azure subscription, and then use SQL to query the tables in a relational database.
-
-This lab will take approximately **15** minutes to complete.
-
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
 
 ## Provision an Azure SQL Database resource
 
