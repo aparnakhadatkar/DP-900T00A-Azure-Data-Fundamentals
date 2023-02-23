@@ -126,14 +126,3 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
 1. Close the KQL query tab, discarding your changes.
 
-## Delete Azure resources
-
-Now that you've finished exploring Azure Synapse Analytics, you should delete the resources you've created to avoid unnecessary Azure costs.
-
-1. Close the Synapse Studio browser tab, without saving any changes, and return to the Azure portal.
-1. On the Azure portal, on the **Home** page, select **Resource groups**.
-1. Select the resource group for your Synapse Analytics workspace (not the managed resource group), and verify that it contains the Synapse workspace, storage account, and Data Explorer pool for your workspace (if you completed the previous exercise, it will also contain a Spark pool).
-1. At the top of the **Overview** page for your resource group, select **Delete resource group**.
-1. Enter the resource group name to confirm you want to delete it, and select **Delete**.
-
-    After a few minutes, your Azure Synapse workspace and the managed workspace associated with it will be deleted.
