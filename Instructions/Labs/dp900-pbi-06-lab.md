@@ -15,7 +15,7 @@ Now you're ready to import the data for your report.
 
 2.  On the Power BI Desktop welcome screen, select  **Get data**, and then in the list of data sources, select  **Web**  and then select  **Connect**.
     
-    ![Selecting the web data source](media/web-source.png)
+    ![Selecting the web data source](images/web-source.png)
     
 3.  In the  **From web**  dialog box, enter the following URL and then select  **OK**:
     
