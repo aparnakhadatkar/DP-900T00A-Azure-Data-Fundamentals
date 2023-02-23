@@ -132,7 +132,7 @@ Now you're almost ready to create a report. First you need to check some setting
     
 11.  Select a blank area of the report, and then in the  **Fields**  pane, select the  **City**  field in the  **customers**  table and then select the  **Revenue**  field in the  **orders**  table. This results in a map showing sales revenue by city (rearrange and resize the visualizations as needed):
     
-![A map shows revenue by city](media/revenue-map.png)
+![A map shows revenue by city](images/revenue-map.png)
     
 12.  In the map, note that you can drag, double-click, use a mouse-wheel, or pinch and drag on a touch screen to interact. Then select a specific city, and note that the other visualizations in the report are modified to highlight the data for the selected city.
     
