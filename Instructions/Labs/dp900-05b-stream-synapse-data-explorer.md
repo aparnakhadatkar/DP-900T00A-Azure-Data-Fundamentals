@@ -5,7 +5,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
 ## Provision a Synapse Analytics workspace
 
-1.  Open the resource group **DP-900-Module-4**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
+1.  Open the resource group **DP-900-Module-5**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
     
 2.  Select your Synapse workspace, and in its  **Overview**  page, in  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
     
