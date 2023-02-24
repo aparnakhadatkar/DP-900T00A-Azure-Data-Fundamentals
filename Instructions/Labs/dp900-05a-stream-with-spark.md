@@ -10,10 +10,6 @@ In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in 
     
 3.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
     
-    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio.png)
-4. Select your Synapse workspace, and in its **Overview** page, in **Open Synapse Studio** card, select **Open** to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
-5. On the left side of Synapse Studio, use the **&rsaquo;&rsaquo;** icon to expand the menu - this reveals the different pages within Synapse Studio that you will use to manage resources and perform data analytics tasks, as shown here:
-
     ![Synapse Studio](images/synapse-studio.png)
 
 
