@@ -17,7 +17,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
 1. In Synapse Studio, select the **Manage** page.
 1. Select the **Data Explorer pools** tab, and then use the **&#65291; New** icon to create a new pool with the following settings:
-    - **Data Explorer pool name**: dxpool-DeploymentID
+    - **Data Explorer pool name**: dxpool<inject key="DeploymentID" enableCopy="false" />
     - **Workload**: Compute optimized
     - **Size**: Extra Small (2 cores)
 1. Select **Next: Additional Settings >** and enable the **Streaming ingestion** setting - this enables Data Explorer to ingest new data from a streaming source, such as Azure Event Hubs.
