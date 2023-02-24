@@ -5,36 +5,19 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
 ## Provision a Synapse Analytics workspace
 
-> **Tip**: If you already have an Azure Synapse Workspace from a previous exercise, skip this section and go straight to **[Create a Data Explorer pool](#create-a-data-explorer-pool)**.
-
-1. Open the Azure portal at [https://portal.azure/com](https://portal.azure.com?azure-portal=true), and sign in using the credentials associated with your Azure subscription.
-
-    > **Note**: Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
-
-1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
-1. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
-    - **Subscription**: *Your Azure subscription*
-        - **Resource group**: *Choose an existing resource group with a suitable name, like "synapse-rg"*
-        - **Managed resource group**: *Enter an appropriate name, for example "synapse-managed-rg"*.
-    - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<your_name>*.
-    - **Region**: *Select any available region*.
-    - **Select Data Lake Storage Gen 2**: From subscription
-        - **Account name**: *Create a new account with a unique name, for example "datalake<your_name>"*.
-        - **File system name**: *Create a new file system with a unique name, for example "fs<your_name>"*.
-
-    > **Note**: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
-
-1. When you've entered these details, select **Review + create**, and then select **Create** to create the workspace.
-1. Wait for the workspace to be created - this may take five minutes or so.
-1. When deployment is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and a Data Lake storage account.
-1. Select your Synapse workspace, and in its **Overview** page, in **Open Synapse Studio** card, select **Open** to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
-1. On the left side of Synapse Studio, use the **&rsaquo;&rsaquo;** icon to expand the menu - this reveals the different pages within Synapse Studio that you will use to manage resources and perform data analytics tasks
-
+1.  Open the resource group **DP-900-Module-4**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
+    
+2.  Select your Synapse workspace, and in its  **Overview**  page, in  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
+    
+3.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
+    
+    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio.png)
+    
 ## Create a Data Explorer pool
 
 1. In Synapse Studio, select the **Manage** page.
 1. Select the **Data Explorer pools** tab, and then use the **&#65291; New** icon to create a new pool with the following settings:
-    - **Data Explorer pool name**: dxpool<DeploymentID>
+    - **Data Explorer pool name**: dxpool-DeploymentID
     - **Workload**: Compute optimized
     - **Size**: Extra Small (2 cores)
 1. Select **Next: Additional Settings >** and enable the **Streaming ingestion** setting - this enables Data Explorer to ingest new data from a streaming source, such as Azure Event Hubs.
