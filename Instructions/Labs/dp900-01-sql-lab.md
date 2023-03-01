@@ -17,7 +17,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 3. Enter the following values on the  **Create SQL Database**  page:
     
     -   **Subscription**: If you're using a  _sandbox_, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a  _sandbox_  subscription, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, create a new resource group with a name of your choice.
+    -   **Resource group**: If you're using a  _sandbox_  subscription, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group with a name  like Dp900-module1.
     -   **Database name**:  _AdventureWorks_
     -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. Use  **SQL authentication**  and specify your name as the server admin login and a suitably complex password (remember the password - you'll need it later!)
     -   **Want to use SQL elastic pool?**:  _No_
