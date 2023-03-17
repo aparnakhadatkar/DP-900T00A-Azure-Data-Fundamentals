@@ -14,7 +14,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 3.  Enter the following details, and then select  **Review + Create**:
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, create a new resource group with a name of your choice.
+    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="Deployment-id" enableCopy="false" />**.
     -   **Account Name**: Enter a unique name
     -   **Location**: Choose any available location
     -   **Capacity mode**: Provisioned throughput
@@ -32,7 +32,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 1. On the page for your new Cosmos DB account, in the pane on the left, select **Data Explorer**.
 1. In the **Data Explorer** page, select **Launch quick start**.
 1. In the **New container** tab, review the pre-populated settings for the sample database, and then select **OK**.
-1. Observe the status in the panel at the bottom of the screen until the **SampleDB** database and its **SampleContainer** container has been created (which may take a minute or so)..
+1. Observe the status in the panel at the bottom of the screen until the **SampleDB** database and its **SampleContainer** container has been created (which may take a minute or so).
 
 ### Task 3 : View and create items
 
