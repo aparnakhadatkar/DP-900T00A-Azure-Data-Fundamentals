@@ -60,11 +60,9 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
     If all three of these resources are not listed, click the  **↻ Refresh**  button until they appear.
     
-> **Note**: 
+> **Note**: If you are using the learn sandbox, the resource group may also contain a second  _Storage account_  named  **cloudshell_xxxxxxxx_**, which is used to store data for the Azure Cloud Shell you used to run the setup script.
     
-    If you are using the learn sandbox, the resource group may also contain a second  _Storage account_  named  **cloudshell_xxxxxxxx_**, which is used to store data for the Azure Cloud Shell you used to run the setup script.
-    
-3.  Select the  **stream_xxxxxxxxxxxxx_**  Stream Analytics job and view the information on its  **Overview**  page, nothing the following details:
+3.  Select the  **stream_xxxxxxxxxxxxx_**  Stream Analytics job and view the information on its  **Overview**  page, note the following details:
     
     -   The job has one  _input_  named  **iotinput**, and one  _output_  named  **bloboutput**. These reference the IoT Hub and Storage account created by the setup script.
     -   The job has a  _query_, which reads data from the  **iotinput**  input, and aggregates it by counting the number of messages processed every 10 seconds; writing the results to the  **bloboutput**  output.
@@ -104,17 +102,13 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
 9.  In the folder for the hour, select the file that has been created, which should have a name similar to  **0_xxxxxxxxxxxxxxxx.json**.
     
 10.  On the page for the file, select  **Edit**, and review the contents of the file; which should consist of a JSON record for each 10 second period, showing the number of messages received from IoT devices, like this:
-    
+  
+```
+{"starttime":"2021-10-23T01:02:13.2221657Z","endtime":"2021-10-23T01:02:23.2221657Z","device":"iotdevice","messages":2}
+{"starttime":"2021-10-23T01:02:14.5366678Z","endtime":"2021-10-23T01:02:24.5366678Z","device":"iotdevice","messages":3}
+{"starttime":"2021-10-23T01:02:15.7413754Z","endtime":"2021-10-23T01:02:25.7413754Z","device":"iotdevice","messages":4}
+```
 
-    
-    ```
-    {"starttime":"2021-10-23T01:02:13.2221657Z","endtime":"2021-10-23T01:02:23.2221657Z","device":"iotdevice","messages":2}
-    {"starttime":"2021-10-23T01:02:14.5366678Z","endtime":"2021-10-23T01:02:24.5366678Z","device":"iotdevice","messages":3}
-    {"starttime":"2021-10-23T01:02:15.7413754Z","endtime":"2021-10-23T01:02:25.7413754Z","device":"iotdevice","messages":4}
-    ...
-    
-    ```
-    
 11.  Use the  **↻ Refresh**  button to refresh the file, nothing that additional results are written to the file as Stream Analytics job processes the device data in real time as it is streamed from the device to the IoT Hub.
     
 12.  Return to the Azure Cloud Shell and wait for the device simulation to finish (it should run for around 3 minutes).
