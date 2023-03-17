@@ -17,7 +17,7 @@ The first step in using Azure Storage is to provision an Azure Storage account i
 2.  Enter the following values on the  **Create a storage account**  page:
     
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, create a new resource group with a name of your choice.
+    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, choose the existing resource group ** dp-900-module2-<inject key="Deployment-id" enableCopy="false" />
     -   **Storage account name**: Enter a unique name for your storage account using lower-case letters and numbers.
     -   **Region**: Select any available location.
     -   **Performance**:  _Standard_
