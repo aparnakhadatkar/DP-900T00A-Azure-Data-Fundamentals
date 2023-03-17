@@ -16,7 +16,7 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resource.
 
 1. Enter the following values on the **Create SQL Database** page:
     - **Subscription**: Select your Azure subscription.
-    - **Resource group**: Choose the resource group  start with **** dp-900-lab01a-<inject key="Deployment-id" enableCopy="false" />**
+    - **Resource group**: Choose the existing resource group **** dp-900-lab01a-<inject key="Deployment-id" enableCopy="false" />**
     - **Server name**: Enter a unique name.
     - **Region**: Select a region near you.
     - **PostgreSQL version**: Leave unchanged.
