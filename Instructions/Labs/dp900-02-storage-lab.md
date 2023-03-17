@@ -81,7 +81,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
 
 Azure Data Lake Store Gen2 support enables you to use hierarchical folders to organize and manage access to blobs. It also enables you to use Azure blob storage to host distributed file systems for common big data analytics platforms.
 
-1.  Download the product2.json JSON file from https://aka.ms/product2.json and save it on your computer in the same folder where you downloaded product1.json previously - you'll upload it to blob storage later).
+1.  Download the product2.json JSON file from https://aka.ms/product2.json and save it on your computer in the same folder where you downloaded product1.json previously - you'll upload it to blob storage later.
 
 2. In the pane on the left side, in the top section, select  **Storage browser**  and navigate back to the root of your  **data**  blob container, which still contains the  **product_data**  folder.
 
@@ -117,7 +117,7 @@ Azure Files provides a way to create cloud-based file shares.
 
 ### Task 5 : Explore Azure Tables
 
-Azure Tables provide a key/value store for applications that need to store data values, but don't need the full functionality and structure of a relational database.
+Azure Tables provide a keyvalue store for applications that need to store data values, but don't need the full functionality and structure of a relational database.
 
 1.  In the Azure portal page for your storage container, on the left side, in the  **Data storage**  section, select  **Tables**.
     
