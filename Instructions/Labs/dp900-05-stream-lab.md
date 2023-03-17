@@ -50,19 +50,19 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
 
 ## Explore the Azure resources
 
-1.  In the  [Azure portal](https://portal.azure.com/), on the home page, select  **Resource groups**  to see the resource groups in your subscription. This should include the  **learn-_xxxxxxxxxxxxxxxxx..._**  resource group identified by the setup script.
+1.  In the  [Azure portal](https://portal.azure.com/), on the home page, select  **Resource groups**  to see the resource groups in your subscription. This should include the  ****learn*xxxxxxxxxxxxxxxxx...*****  resource group identified by the setup script.
     
-2.  Select the  **learn-_xxxxxxxxxxxxxxxxx..._**  resource group, and review the resources it contains, which should include:
+2.  Select the  ****learn*xxxxxxxxxxxxxxxxx...*****  resource group, and review the resources it contains, which should include:
     
-    -   An  _IoT Hub_  named  **iothub_xxxxxxxxxxxxx_**, which is used to receive incoming device data.
-    -   A  _Storage account_  named  **store_xxxxxxxxxxxx_**, to which the data processing results will be written.
-    -   A  _Stream Analytics job_  named  **stream_xxxxxxxxxxxxx_**, which will be used to process streaming data.
+    -   An  _IoT Hub_  named  **iothub*xxxxxxxxxxxxx***, which is used to receive incoming device data.
+    -   A  _Storage account_  named  **store*xxxxxxxxxxxx***, to which the data processing results will be written.
+    -   A  _Stream Analytics job_  named  **stream*xxxxxxxxxxxxx**, which will be used to process streaming data.
     
     If all three of these resources are not listed, click the  **↻ Refresh**  button until they appear.
     
 > **Note**: If you are using the learn sandbox, the resource group may also contain a second  _Storage account_  named  **cloudshell_xxxxxxxx_**, which is used to store data for the Azure Cloud Shell you used to run the setup script.
     
-3.  Select the  **stream_xxxxxxxxxxxxx_**  Stream Analytics job and view the information on its  **Overview**  page, note the following details:
+3.  Select the **stream*xxxxxxxxxxxxx**  Stream Analytics job and view the information on its  **Overview**  page, note the following details:
     
     -   The job has one  _input_  named  **iotinput**, and one  _output_  named  **bloboutput**. These reference the IoT Hub and Storage account created by the setup script.
     -   The job has a  _query_, which reads data from the  **iotinput**  input, and aggregates it by counting the number of messages processed every 10 seconds; writing the results to the  **bloboutput**  output.
@@ -91,7 +91,7 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
     ```
     
-5.  While the simulation is running, back in the Azure portal, return to the page for the  **learn-_xxxxxxxxxxxxxxxxx..._**  resource group, and select the  **store_xxxxxxxxxxxx_**  storage account.
+5.  While the simulation is running, back in the Azure portal, return to the page for the  **learn*xxxxxxxxxxxxxxxxx...***  resource group, and select the  **store*xxxxxxxxxxxx***  storage account.
     
 6.  In the pane on the left of the storage account blade, select the  **Containers**  tab.
     
@@ -115,6 +115,6 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
 13.  Back in the Azure portal, refresh the file one more time to see the full set of results that were produced during the simulation.
     
-14.  Return to the  **learn-_xxxxxxxxxxxxxxxxx..._**  resource group, and re-open the  **stream_xxxxxxxxxxxxx_**  Stream Analytics job.
+14.  Return to the  **learn*xxxxxxxxxxxxxxxxx...***   resource group, and re-open the  **stream*xxxxxxxxxxxxx...***  Stream Analytics job.
     
 15.  At the top of the Stream Analytics job page, use the  **⬜ Stop**  button to stop the job, confirming when prompted.
