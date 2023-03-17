@@ -17,7 +17,7 @@ The first step in using Azure Storage is to provision an Azure Storage account i
 2.  Enter the following values on the  **Create a storage account**  page:
     
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, choose the existing resource group ** dp-900-module2-<inject key="Deployment-id" enableCopy="false" />
+    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, choose the existing resource group **dp-900-module2-<inject key="Deployment-id" enableCopy="false"/>**
     -   **Storage account name**: Enter a unique name for your storage account using lower-case letters and numbers.
     -   **Region**: Select any available location.
     -   **Performance**:  _Standard_
@@ -38,7 +38,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
 
 1.   Download the product1.json JSON file from https://aka.ms/product1.json and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
     
-    >If the JSON file is displayed in your browser, save the page as **product1.json**.
+  >**Note:** If the JSON file is displayed in your browser, save the page as **product1.json**.
     
 2.  In the Azure portal page go to the newly created storage account for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
     
@@ -60,28 +60,28 @@ Now that you have an Azure Storage account, you can create a container for blob 
 
 	    Folders in blob storage are virtual, and only exist as part of the path of a blob. Since the  **products**  folder contained no blobs, it isn't really there!
     
-12.  Use the  **⤒ Upload**  button to open the  **Upload blob**  panel.
+11.  Use the  **⤒ Upload**  button to open the  **Upload blob**  panel.
     
-13.  In the  **Upload blob**  panel, select the  **product1.json**  file you saved on your local computer previously. Then in the  **Advanced**  section, in the  **Upload to folder**  box, enter  **product_data**  and select the  **Upload**  button.
+12.  In the  **Upload blob**  panel, select the  **product1.json**  file you saved on your local computer previously. Then in the  **Advanced**  section, in the  **Upload to folder**  box, enter  **product_data**  and select the  **Upload**  button.
     
-14.  Close the  **Upload blob**  panel if it's still open, and verify that a  **product_data**  virtual folder has been created in the  **data**  container.
+13.  Close the  **Upload blob**  panel if it's still open, and verify that a  **product_data**  virtual folder has been created in the  **data**  container.
     
-15.  Select the  **product_data**  folder and verify that it contains the  **product1.json**  blob you uploaded.
+14.  Select the  **product_data**  folder and verify that it contains the  **product1.json**  blob you uploaded.
     
-16.  On the left side, in the  **Data storage**  section, select  **Containers**.
+15.  On the left side, in the  **Data storage**  section, select  **Containers**.
     
-17.  Open the  **data**  container, and verify that the  **product_data**  folder you created is listed.
+16.  Open the  **data**  container, and verify that the  **product_data**  folder you created is listed.
     
-18.  Select the  **‧‧‧**  icon at the right-end of the folder, and note that it doesn't display any options. Folders in a flat namespace blob container are virtual, and can’t be managed.
+17.  Select the  **‧‧‧**  icon at the right-end of the folder, and note that it doesn't display any options. Folders in a flat namespace blob container are virtual, and can’t be managed.
     
-19.  Use the  **X**  icon at the top right in the  **data**  page to close the page and return to the  **Containers**  page.
+18.  Use the  **X**  icon at the top right in the  **data**  page to close the page and return to the  **Containers**  page.
     
 
 ### Task 3 :  Explore Azure Data Lake Storage Gen2
 
 Azure Data Lake Store Gen2 support enables you to use hierarchical folders to organize and manage access to blobs. It also enables you to use Azure blob storage to host distributed file systems for common big data analytics platforms.
 
-1.  Download the product2.json JSON file from https://aka.ms/product2.json and save it on your computer in the same folder where you downloaded product1.json previously - you'll upload it to blob storage later).
+1.  Download the product2.json JSON file from https://aka.ms/product2.json and save it on your computer in the same folder where you downloaded product1.json previously - you'll upload it to blob storage later.
 
 2. In the pane on the left side, in the top section, select  **Storage browser**  and navigate back to the root of your  **data**  blob container, which still contains the  **product_data**  folder.
 
@@ -111,13 +111,13 @@ Azure Files provides a way to create cloud-based file shares.
 
 3.  In the  **File shares**, open your new  **files**  share.
 
-4.  At the top of the page, select  **Connect**. Then in the  **Connect**  pane, note that there are tabs for common operating systems (Windows, Linux, and macOS) that contain scripts you can run to connect to the shared folder from a client computer.
+4.  At the top of the page, select  **Connect**. Then in the  **Connect**  pane, note that there are tabs for common operating systems (Windows, Linux, and macOS)    that contain scripts you can run to connect to the shared folder from a client computer.
 
 5.  Close the  **Connect**  pane and then close the  **files**  page to return to the  **File shares**  page for your Azure storage account.
 
 ### Task 5 : Explore Azure Tables
 
-Azure Tables provide a key/value store for applications that need to store data values, but don't need the full functionality and structure of a relational database.
+Azure Tables provide a keyvalue store for applications that need to store data values, but don't need the full functionality and structure of a relational database.
 
 1.  In the Azure portal page for your storage container, on the left side, in the  **Data storage**  section, select  **Tables**.
     
