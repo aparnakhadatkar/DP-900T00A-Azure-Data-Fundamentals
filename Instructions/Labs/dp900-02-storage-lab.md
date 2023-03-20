@@ -38,7 +38,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
 
 1.   Download the product1.json JSON file from https://aka.ms/product1.json and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
     
-  >**Note:** If the JSON file is displayed in your browser, save the page as **product1.json**.
+   >**Note:** If the JSON file is displayed in your browser, save the page as **product1.json**.
     
 2.  In the Azure portal page go to the newly created storage account for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
     
@@ -58,7 +58,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
     
 10.  In the breadcrumbs, select  **data**  to switch to the  **data**  container, and note that it does  not  contain a folder named  **products**.
 
-	    Folders in blob storage are virtual, and only exist as part of the path of a blob. Since the  **products**  folder contained no blobs, it isn't really there!
+   >**Note:** Folders in blob storage are virtual, and only exist as part of the path of a blob. Since the  **products**  folder contained no blobs, it isn't really there!
     
 11.  Use the  **⤒ Upload**  button to open the  **Upload blob**  panel.
     
