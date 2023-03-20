@@ -138,7 +138,7 @@ Now you're almost ready to create a report. First you need to check some setting
     
 ![A map shows revenue by city highlighting data for the selected city](images/selected-data.png)
     
-13.  On the  **File**  menu, select  **Save**. Then save the file with chart-<inject key="Deployment-id" enableCopy="false" /> .pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
+13.  On the  **File**  menu, select  **Save**. Then save the file with chart-<inject key="Deployment-id" enableCopy="false" />.pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
     
 
 In this exercise, you have used Power BI Desktop to ingest data, create a data model, and use interactive visualizations to create a report. If you have a  [Power BI service](https://www.powerbi.com/)  subscription, you can sign into your account and publish the report to a Power BI workspace.
