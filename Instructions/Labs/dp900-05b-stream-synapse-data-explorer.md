@@ -29,6 +29,11 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 1. Ensure that the **Workspace** tab is selected, and if necessary, select the **&#8635;** icon at the top-left of the page to refresh the view so that **Data Explorer databases** is listed.
 1. Expand **Data Explorer databases** and verify that **dxpool<DeploymentID>** is listed.
 1. In the **Data** pane, use the **&#65291;** icon to create a new **Data Explorer database** in the **dxpool<DeploymentID>** pool with the name **iot-data**.
+
+    ![Data Explorer](images/dataexplorer-1.png)
+    
+    ![Data Explorer](images/dataexplorer-2.png)
+
 1. While waiting for the database to be created, download **devices.csv** from [https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv?azure-portal=true), saving it in any folder on your local computer.
 1. In Synapse Studio, wait for the database to be created if necessary, and then in the **...** menu for the new **iot-data** database, select **Open in Azure Data Explorer**.
 1. In the new browser tab containing Azure Data Explorer, on the **Data** tab, select **Ingest new data**.
