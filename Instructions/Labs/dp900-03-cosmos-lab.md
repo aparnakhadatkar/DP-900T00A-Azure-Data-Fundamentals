@@ -77,3 +77,15 @@ WHERE c.age > 40
 6.  Close the SQL Query editor, discarding your changes.
     
     You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
+    
+<br>
+Congratulations on completing the task! Now, it's time to validate it. Here are the steps:
+
+ 1. Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+ 
+ 2. Hit the Validate button for the corresponding task.
+ 
+ 3. If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ 
+ 4. If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
