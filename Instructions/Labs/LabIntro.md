@@ -27,3 +27,7 @@
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+1. 1. Use **Next** button from lower right corner to move on to the next page.
+
+   ![](../images/next.png "Resource groups")
