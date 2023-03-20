@@ -28,6 +28,6 @@
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
-1. 1. Use **Next** button from lower right corner to move on to the next page.
+1. Use **Next** button from lower right corner to move on to the next page.
 
-   ![](../images/next.png "Resource groups")
+   ![Screenshot of the next page.](images//next.png)
