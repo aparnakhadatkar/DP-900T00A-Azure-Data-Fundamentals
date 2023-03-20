@@ -8,10 +8,10 @@ In this exercise, you'll use Microsoft Power BI Desktop to create a data model a
 
 1.  Open Power BI Desktop. The application interface should look similar to this:
     
-    ![The Power BI Desktop start screen](images/power-bi-start.png)
+    ![The Power BI Desktop start screen](images/power-bi-start-1.png)
     
 
-Now you're ready to import the data for your report.
+    Now you're ready to import the data for your report.
 
 2.  On the Power BI Desktop welcome screen, select  **Get data**, and then in the list of data sources, select  **Web**  and then select  **Connect**.
     
