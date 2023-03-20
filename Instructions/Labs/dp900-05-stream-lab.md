@@ -52,7 +52,7 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
 
 1.  In the  [Azure portal](https://portal.azure.com/), on the home page, select  **Resource groups**  to see the resource groups in your subscription. This should include the  ****learnxxxxxxxxxxxxxxxxx...**** resource group identified by the setup script.
     
-2.  Select the  ****learnxxxxxxxxxxxxxxxxx...*****  resource group, and review the resources it contains, which should include:
+2.  Select the  ****learnxxxxxxxxxxxxxxxxx...****  resource group, and review the resources it contains, which should include:
     
     -   An  _IoT Hub_  named  **iothubxxxxxxxxxxxxx**, which is used to receive incoming device data.
     -   A  _Storage account_  named  **storexxxxxxxxxxxx**, to which the data processing results will be written.
