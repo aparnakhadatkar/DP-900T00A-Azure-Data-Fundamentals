@@ -75,22 +75,18 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
 3.  Switch back to the Azure Cloud Shell, and enter the following command to simulate a device that sends data to the IoT Hub.
     
-
+    ```
+    bash iotdevice.sh
     
-       ```
-       bash iotdevice.sh
-
-       ```
+    ```  
     
 4.  Wait for the simulation to start, which will be indicated by output like this:
+     
+    ```
+    Device simulation in progress: 6%|#    | 7/120 [00:08<02:21, 1.26s/it]
     
-
-    
-       ```
-       Device simulation in progress: 6%|#    | 7/120 [00:08<02:21, 1.26s/it]
-
-       ```
-    
+    ```
+      
 5.  While the simulation is running, back in the Azure portal, return to the page for the  **learn*xxxxxxxxxxxxxxxxx...***  resource group, and select the  **store*xxxxxxxxxxxx***  storage account.
     
 6.  In the pane on the left of the storage account blade, select the  **Containers**  tab.
@@ -103,11 +99,13 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
 10.  On the page for the file, select  **Edit**, and review the contents of the file; which should consist of a JSON record for each 10 second period, showing the number of messages received from IoT devices, like this:
   
-       ```
-        {"starttime":"2021-10-23T01:02:13.2221657Z","endtime":"2021-10-23T01:02:23.2221657Z","device":"iotdevice","messages":2}
-        {"starttime":"2021-10-23T01:02:14.5366678Z","endtime":"2021-10-23T01:02:24.5366678Z","device":"iotdevice","messages":3}
-        {"starttime":"2021-10-23T01:02:15.7413754Z","endtime":"2021-10-23T01:02:25.7413754Z","device":"iotdevice","messages":4}
-       ```
+     
+        ```
+           {"starttime":"2021-10-23T01:02:13.2221657Z","endtime":"2021-10-23T01:02:23.2221657Z","device":"iotdevice","messages":2}
+           {"starttime":"2021-10-23T01:02:14.5366678Z","endtime":"2021-10-23T01:02:24.5366678Z","device":"iotdevice","messages":3}
+           {"starttime":"2021-10-23T01:02:15.7413754Z","endtime":"2021-10-23T01:02:25.7413754Z","device":"iotdevice","messages":4}
+
+        ```
 
 11.  Use the  **↻ Refresh**  button to refresh the file, nothing that additional results are written to the file as Stream Analytics job processes the device data in real time as it is streamed from the device to the IoT Hub.
     
