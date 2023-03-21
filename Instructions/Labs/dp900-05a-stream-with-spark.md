@@ -22,8 +22,7 @@ To explore stream processing with Spark, you'll use a notebook that contains Pyt
 3. On the **&#65291;** menu, select **&#8612; Import**, and select the **Structured Streaming and Delta Tables.ipynb** file on your local computer.
 4. Follow the instructions in the notebook to attach it to your Spark pool and run the code cells it contains to explore various ways to use Spark for stream processing.
 
-<br>
-Congratulations on completing the task! Now, it's time to validate it. Here are the steps:
+<br>**Congratulations on completing the task! Now, it's time to validate it. Here are the steps:**
 
  1. Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
  
