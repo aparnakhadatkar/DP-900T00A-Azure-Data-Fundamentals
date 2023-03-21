@@ -23,7 +23,7 @@ The first step in using Azure Storage is to provision an Azure Storage account i
     -   **Performance**:  _Standard_
     -   **Redundancy**:  _Locally-redundant storage (LRS)_
 
-3.  Select  **Next: Advanced >**  and view the advanced configuration options. This is where you can enable hierarchical namespace to support Azure Data Lake Storage Gen2. Under **Data Lake Storage Gen2**, check the **Enable hierarchical namespace** option, and then select  **Next: Networking >**  to view the networking options for your storage account.
+3.  Select  **Next: Advanced >**  and view the advanced configuration options. Then select  **Next: Networking >**  to view the networking options for your storage account.
     
 4.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
     
@@ -55,6 +55,10 @@ Now that you have an Azure Storage account, you can create a container for blob 
 8.  Select  **＋ Add Directory**  and read the information about folders before creating a new directory named  **products**.
     
 9.  In storage explorer, verify that the current view shows the contents of the  **products**  folder you just created - observe that the "breadcrumbs" at the top of the page reflect the path  **Blob containers > data > products**.
+
+10. In the breadcrumbs, select **data** to switch to the **data** container, and note that it does <u>not</u> contain a folder named **products**.
+
+    >**Note:** Folders in blob storage are virtual, and only exist as part of the path of a blob. Since the **products** folder contained no blobs, it isn't really there!
       
 10.  Use the  **⤒ Upload**  button to open the  **Upload blob**  panel.
     
