@@ -5,7 +5,7 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
 
 1. If you are not already signed into the Azure portal, sign in to the  [Azure portal](https://portal.azure.com/)  at  `https://portal.azure.com`, with the Azure credentials from the Lab Environment output page. 
     
-2.  Use the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a  _**Bash**_  environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+2.  Use the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a  _**Bash**_  environment and if you get **You have no storage mounted** click on **create storage**.The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
     
     ![Azure portal with a cloud shell pane](images/cloud-shell.png)
     
