@@ -3,7 +3,7 @@
 In this exercise, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
 Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud shell environment for your Azure subscription.
 
-1.   if you are not Sign into your Azure subscription in the  [Azure portal](https://portal.azure.com/)  at  `https://portal.azure.com`, using your Azure subscription credentials.
+1. If you are not already signed into the Azure portal, sign in to the  [Azure portal](https://portal.azure.com/)  at  `https://portal.azure.com`, with the Azure credentials from the Lab Environment output page. 
     
 2.  Use the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a  _**Bash**_  environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
     
@@ -77,19 +77,19 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
 
     
-    ```
-    bash iotdevice.sh
-    
-    ```
+        ```
+        bash iotdevice.sh
+
+        ```
     
 4.  Wait for the simulation to start, which will be indicated by output like this:
     
 
     
-    ```
-    Device simulation in progress: 6%|#    | 7/120 [00:08<02:21, 1.26s/it]
-    
-    ```
+        ```
+        Device simulation in progress: 6%|#    | 7/120 [00:08<02:21, 1.26s/it]
+
+        ```
     
 5.  While the simulation is running, back in the Azure portal, return to the page for the  **learn*xxxxxxxxxxxxxxxxx...***  resource group, and select the  **store*xxxxxxxxxxxx***  storage account.
     
@@ -119,8 +119,8 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
 15.  At the top of the Stream Analytics job page, use the  **⬜ Stop**  button to stop the job, confirming when prompted.
 
-<br>
-Congratulations on completing the task! Now, it's time to validate it. Here are the steps:
+
+**Congratulations on completing the task! Now, it's time to validate it. Here are the steps:**
 
  1. Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
  
