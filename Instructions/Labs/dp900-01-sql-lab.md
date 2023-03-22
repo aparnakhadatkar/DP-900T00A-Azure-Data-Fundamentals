@@ -72,8 +72,8 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 
 15. Close the query editor pane, discarding your edits.
   
-<br>
-Congratulations on completing the task! Now, it's time to validate it. Here are the steps:
+
+<br>**Congratulations on completing the task! Now, it's time to validate it. Here are the steps:**
 
  1. Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
  
