@@ -10,7 +10,7 @@ In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in 
     
 3.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
     
-    ![Synapse Studio](images/synapse-studio.png)
+    ![Synapse Studio](images/synapse-studio1.png)
 
 
 ## Explore stream processing
