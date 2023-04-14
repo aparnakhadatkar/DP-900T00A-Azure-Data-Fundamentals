@@ -39,7 +39,7 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resource.
 
 1. Review the options for managing your Azure Database for PostgreSQL resource.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
     > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
