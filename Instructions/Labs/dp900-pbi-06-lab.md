@@ -118,11 +118,11 @@ Now you're almost ready to create a report. First you need to check some setting
     
     ![A stacked column chart of categorized products with revenue in a report](images/stacked-column-chart.png)
     
-7.  Above the selected column chart, select the  **↓**  icon to turn on drill-down. Then in the chart, select the second column (_Road Bikes_) to drill down and see the revenue for the individual products in this category. This capability is possible because you defined a hierarchy of categories and products.
+7.  Hover on the selected column chart, then click on more options(...), select **sort axis** then select  **↓ sort ascending**  icon to turn on drill-down. Then in the chart, select the second column (_Road Bikes_) to drill down and see the revenue for the individual products in this category. This capability is possible because you defined a hierarchy of categories and products.
     
     ![A column chart drilled down to see products within a category](images/drill-down.png)
     
-8.  Use the  **↑**  icon to drill back up to the category level. Then select the  **(**↓**)**  icon to turn off the drill-down feature.
+8.  Use the  **↓ sort ascending**  icon to drill back up to the category level. Then select the  **(**↓ sort descending**)**  icon to turn off the drill-down feature.
     
 9.  Select a blank area of the report, and then in the  **Fields**  pane, select the  **Quantity**  field in the  **orders**  table and the  **Category**  field in the  **products**  table. This results in another column chart showing sales quantity by product category.
     
@@ -138,7 +138,7 @@ Now you're almost ready to create a report. First you need to check some setting
     
      ![A map shows revenue by city highlighting data for the selected city](images/selected-data.png)
     
-13.  On the  **File**  menu, select  **Save**. Then save the file with chart-<inject key="Deployment-id" enableCopy="false" />.pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
+13.  On the  **File**  menu, select  **Save**. Then save the file with chart-<inject key="Deployment-id" enableCopy="false"/>.pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
   
 
 <br>**Congratulations on completing the task! Now, it's time to validate it. Here are the steps:**
