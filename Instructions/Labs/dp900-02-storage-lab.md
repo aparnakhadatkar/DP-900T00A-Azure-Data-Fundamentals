@@ -17,7 +17,7 @@ The first step in using Azure Storage is to provision an Azure Storage account i
 2.  Enter the following values on the  **Create a storage account**  page:
     
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, choose the existing resource group **dp-900-module2-<inject key="Deployment-id" enableCopy="false"/>**
+    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/>**
     -   **Storage account name**: Enter a unique name for your storage account using lower-case letters and numbers.
     -   **Region**: Select any available location.
     -   **Performance**:  _Standard_
@@ -107,7 +107,7 @@ Azure Files provides a way to create cloud-based file shares.
 
 1.  In the Azure portal page for your storage container, on the left side, in the  **Data storage**  section, select  **File shares**.
 
-2.  In the File shares page, select  **＋ File share**  and add a new file share named  **files**  using the  **Transaction optimized**  tier.
+2.  In the File shares page, select  **＋ File share**  and add a new file share named  **files**  using the  **Transaction optimized**  tier and select **Create**.
 
 3.  In the  **File shares**, open your new  **files**  share.
 
