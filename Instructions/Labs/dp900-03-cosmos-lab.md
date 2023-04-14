@@ -52,6 +52,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
     }
 
     ```
+    
 5.  After saving the new item, notice that additional metadata properties are added automatically.
 
 ### Task 4  : Query the database
