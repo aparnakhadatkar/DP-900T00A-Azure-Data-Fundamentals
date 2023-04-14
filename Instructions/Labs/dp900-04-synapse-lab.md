@@ -16,7 +16,7 @@ The exercise is designed to familiarize you with some key elements of a modern d
     
 8.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
     
-    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio.png)
+    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio-dp900-lab4.png)
     
 
 ### Task 2 : Ingest data
@@ -98,7 +98,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
 14.  On the  **Data**  page, select the  **Linked**  tab and expand the  **Azure Data Lake Storage Gen 2**  hierarchy until you see the file storage for your Synapse workspace. Then select the file storage to verify that a file named  **products.csv**  has been copied to this location, as shown here:
     
-     ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](images/synapse-storage.png)
+     ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](images/synapse-storage-dp-900-lab4.png)
     
 
 ### Task 3 : Use a SQL pool to analyze data
@@ -211,7 +211,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
      The resulting chart should resemble this:
     
-     ![Image showing the product count chart view](images/column-chart.png)
+     ![Image showing the product count chart view](images/column-chart-dp-900-lab4.png)
     
 
 ### Task 4 : Use a Spark pool to analyze data
@@ -291,17 +291,17 @@ While SQL is a common language for querying structured datasets, many data analy
     
 11.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
     
-     ![Image showing category count chart view](images/bar-chart.png)
+     ![Image showing category count chart view](images/bar-chart-dp-900-lab4.png)
     
 12.  Close the  **Notebook 1**  pane and discard your changes.
 
-<br>
-Congratulations on completing the task! Now, it's time to validate it. Here are the steps:
 
- 1. Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+ - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
  
- 2. Hit the Validate button for the corresponding task.
+ - Hit the Validate button for the corresponding task.
  
- 3. If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
  
- 4. If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
