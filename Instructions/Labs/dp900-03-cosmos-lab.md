@@ -14,7 +14,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 3.  Enter the following details, and then select  **Review + Create**:
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="Deployment-id" enableCopy="false" />**.
+    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="DeploymentID" enableCopy="false"/>**.
     -   **Account Name**: Enter a unique name
     -   **Location**: Choose any available location
     -   **Capacity mode**: Provisioned throughput
@@ -45,14 +45,14 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 4.  Modify the JSON for the new item as follows, and then select  **Save**.
 
 
-```
-{
-    "id": "123",
-    "firstname": "Bob",
-    "age": 54
-}
+    ```
+    {
+        "id": "123",
+        "firstname": "Bob",
+        "age": 54
+    }
 
-```
+    ```
 5.  After saving the new item, notice that additional metadata properties are added automatically.
 
 ### Task 4  : Query the database
@@ -65,12 +65,12 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 4.  Modify the query as follows:
 
-```
-SELECT c.id, c.firstname, c.age
-FROM c
-WHERE c.age > 40
+    ```
+    SELECT c.id, c.firstname, c.age
+    FROM c
+    WHERE c.age > 40
 
-```
+    ```
 
 5.  Use the  **Execute Query**  button to run the revised query and review the results, which includes JSON containing the id, firstname, and age fields for person items with an age greater than 40.
     
