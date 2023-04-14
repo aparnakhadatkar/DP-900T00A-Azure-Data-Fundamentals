@@ -6,7 +6,7 @@ In this exercise, you'll use Microsoft Power BI Desktop to create a data model a
 
 ### Task 1 : Import data
 
-1.  Open Power BI Desktop. The application interface should look similar to this:
+1.  Open Power BI Desktop. The application interface should look similar to this, select **Get Started**, if it is asking for the Email, select cancel. :
     
     ![The Power BI Desktop start screen](images/power-bi-start-1.png)
     
