@@ -36,7 +36,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ### Task 3 : View and create items
 
-1.  In the Data Explorer page, expand the  **SampleDB**  database and the Persons container, and select  **Items**  to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
+1.  In the Data Explorer page, expand the  **SampleDB**  database and the SampleContainer, and select  **Items**  to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
 
 2.  Select any of the items in the list to see a JSON representation of the item data.
 
