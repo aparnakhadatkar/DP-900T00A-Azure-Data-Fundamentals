@@ -44,7 +44,6 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 4.  Modify the JSON for the new item as follows, and then select  **Save**.
 
-
     ```
     {
         "id": "123",
