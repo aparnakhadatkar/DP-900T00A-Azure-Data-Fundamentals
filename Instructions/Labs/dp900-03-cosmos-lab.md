@@ -14,8 +14,8 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 3.  Enter the following details, and then select  **Review + Create**:
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="DeploymentID" enableCopy="false"/>**.
-    -   **Account Name**: Enter a unique name
+    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="DeploymentID" enableCopy="false"/>**
+    -   **Account Name**: **cosmosdb-<inject key="DeploymentID" enableCopy="false"/>**
     -   **Location**: Choose any available location
     -   **Capacity mode**: Provisioned throughput
     -   **Apply Free-Tier Discount**: Select Apply if available
