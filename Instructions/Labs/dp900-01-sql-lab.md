@@ -17,9 +17,9 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 3. Enter the following values on the  **Create SQL Database**  page:
     
     -   **Subscription**: If you're using a  _sandbox_, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a  _sandbox_  subscription, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group with a name **Dp900-module1--<inject key="Deployment-id" enableCopy="false" />**.
+    -   **Resource group**: If you're using a  _sandbox_  subscription, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group with a name **Dp900-module1-<inject key="Deployment-id" enableCopy="false"/>**.
     -   **Database name**:  _AdventureWorks_
-    -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. Use  **SQL authentication**  and specify your name as the server admin login and a suitably complex password (remember the password - you'll need it later!)
+    -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. In Authentication method use  **SQL authentication**  and specify your name as the server admin login and a suitably complex password (remember the password - you'll need it later!)
     -   **Want to use SQL elastic pool?**:  _No_
     -   **Compute + storage**: Leave unchanged
     -   **Backup storage redundancy**:  _Locally-redundant backup storage_
@@ -27,7 +27,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
 5. Select  **Next: Security >**  and set the  **Enable Microsoft Defender for SQL**  option to  **Not now**.
     
-6. Select  **Next: Additional Settings >**  and on the  **Additional settings**  tab, set the  **Use existing data**  option to  **Sample**  (this will create a sample database that you can explore later).
+6. Select  **Next: Additional Settings >**  and on the  **Additional settings**  tab, set the  **Use existing data**  option to  **Sample**  (this will create a sample database that you can explore later) then select **OK**.
     
 7. Select  **Review + Create**, and then select  **Create**  to create your Azure SQL database.
     
@@ -47,7 +47,9 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
 11. In the  **Query 1**  pane, enter the following SQL code:
 
+    ```sql
     SELECT * FROM SalesLT.Product;
+    ```
     
 12. Select  **▷ Run**  above the query to run it and view the results, which should include all columns for all rows in the  **SalesLT.Product**  table as shown here:
     
