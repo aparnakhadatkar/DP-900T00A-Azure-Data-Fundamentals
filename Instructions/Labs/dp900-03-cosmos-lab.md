@@ -14,8 +14,8 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 3.  Enter the following details, and then select  **Review + Create**:
     -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="Deployment-id" enableCopy="false" />**.
-    -   **Account Name**: Enter a unique name
+    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="DeploymentID" enableCopy="false"/>**
+    -   **Account Name**: **cosmosdb-<inject key="DeploymentID" enableCopy="false"/>**
     -   **Location**: Choose any available location
     -   **Capacity mode**: Provisioned throughput
     -   **Apply Free-Tier Discount**: Select Apply if available
@@ -36,7 +36,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ### Task 3 : View and create items
 
-1.  In the Data Explorer page, expand the  **SampleDB**  database and the Persons container, and select  **Items**  to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
+1.  In the Data Explorer page, expand the  **SampleDB**  database and the SampleContainer, and select  **Items**  to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
 
 2.  Select any of the items in the list to see a JSON representation of the item data.
 
@@ -45,14 +45,14 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 4.  Modify the JSON for the new item as follows, and then select  **Save**.
 
 
-```
-{
-    "id": "123",
-    "firstname": "Bob",
-    "age": 54
-}
+    ```
+    {
+        "id": "123",
+        "firstname": "Bob",
+        "age": 54
+    }
 
-```
+    ```
 5.  After saving the new item, notice that additional metadata properties are added automatically.
 
 ### Task 4  : Query the database
@@ -65,12 +65,12 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 4.  Modify the query as follows:
 
-```
-SELECT c.id, c.firstname, c.age
-FROM c
-WHERE c.age > 40
+    ```
+    SELECT c.id, c.firstname, c.age
+    FROM c
+    WHERE c.age > 40
 
-```
+    ```
 
 5.  Use the  **Execute Query**  button to run the revised query and review the results, which includes JSON containing the id, firstname, and age fields for person items with an age greater than 40.
     
@@ -78,14 +78,10 @@ WHERE c.age > 40
     
     You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
     
-<br>
-Congratulations on completing the task! Now, it's time to validate it. Here are the steps:
+     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+     > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+     > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
+     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
- 1. Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
- 
- 2. Hit the Validate button for the corresponding task.
- 
- 3. If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
- 
- 4. If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
