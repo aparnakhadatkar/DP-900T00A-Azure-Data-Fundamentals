@@ -12,7 +12,7 @@ In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in 
 2. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 3. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
-        - **Resource group**: *Select existing resource group, like "synapse-rg-<inject key="DeploymentID" enableCopy="false"/>"*
+        - **Resource group**: *Select existing resource group, like "DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>"*
     - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<inject key="DeploymentID" enableCopy="false"/>"*.
     - **Region**: *Select resource group region*.
     - **Select Data Lake Storage Gen 2**: From subscription
