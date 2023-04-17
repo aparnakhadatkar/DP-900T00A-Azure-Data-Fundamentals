@@ -232,7 +232,7 @@ While SQL is a common language for querying structured datasets, many data analy
 
 1. In Synapse Studio, select the **Manage** page.
 2. Select the **Apache Spark pools** tab, and then use the **&#65291; New** icon to create a new Spark pool with the following settings:
-    - **Apache Spark pool name**: Enter **sprark<inject key="DeploymentID" enableCopy="false"/>**.
+    - **Apache Spark pool name**: Enter **spark<inject key="DeploymentID" enableCopy="false"/>**.
     - **Node size family**: Memory Optimized
     - **Node size**: Small (4 vCores / 32 GB)
     - **Autoscale**: Enabled
