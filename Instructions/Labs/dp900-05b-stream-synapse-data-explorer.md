@@ -5,13 +5,18 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
 ## Provision a Synapse Analytics workspace
 
-1.  Open the resource group **DP-900-Module-5**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
+1.  Open the resource group **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false" />**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
     
 2.  Select your Synapse workspace, and in its  **Overview**  page, in  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
     
 3.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
     
     ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio-dp900-lab4.png)
+    
+    >
+    >**Note:** Ignore if you receive any pop-up like **Failed to load** as shown below by clicking on **OK**.
+       
+       ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/failed.png)
     
 ## Create a Data Explorer pool
 
@@ -27,8 +32,8 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
 1. In Synapse Studio, select the **Data** page.
 1. Ensure that the **Workspace** tab is selected, and if necessary, select the **&#8635;** icon at the top-left of the page to refresh the view so that **Data Explorer databases** is listed.
-1. Expand **Data Explorer databases** and verify that **dxpool<DeploymentID>** is listed.
-1. In the **Data** pane, use the **&#65291;** icon to create a new **Data Explorer database** in the **dxpool<DeploymentID>** pool with the name **iot-data**.
+1. Expand **Data Explorer databases** and verify that **dxpool<inject key="DeploymentID" enableCopy="false" />** is listed.
+1. In the **Data** pane, use the **&#65291;** icon to create a new **Data Explorer database** in the **dxpool<inject key="DeploymentID" enableCopy="false" />** pool with the name **iot-data**.
 
     ![Data Explorer](images/dataexplorer-1.png)
     
@@ -38,7 +43,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 1. In Synapse Studio, wait for the database to be created if necessary, and then in the **...** menu for the new **iot-data** database, select **Open in Azure Data Explorer**.
 1. In the new browser tab containing Azure Data Explorer, on the **Data** tab, select **Ingest new data**.
 1. In the **Destination** page, select the following settings:
-    - **Cluster**: *The **dxpool<DeploymentID>** Data Explorer pool in your Azure Synapse workspace*
+    - **Cluster**: *The **dxpool<inject key="DeploymentID" enableCopy="false" />** Data Explorer pool in your Azure Synapse workspace*
     - **Database**: iot-data
     - **Table**: Create a new table named **devices**
 1. Select **Next: Source** and on the **Source** page, select the following options:
