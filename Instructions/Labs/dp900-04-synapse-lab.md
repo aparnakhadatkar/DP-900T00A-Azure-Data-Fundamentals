@@ -156,19 +156,18 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
     
 
-    
-    ```SQL
-    SELECT
-        TOP 100 *
-    FROM
-        OPENROWSET(
-            BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
-            FORMAT = 'CSV',
-            PARSER_VERSION='2.0',
-            HEADER_ROW = TRUE
-        ) AS [result]
-    
-    ```
+         ```SQL
+         SELECT
+             TOP 100 *
+         FROM
+             OPENROWSET(
+                 BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
+                 FORMAT = 'CSV',
+                 PARSER_VERSION='2.0',
+                 HEADER_ROW = TRUE
+             ) AS [result]
+
+         ```
     
     Now the results look like this:
 
@@ -182,19 +181,18 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 6.  Modify the query as follows (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system):
     
 
-    
-    ```SQL
-    SELECT
-        Category, COUNT(*) AS ProductCount
-    FROM
-        OPENROWSET(
-            BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
-            FORMAT = 'CSV',
-            PARSER_VERSION='2.0',
-            HEADER_ROW = TRUE
-        ) AS [result]
-    GROUP BY Category; 
-    ```
+         ```SQL
+         SELECT
+             Category, COUNT(*) AS ProductCount
+         FROM
+             OPENROWSET(
+                 BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
+                 FORMAT = 'CSV',
+                 PARSER_VERSION='2.0',
+                 HEADER_ROW = TRUE
+             ) AS [result]
+         GROUP BY Category; 
+         ```
     
 7.  Run the modified query, which should return a resultset that contains the number products in each category, like this:
     
@@ -244,16 +242,15 @@ While SQL is a common language for querying structured datasets, many data analy
 3. When the Spark pool has been deployed, in Synapse Studio, on the **Data** page, browse to the file system for your Synapse workspace. Then right-click **products.csv**, point to **New notebook**, and select **Load to DataFrame**.
 4. In the **Notebook 1** pane that opens, in the **Attach to** list, select the **spark** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python)**.
 6. Review the code in the first (and only) cell in the notebook, which should look like this:
-
-
-    ```Python
-    %%pyspark
-    df = spark.read.load('abfss://fsxx@datalakexx.dfs.core.windows.net/products.csv', format='csv'
-    ## If header exists uncomment line below
-    ##, header=True
-    )
-    display(df.limit(10))
-    ```
+   
+         ```Python
+         %%pyspark
+         df = spark.read.load('abfss://fsxx@datalakexx.dfs.core.windows.net/products.csv', format='csv'
+         ## If header exists uncomment line below
+         ##, header=True
+         )
+         display(df.limit(10))
+         ```
     
 4.  Use the  **▷**  icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
     
