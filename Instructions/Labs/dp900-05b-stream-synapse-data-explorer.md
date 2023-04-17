@@ -16,7 +16,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
     >
     >**Note:** Ignore if you receive any pop-up like **Failed to load** as shown below by clicking on **OK**.
        
-       ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/failed.png)
+     ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/failed.png)
     
 ## Create a Data Explorer pool
 
