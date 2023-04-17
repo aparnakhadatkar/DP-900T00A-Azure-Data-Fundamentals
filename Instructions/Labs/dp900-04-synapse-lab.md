@@ -2,7 +2,7 @@
 
 In this exercise, you'll use the already provisioned Azure Synapse Analytics workspace in your Azure subscription, to ingest and query data.
 
-## Exercise 1 : Explore Azure Synapse Analytics
+## Exercise 1 : Provision an Azure Synapse Analytics workspace
 
 In this exercise, you'll use the Azure Synapse Analytics workspace to ingest and analyze some data.
 
@@ -10,8 +10,32 @@ The exercise is designed to familiarize you with some key elements of a modern d
 
 ### Task 1 : Explore an Azure Synapse Analytics workspace
 
-1.  Open the resource group **DP-900-Module-4**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
+1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
+2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
+
+     - **Subscription**: Select **Azure subscription**
+        - **Resource group**: Select **DP-900-Module-4-<inject key="DeploymentID" enableCopy="false"/>**.
+        - **Managed resource group**: Leave Blank
+     - **Workspace name**: Enter **synapse-<inject key="DeploymentID" enableCopy="false"/>**.
+     - **Region**: *Select any of the following regions*:
+          - Australia East
+          - Central US
+          - East US 2
+          - North Europe
+          - South Central US
+          - Southeast Asia
+          - UK South
+          - West Europe
+          - West US
+      - **Select Data Lake Storage Gen 2**: From subscription
+        - **Account name**: Click on Create new then enter **datalake<inject key="DeploymentID" enableCopy="false"/>**.
+        - **File system name**: Click on Create new then enter **fs<inject key="DeploymentID" enableCopy="false"/>**.
+
+   > **Note**: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
     
+1.  When you've entered these details, select **Review + create**, and then select **Create** to create the workspace.
+2.   Wait for the workspace to be created - this may take five minutes or so.
+6. When deployment is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and a Data Lake storage account.
 7.  Select your Synapse workspace, and in its  **Overview**  page, in  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
     
 8.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
@@ -23,7 +47,7 @@ The exercise is designed to familiarize you with some key elements of a modern d
 
 One of the key tasks you can perform with Azure Synapse Analytics is to define  _pipelines_  that transfer (and if necessary, transform) data from a wide range of sources into your workspace for analysis.
 
-1.  In Synapse Studio, on the  **Home**  page, select  **Ingest**  and then choose  **Built-in copy task**  to open the  **Copy Data tool**  tool.
+1.  In Synapse Studio, on the **Home** page, select **Ingest** to open the **Copy Data tool** tool.
     
 2.  In the Copy Data tool, on the  **Properties**  step, ensure that  **Built-in copy task**  and  **Run once now**  are selected, and click  **Next >**.
     
@@ -68,7 +92,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
         -   **Test connection**: To linked service
 8.  After creating the connection, on the  **Destination/Dataset**  step, ensure the following settings are selected, and then select  **Next >**:
     
-    -   **Folder path**:  _Browse to your file system folder and select **defaultfs**_
+    -   **Folder path**:  Browse to your file system folder and select **fs<inject key="DeploymentID" enableCopy="false"/>**.
     -   **File name**: products.csv
     -   **Copy behavior**: None
     -   **Max concurrent connections**:  _Leave blank_
@@ -111,7 +135,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 
     
-    ```
+    ```SQL
     -- This is auto-generated code
     SELECT
         TOP 100 *
@@ -142,7 +166,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 
     
-    ```
+    ```SQL
     SELECT
         TOP 100 *
     FROM
@@ -168,7 +192,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 
     
-    ```
+    ```SQL
     SELECT
         Category, COUNT(*) AS ProductCount
     FROM
@@ -178,8 +202,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
             PARSER_VERSION='2.0',
             HEADER_ROW = TRUE
         ) AS [result]
-    GROUP BY Category;
-    
+    GROUP BY Category; 
     ```
     
 7.  Run the modified query, which should return a resultset that contains the number products in each category, like this:
@@ -218,20 +241,27 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 While SQL is a common language for querying structured datasets, many data analysts find languages like Python useful to explore and prepare data for analysis. In Azure Synapse Analytics, you can run Python (and other) code in a  _Spark pool_; which uses a distributed data processing engine based on Apache Spark.
 
-1.  In Synapse Studio, on the  **Data**  page, browse to the file system for your Synapse workspace. Then right-click  **products.csv**, point to  **New notebook**, and select  **Load to DataFrame**.
-    
-2.  In the  **Notebook 1**  pane that opens, in the  **Attach to**  list, select the  **spark**  Spark pool to created previously and ensure that the  **Language**  is set to  **PySpark (Python)**.
-    
-3.  Review the code in the first (and only) cell in the notebook, which should look like this:
+1. In Synapse Studio, select the **Manage** page.
+2. Select the **Apache Spark pools** tab, and then use the **&#65291; New** icon to create a new Spark pool with the following settings:
+    - **Apache Spark pool name**: Enter **sprark<inject key="DeploymentID" enableCopy="false"/>**.
+    - **Node size family**: Memory Optimized
+    - **Node size**: Small (4 vCores / 32 GB)
+    - **Autoscale**: Enabled
+    - **Number of nodes** 3----3
+   
+1. Review and create the Spark pool, and then wait for it to deploy (which may take a few minutes).
+3. When the Spark pool has been deployed, in Synapse Studio, on the **Data** page, browse to the file system for your Synapse workspace. Then right-click **products.csv**, point to **New notebook**, and select **Load to DataFrame**.
+4. In the **Notebook 1** pane that opens, in the **Attach to** list, select the **spark** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python)**.
+6. Review the code in the first (and only) cell in the notebook, which should look like this:
 
-    ```
+
+    ```Python
     %%pyspark
     df = spark.read.load('abfss://fsxx@datalakexx.dfs.core.windows.net/products.csv', format='csv'
     ## If header exists uncomment line below
     ##, header=True
     )
     display(df.limit(10))
-    
     ```
     
 4.  Use the  **▷**  icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
@@ -248,11 +278,10 @@ While SQL is a common language for querying structured datasets, many data analy
     | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
     | ...   | ...        | ...      |  ...   |
     
-6.  Uncomment the  _,header=True_  line (because the products.csv file has the column headers in the first line), so your code looks like this:
+6.  Uncomment the  **header=True**  line (because the products.csv file has the column headers in the first line), so your code looks like this:
     
-    PythonCopy
-    
-    ```
+   
+    ```Python
     %%pyspark
     df = spark.read.load('abfss://fsxx@datalakexx.dfs.core.windows.net/products.csv', format='csv'
     ## If header exists uncomment line below
@@ -276,14 +305,14 @@ While SQL is a common language for querying structured datasets, many data analy
     
 9.  In the new empty code cell, add the following code:
 
-    ```
+    ```Python
     df_counts = df.groupby(df.Category).count()
     display(df_counts)
     ```
     
 10.  Run the new code cell by clicking its  **▷**  icon, and review the results, which should look similar to this:
 
-        | Category      | ProductCount      |
+        | Category      | Count      |
         | :---        |  ---:       |
         | Headsets	   | 3        | 
         | Wheels	   | 14        | 
