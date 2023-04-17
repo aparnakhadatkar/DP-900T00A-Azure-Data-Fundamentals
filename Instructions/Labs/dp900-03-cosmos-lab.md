@@ -8,13 +8,13 @@ In this exercise, you'll provision an Azure Cosmos DB database in your Azure sub
 
 To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
 
-1.  In the Azure portal, select  **+ Create a resource**  at the top left, and search for  _Azure Cosmos DB_. In the results, select  **Azure Cosmos DB**  and select  **Create**.
+1.  In the Azure portal, select  **+ Create a resource**  at the top left, and search for  **Azure Cosmos DB**. In the results, select  **Azure Cosmos DB**  and select  **Create**.
 
 2.  In the  **Azure Cosmos DB for NoSQL**  tile, select  **Create**.
 
 3.  Enter the following details, and then select  **Review + Create**:
-    -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group **DP-900-Module-3-<inject key="DeploymentID" enableCopy="false"/>**
+    -   **Subscription**: Select your **Azure subscription.**
+    -   **Resource group**: Select existing resource group **DP-900-Module-3-<inject key="DeploymentID" enableCopy="false"/>**
     -   **Account Name**: **cosmosdb-<inject key="DeploymentID" enableCopy="false"/>**
     -   **Location**: Choose any available location
     -   **Capacity mode**: Provisioned throughput
@@ -36,7 +36,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 ### Task 3 : View and create items
 
-1.  In the Data Explorer page, expand the  **SampleDB**  database and the SampleContainer, and select  **Items**  to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
+1.  In the Data Explorer page, expand the  **SampleDB**  database and the **SampleContainer**, and select  **Items**  to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
 
 2.  Select any of the items in the list to see a JSON representation of the item data.
 
@@ -44,13 +44,16 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 
 4.  Modify the JSON for the new item as follows, and then select  **Save**.
 
-    ```
+    
+    ```json
     {
-        "id": "123",
-        "firstname": "Bob",
-        "age": 54
+        "name": "Road Helmet,45",
+        "id": "123456789",
+        "categoryID": "123456789",
+        "SKU": "AB-1234-56",
+        "description": "The product called \"Road Helmet,45\" ",
+        "price": 48.74
     }
-
     ```
     
 5.  After saving the new item, notice that additional metadata properties are added automatically.
@@ -64,15 +67,14 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 3.  Review the results, which includes the full JSON representation of all items.
 
 4.  Modify the query as follows:
-
-    ```
-    SELECT c.id, c.firstname, c.age
+   
+    ```sql
+    SELECT *
     FROM c
-    WHERE c.age > 40
-
+    WHERE CONTAINS(c.name,"Helmet")
     ```
 
-5.  Use the  **Execute Query**  button to run the revised query and review the results, which includes JSON containing the id, firstname, and age fields for person items with an age greater than 40.
+5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with a **name** field containing the text "Helmet".
     
 6.  Close the SQL Query editor, discarding your changes.
     
