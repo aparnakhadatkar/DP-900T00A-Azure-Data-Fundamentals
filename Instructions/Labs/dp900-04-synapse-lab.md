@@ -17,16 +17,7 @@ The exercise is designed to familiarize you with some key elements of a modern d
         - **Resource group**: Select **DP-900-Module-4-<inject key="DeploymentID" enableCopy="false"/>**.
         - **Managed resource group**: Leave Blank
      - **Workspace name**: Enter **synapse-<inject key="DeploymentID" enableCopy="false"/>**.
-     - **Region**: *Select any of the following regions*:
-          - Australia East
-          - Central US
-          - East US 2
-          - North Europe
-          - South Central US
-          - Southeast Asia
-          - UK South
-          - West Europe
-          - West US
+     - **Region**: Select resource group region.
       - **Select Data Lake Storage Gen 2**: From subscription
         - **Account name**: Click on Create new then enter **datalake<inject key="DeploymentID" enableCopy="false"/>**.
         - **File system name**: Click on Create new then enter **fs<inject key="DeploymentID" enableCopy="false"/>**.
