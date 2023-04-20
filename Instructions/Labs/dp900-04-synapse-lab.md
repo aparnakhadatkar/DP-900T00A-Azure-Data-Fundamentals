@@ -44,8 +44,9 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
 3.  On the  **Source**  step, in the  **Dataset**  substep, select the following settings:
     
-    -   **Source type**: HTTP
-    -   **Connection**:  _Create a new connection with the following properties:_
+    -   **Source type**: All
+    -   **Connection**:  Create a new connection, and in the **New connection** pane that appears, on the **Generic protocol** tab, select **HTTP**. Then continue    
+    -   create a connection to a data file using the following settings:
         -   **Name**: AdventureWorks Products
         -   **Description**: Product list via HTTP
         -   **Connect via integration runtime**: AutoResolveIntegrationRuntime
@@ -154,9 +155,8 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 
 5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
-    
 
-         
+       ```SQL 
          SELECT
              TOP 100 *
          FROM
@@ -166,7 +166,9 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
                  PARSER_VERSION='2.0',
                  HEADER_ROW = TRUE
              ) AS [result]
-    
+   
+      ```
+     
     Now the results look like this:
 
     | ProductID      | ProductName       | Category   | ListPrice |
@@ -178,8 +180,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 6.  Modify the query as follows (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system):
     
-
-         
+       ```SQL
          SELECT
              Category, COUNT(*) AS ProductCount
          FROM
@@ -190,7 +191,8 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
                  HEADER_ROW = TRUE
              ) AS [result]
          GROUP BY Category; 
-         
+      
+       ```
     
 7.  Run the modified query, which should return a resultset that contains the number products in each category, like this:
     
