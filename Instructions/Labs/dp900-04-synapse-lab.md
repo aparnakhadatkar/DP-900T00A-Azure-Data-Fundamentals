@@ -287,7 +287,8 @@ While SQL is a common language for querying structured datasets, many data analy
     | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
     | ...   | ...        | ...      |  ...   |
     
-    Notice that running the cell again takes less time, because the Spark pool is already started.
+    
+    > Notice that running the cell again takes less time, because the Spark pool is already started.
     
 8.  Under the results, use the  **＋ Code**  icon to add a new code cell to the notebook.
     
