@@ -154,9 +154,9 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | ...   | ...        | ...      |  ...   |
 
 
-5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
+5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  with **datalake<inject key="DeploymentID" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system), and then rerun the query:
 
-      ```SQL
+    ```SQL
     SELECT
         TOP 100 *
     FROM
@@ -177,7 +177,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | ...   | ...        | ...      |  ...   |
     
     
-6.  Modify the query as follows (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system):
+6.  Modify the query as follows (replacing  _datalakexx_  with **datalake<inject key="DeploymentID" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
     
 
     ```SQL
@@ -278,7 +278,7 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     
     ```
-    >**Note**: Modify the query as follows (replacing  _fsxx_  and _datalakexx_ with the names of your data lake storage account and file system):
+    >**Note**: Modify the query as follows (replacing  _fsxx_ with **fs<inject key="DeploymentID" enableCopy="false"/>** and _datalakexx_ with **datalake<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
 
 
 7.  Rerun the cell and verify that the results look like this:
