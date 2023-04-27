@@ -278,7 +278,7 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     
     ```
-    >**Note**: Modify the query as follows (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system):
+    >**Note**: Modify the query as follows (replacing  _fsxx_  and _datalakexx_ with the names of your data lake storage account and file system):
 
 
 7.  Rerun the cell and verify that the results look like this:
