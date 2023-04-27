@@ -11,7 +11,7 @@ The exercise is designed to familiarize you with some key elements of a modern d
 ### Task 1 : Explore an Azure Synapse Analytics workspace
 
 1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
-2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
+2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings and click  **Create**.
 
      - **Subscription**: Select **Azure subscription**
         - **Resource group**: Select **DP-900-Module-4-<inject key="DeploymentID" enableCopy="false"/>**.
@@ -42,7 +42,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
 2.  In the Copy Data tool, on the  **Properties**  step, ensure that  **Built-in copy task**  and  **Run once now**  are selected, and click  **Next >**.
     
-3.  On the  **Source**  step, in the  **Dataset**  substep, select the following settings:
+3.  On the  **Source**  step, in the  **Dataset**  substep, select the following settings and click  **Create**.
     
     -   **Source type**: All
     -   **Connection**:  Create a new connection, and in the **New connection** pane that appears, on the **Generic protocol** tab, select **HTTP**. Then continue    
@@ -156,7 +156,10 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
 
+
+
        ```SQL 
+
          SELECT
              TOP 100 *
          FROM
@@ -166,9 +169,11 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
                  PARSER_VERSION='2.0',
                  HEADER_ROW = TRUE
              ) AS [result]
-   
-      ```
-     
+
+       ```
+
+
+
     Now the results look like this:
 
     | ProductID      | ProductName       | Category   | ListPrice |
@@ -180,19 +185,20 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 6.  Modify the query as follows (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system):
     
-       ```SQL
-         SELECT
-             Category, COUNT(*) AS ProductCount
-         FROM
-             OPENROWSET(
-                 BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
-                 FORMAT = 'CSV',
-                 PARSER_VERSION='2.0',
-                 HEADER_ROW = TRUE
-             ) AS [result]
-         GROUP BY Category; 
-      
-       ```
+
+    ```SQL
+    SELECT
+        Category, COUNT(*) AS ProductCount
+    FROM
+        OPENROWSET(
+            BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
+            FORMAT = 'CSV',
+            PARSER_VERSION='2.0',
+            HEADER_ROW = TRUE
+        ) AS [result]
+    GROUP BY Category;
+    ```
+
     
 7.  Run the modified query, which should return a resultset that contains the number products in each category, like this:
     
@@ -200,8 +206,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | :---        |  ---:       |
     | Bib Shorts	   | 3        | 
     | Bike Racks	   | 1        | 
-    | ...   | ...        | ...      |  ...   |
-    
+     
 8.  In the  **Properties**  pane for  **SQL Script 1**, change the  **Name**  to  **Count Products by Category**. Then in the toolbar, select  **Publish**  to save the script.
     
 9.  Close the  **Count Products by Category**  script pane.
@@ -242,15 +247,17 @@ While SQL is a common language for querying structured datasets, many data analy
 3. When the Spark pool has been deployed, in Synapse Studio, on the **Data** page, browse to the file system for your Synapse workspace. Then right-click **products.csv**, point to **New notebook**, and select **Load to DataFrame**.
 4. In the **Notebook 1** pane that opens, in the **Attach to** list, select the **spark** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python)**.
 6. Review the code in the first (and only) cell in the notebook, which should look like this:
-   
-         
-         %%pyspark
-         df = spark.read.load('abfss://fsxx@datalakexx.dfs.core.windows.net/products.csv', format='csv'
-         ## If header exists uncomment line below
-         ##, header=True
-         )
-         display(df.limit(10))
-         
+
+
+    ```Python
+    %%pyspark
+    df = spark.read.load('abfss://fsxx@datalakexx.dfs.core.windows.net/products.csv', format='csv'
+    ## If header exists uncomment line below
+    ##, header=True
+    )
+    display(df.limit(10))
+    ```
+
     
 4.  Use the  **▷**  icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
     
@@ -264,7 +271,6 @@ While SQL is a common language for querying structured datasets, many data analy
     | ProductID      | ProductName       | Category   | ListPrice |
     | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
     | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
-    | ...   | ...        | ...      |  ...   |
     
 6.  Uncomment the  **header=True**  line (because the products.csv file has the column headers in the first line), so your code looks like this:
     
@@ -278,14 +284,15 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     
     ```
-    
+    >**Note**: Modify the query as follows (replacing  _fsxx_  and _datalakexx_ with the names of your data lake storage account and file system):
+
+
 7.  Rerun the cell and verify that the results look like this:
     
     | ProductID      | ProductName       | Category   | ListPrice |
     | :---        |    :----:   |    :----:     |  ---:       |
     | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
     | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
-    | ...   | ...        | ...      |  ...   |
     
     
     > Notice that running the cell again takes less time, because the Spark pool is already started.
@@ -305,8 +312,7 @@ While SQL is a common language for querying structured datasets, many data analy
         | :---        |  ---:       |
         | Headsets	   | 3        | 
         | Wheels	   | 14        | 
-        | ...   | ...        | ...      |  ...   |
-    
+     
 11.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
     
      ![Image showing category count chart view](images/bar-chart-dp-900-lab4.png)
