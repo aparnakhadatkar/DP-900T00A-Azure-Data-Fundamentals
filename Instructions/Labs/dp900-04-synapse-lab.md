@@ -238,7 +238,7 @@ While SQL is a common language for querying structured datasets, many data analy
     - **Autoscale**: Enabled
     - **Number of nodes** 3----3
    
-1. Review and create the Spark pool, and then wait for it to deploy (which may take a few minutes).
+1. Select **Review and create** and click on **Create**  the Spark pool, and then wait for it to deploy (which may take a few minutes).
 3. When the Spark pool has been deployed, in Synapse Studio, on the **Data** page, browse to the file system for your Synapse workspace. Then right-click **products.csv**, point to **New notebook**, and select **Load to DataFrame**.
 4. In the **Notebook 1** pane that opens, in the **Attach to** list, select the **spark** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python)**.
 6. Review the code in the first (and only) cell in the notebook, which should look like this:
