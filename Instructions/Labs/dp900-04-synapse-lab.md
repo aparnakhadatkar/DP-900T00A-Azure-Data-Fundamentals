@@ -156,8 +156,6 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
 
-
-
        ```SQL 
 
          SELECT
@@ -169,10 +167,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
                  PARSER_VERSION='2.0',
                  HEADER_ROW = TRUE
              ) AS [result]
-
        ```
-
-
 
     Now the results look like this:
 
@@ -248,7 +243,6 @@ While SQL is a common language for querying structured datasets, many data analy
 4. In the **Notebook 1** pane that opens, in the **Attach to** list, select the **spark** Spark pool to created previously and ensure that the **Language** is set to **PySpark (Python)**.
 6. Review the code in the first (and only) cell in the notebook, which should look like this:
 
-
     ```Python
     %%pyspark
     df = spark.read.load('abfss://fsxx@datalakexx.dfs.core.windows.net/products.csv', format='csv'
@@ -256,6 +250,7 @@ While SQL is a common language for querying structured datasets, many data analy
     ##, header=True
     )
     display(df.limit(10))
+    
     ```
 
     
