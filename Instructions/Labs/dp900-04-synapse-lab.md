@@ -302,10 +302,10 @@ While SQL is a common language for querying structured datasets, many data analy
     
 10.  Run the new code cell by clicking its  **▷**  icon, and review the results, which should look similar to this:
 
-        | Category      | Count      |
-        | :---        |  ---:       |
-        | Headsets	   | 3        | 
-        | Wheels	   | 14        | 
+       | Category    | Count     |
+       | :---        |  ---:     |
+       | Headsets	   | 3       | 
+       | Wheels	   | 14      | 
      
 11.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
     
