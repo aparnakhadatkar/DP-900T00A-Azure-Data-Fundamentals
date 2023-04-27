@@ -156,18 +156,17 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system), and then rerun the query:
 
-       ```SQL 
-
-         SELECT
-             TOP 100 *
-         FROM
-             OPENROWSET(
-                 BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
-                 FORMAT = 'CSV',
-                 PARSER_VERSION='2.0',
-                 HEADER_ROW = TRUE
-             ) AS [result]
-       ```
+      ```SQL
+    SELECT
+        TOP 100 *
+    FROM
+        OPENROWSET(
+            BULK 'https://datalakexx.dfs.core.windows.net/fsxx/products.csv',
+            FORMAT = 'CSV',
+            PARSER_VERSION='2.0',
+            HEADER_ROW = TRUE
+        ) AS [result]
+    ```
 
     Now the results look like this:
 
