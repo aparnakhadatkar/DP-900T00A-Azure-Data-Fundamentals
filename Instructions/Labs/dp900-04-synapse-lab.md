@@ -11,7 +11,7 @@ The exercise is designed to familiarize you with some key elements of a modern d
 ### Task 1 : Explore an Azure Synapse Analytics workspace
 
 1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
-2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
+2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings and click  **Create**.
 
      - **Subscription**: Select **Azure subscription**
         - **Resource group**: Select **DP-900-Module-4-<inject key="DeploymentID" enableCopy="false"/>**.
@@ -42,7 +42,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     
 2.  In the Copy Data tool, on the  **Properties**  step, ensure that  **Built-in copy task**  and  **Run once now**  are selected, and click  **Next >**.
     
-3.  On the  **Source**  step, in the  **Dataset**  substep, select the following settings:
+3.  On the  **Source**  step, in the  **Dataset**  substep, select the following settings and click  **Create**.
     
     -   **Source type**: HTTP
     -   **Connection**:  _Create a new connection with the following properties:_
@@ -278,7 +278,9 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     
     ```
-    
+    >**Note**: Modify the query as follows (replacing  _datalakexx_  and  _fsxx_  with the names of your data lake storage account and file system):
+
+
 7.  Rerun the cell and verify that the results look like this:
     
     | ProductID      | ProductName       | Category   | ListPrice |
