@@ -1,4 +1,4 @@
-# Explore Azure Synapse Analytics
+# Module 4 : Explore Azure Synapse Analytics
 
 In this exercise, you'll use the already provisioned Azure Synapse Analytics workspace in your Azure subscription, to ingest and query data.
 
