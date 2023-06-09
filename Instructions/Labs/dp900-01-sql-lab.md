@@ -17,9 +17,9 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 3. Enter the following values on the  **Create SQL Database**  page:
     
     -   **Subscription**: If you're using a  _sandbox_, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a  _sandbox_  subscription, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group with a name **Dp900-module1-<inject key="Deployment-id" enableCopy="false"/>**.
+    -   **Resource group**: If you're using a  _sandbox_  subscription, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group with a name **Dp900-module1-<inject key="DeploymentID" enableCopy="false"/>**.
     -   **Database name**:  _AdventureWorks_
-    -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. In Authentication method use  **SQL authentication**  and specify your name as the server admin login and a suitably complex password (remember the password - you'll need it later!)
+    -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. In Authentication method use  **SQL authentication**  and specify any name as the server admin login and a suitably complex password (remember the password - you'll need it later!), and select **OK**.
     -   **Want to use SQL elastic pool?**:  _No_
     -   **Compute + storage**: Leave unchanged
     -   **Backup storage redundancy**:  _Locally-redundant backup storage_
@@ -32,10 +32,11 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 7. Select  **Review + Create**, and then select  **Create**  to create your Azure SQL database.
     
 8. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
-    
+    >**Note:** deployment will take some time.
+
    ![Screenshot of the Azure portal showing the SQL Database page.](images//sql-database-portal.png)
     
-9. In the pane on the left side of the page, select  **Query editor (preview)**, and then sign in using the administrator login and password you specified for your server.
+9. In the pane on the left side of the page, select  **Query editor (preview)**, and then sign in using the administrator login and password you specified for your server, then select **OK**.
     
     _If an error message stating that the client IP address isn't allowed is displayed, select the  **Allowlist IP ...**  link at the end of the message to allow access and try to sign in again (you previously added you own computer's client IP address to the firewall rules, but the query editor may connect from a different address depending on your network configuration.)_
     
@@ -55,14 +56,14 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
      ![Screenshot of the Azure portal showing the query editor with query results.](images//sql-query-results.png)
      
-13. Replace the SELECT statement with the following code, and then select **&#9655; Run** to run the new query and review the results (which includes only the **ProductID**, **Name**, **ListPrice**, **ProductCategoryID** columns):
+13. Replace the existing code with the following code, and then select **&#9655; Run** to run the new query and review the results (which includes only the **ProductID**, **Name**, **ListPrice**, **ProductCategoryID** columns):
 
     ```sql
     SELECT ProductID, Name, ListPrice, ProductCategoryID
     FROM SalesLT.Product;
     ```
 
-14. Now try the following query, which uses a JOIN to get the category name from the **SalesLT.ProductCategory** table:
+14. Now try the following query, replace the existing query, and then select **&#9655; Run** to run the new query which uses a JOIN to get the category name from the **SalesLT.ProductCategory** table:
 
     ```sql
     SELECT p.ProductID, p.Name AS ProductName,
@@ -75,8 +76,8 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 15. Close the query editor pane, discarding your edits.
   
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-     > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
