@@ -8,7 +8,7 @@ In this exercise you'll provision an Azure Storage account in your Azure subscri
 
 ## Exercise 1 : Explore Azure Storage
 
-### Task 1 : Provision an Azure Storage account
+#### Task 1 : Provision an Azure Storage account
 
 The first step in using Azure Storage is to provision an Azure Storage account in your Azure subscription.
 
@@ -39,13 +39,13 @@ The first step in using Azure Storage is to provision an Azure Storage account i
 7.  Wait for deployment to complete. Then go to the resource that was deployed.
     
 
-### Task 2 : Explore blob storage
+#### Task 2 : Explore blob storage
 
 Now that you have an Azure Storage account, you can create a container for blob data.
 
 1.   Download the product1.json JSON file from https://aka.ms/product1.json and save it on your computer (you can save it in any folder - you'll upload it to blob storage later).
     
-   >**Note:** If the JSON file is displayed in your browser, save the page as **product1.json**.
+      >**Note:** If the JSON file is displayed in your browser, save the page as **product1.json**.
     
 2.  In the Azure portal page go to the newly created storage account for your storage container, on the left side, in the  **Data storage**  section, select  **Containers**.
     
@@ -56,6 +56,8 @@ Now that you have an Azure Storage account, you can create a container for blob 
 5.  Go back to the storage account, in the pane on the left side, in the top section, select  **Storage browser**. This page provides a browser-based interface that you can use to work with the data in your storage account.
     
 6.  In the storage browser page, select  **Blob containers**  and verify that your  **data**  container is listed.
+
+       ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp900-mod2-str.png)  
     
 7.  Select the  **data**  container, and note that it's empty.
     
@@ -78,13 +80,15 @@ Now that you have an Azure Storage account, you can create a container for blob 
 14.  On the left side, in the  **Data storage**  section, select  **Containers**.
     
 15.  Open the  **data**  container, and verify that the  **product_data**  folder you created is listed.
+
+     ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp900-mod2-cont1.1.png)
     
 16.  Select the  **‧‧‧**  icon at the right-end of the folder, and note that it doesn't display any options. Folders in a flat namespace blob container are virtual, and can’t be managed.
     
 17.  Use the  **X**  icon at the top right in the  **data**  page to close the page and return to the  **Containers**  page.
     
 
-### Task 3 :  Explore Azure Data Lake Storage Gen2
+#### Task 3 :  Explore Azure Data Lake Storage Gen2
 
 Azure Data Lake Store Gen2 support enables you to use hierarchical folders to organize and manage access to blobs. It also enables you to use Azure blob storage to host distributed file systems for common big data analytics platforms.
 
@@ -100,6 +104,8 @@ Azure Data Lake Store Gen2 support enables you to use hierarchical folders to or
 
 6.  Close the  **Upload blob**  panel if it's still open, and verify that a  **product_data**  folder now contains the  **product2.json**  file.
 
+    ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp900mod2-prod1.1.png) 
+
 7.  On the left side, in the  **Data storage**  section, select  **Containers**.
 
 8.  Open the  **data**  container, and verify that the  **product_data**  folder you created is listed.
@@ -112,7 +118,7 @@ Azure Data Lake Store Gen2 support enables you to use hierarchical folders to or
 
 Azure Files provides a way to create cloud-based file shares.
 
-1.  In the Azure portal page for your storage container, on the left side, in the  **Data storage**  section, select  **File shares**.
+1.  In the Azure portal displaying the storage container, on the left side, in the  **Data storage**  section, select  **File shares**.
 
 2.  In the File shares page, select  **＋ File share**  and add a new file share named  **files**  using the  **Transaction optimized**  tier and select **Create**.
 
@@ -139,23 +145,28 @@ Azure Tables provide a keyvalue store for applications that need to store data v
 6.  In the  **product**  page, select  **＋ Add entity**.
     
 7.  In the  **Add entity**  panel, enter the following key values:
+
+    |Property name | Type | Value |
+    | ------------ | ---- | ----- |
+    | PartitionKey (1) | String | 1 |
+    | RowKey (2) | String | 1 |
     
-    -   **PartitionKey**: 1
-    -   **RowKey**: 1
 8.  Select  **Add property**, and create a new property with the following values:
     
     |Property name | Type | Value |
     | ------------ | ---- | ----- |
-    | Name | String | Widget |
+    | Name (3) | String | Widget |
     
 9.  Add a second property with the following values:
     
      |Property name | Type | Value |
      | ------------ | ---- | ----- |
-     | Price | Double | 2.99 |
+     | Price (4) | Double | 2.99 |
 
     
-10.  Select  **Insert**  to insert a row for the new entity into the table.
+10.  Select  **Insert (5)**  to insert a row for the new entity into the table.
+
+     ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp-900-mod2-entity1.1.png)
     
 11.  In storage browser, verify that a row has been added to the  **products**  table, and that a  **Timestamp**  column has been created to indicate when the row was last modified.
     
@@ -170,11 +181,15 @@ Azure Tables provide a keyvalue store for applications that need to store data v
     | Discontinued | Boolean | true |
 
 13. After inserting the new entity, verify that a row containing the discontinued product is shown in the table.
+
+     ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp-900-mod2-knicknack.png)
     
    You have manually entered data into the table using the storage browser interface. In a real scenario, application developers can use the Azure Storage Table API to build applications that read and write values to tables, making it a cost effective and scalable solution for NoSQL storage.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
    > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+### You have successfully completed this lab.
