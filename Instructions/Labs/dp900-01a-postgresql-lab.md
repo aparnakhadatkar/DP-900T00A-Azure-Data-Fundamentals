@@ -1,10 +1,12 @@
-# Module 1A: Explore Azure Database for PostgreSQL
+# Module 1A : Explore Azure Database for PostgreSQL
 
 In this exercise, you'll provision an Azure Database for PostgreSQL resources in your Azure subscription.
 
-### Exercise 1 : Provision an Azure Database for PostgreSQL resource
+### Exercise 1 : Explore Azure Database for PostgreSQL
 
 In this exercise, you'll provision an Azure Database for PostgreSQL resources.
+
+#### Task 1 : Provision an Azure Database for PostgreSQL resource
  
 1. In the Azure portal, select **&#65291; Create a resource** (1) from the upper left-hand corner and search for **Azure Database for PostgreSQL** (2).  From the marketplace select the **Azure Database for PostgreSQL Flexible Serve** (3).
  
@@ -44,3 +46,5 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resources.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+**You have successfully completed the lab.**
