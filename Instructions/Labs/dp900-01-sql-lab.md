@@ -26,7 +26,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 
 4. On the  **Create SQL Database**  page, select  **Next :Networking >**.
 
-1. On the**Networking**  page, in the  **Network connectivity**  section, select  **Public endpoint**. 
+1. On the **Networking**  page, in the  **Network connectivity**  section, select  **Public endpoint**. 
 
 1. Select  **Yes**  for both options in the  **Firewall rules**  section to allow access to your database server from Azure services and your current client IP address.
     
