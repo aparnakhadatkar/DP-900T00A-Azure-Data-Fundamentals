@@ -1,12 +1,12 @@
-# Explore Azure SQL Database
+# Module 1: Explore Azure SQL Database
 
 In this exercise, you'll provision an Azure SQL Database resource in your Azure subscription, and then use SQL to query the tables in a relational database. 
 
-## Exercise 1 : Provision Azure relational database services
-
-### Task 1 : Provision an Azure SQL Database resource
+### Exercise 1 : Provision Azure relational database services
 
 In this exercise, you'll provision and test an Azure SQL Database resource.
+
+#### Task 1 : Provision an Azure SQL Database resource
 
 1. In the Azure portal, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Azure SQL_. Then in the resulting  **Azure SQL**  page, select  **Create**.
     
