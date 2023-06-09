@@ -10,35 +10,41 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 
 1. In the Azure portal, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Azure SQL_. Then in the resulting  **Azure SQL**  page, select  **Create**.
     
-2. Review the Azure SQL options that are available, and then in the  **SQL databases**  tile, ensure  **Single database**  is selected and select  **Create**.
+2. Review the Azure SQL options that are available, and then in the  **SQL databases** (1)  tile, ensure  **Single database** (2)  is selected and select  **Create** (3).
     
     ![Screenshot of the Azure portal showing the Azure SQL page.](images//DP-900sql.png)
     
 3. Enter the following values on the  **Create SQL Database**  page:
     
-    -   **Subscription**: If you're using a  _sandbox_, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a  _sandbox_  subscription, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, select existing resource group with a name **Dp900-module1-<inject key="DeploymentID" enableCopy="false"/>**.
+    -   **Subscription**: select your Azure subscription.
+    -   **Resource group**: select existing resource group with a name **Dp900-module1-<inject key="DeploymentID" enableCopy="false"/>**.
     -   **Database name**:  _AdventureWorks_
-    -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. In Authentication method use  **SQL authentication**  and specify any name as the server admin login and a suitably complex password (remember the password - you'll need it later!), and select **OK**.
+    -   **Server**: Select  **Create new**  and create a new server with a unique name in any available location. In the Authentication method **Use SQL authentication**  and specify any name as the server admin login and a suitably complex password (remember the password - you'll need it later!), and select **OK**.
     -   **Want to use SQL elastic pool?**:  _No_
     -   **Compute + storage**: Leave unchanged
     -   **Backup storage redundancy**:  _Locally-redundant backup storage_
-4. On the  **Create SQL Database**  page, select  **Next :Networking >**, and on the  **Networking**  page, in the  **Network connectivity**  section, select  **Public endpoint**. Then select  **Yes**  for both options in the  **Firewall rules**  section to allow access to your database server from Azure services and your current client IP address.
+
+4. On the  **Create SQL Database**  page, select  **Next :Networking >**.
+
+1. On the**Networking**  page, in the  **Network connectivity**  section, select  **Public endpoint**. 
+
+1. Select  **Yes**  for both options in the  **Firewall rules**  section to allow access to your database server from Azure services and your current client IP address.
     
 5. Select  **Next: Security >**  and set the  **Enable Microsoft Defender for SQL**  option to  **Not now**.
     
-6. Select  **Next: Additional Settings >**  and on the  **Additional settings**  tab, set the  **Use existing data**  option to  **Sample**  (this will create a sample database that you can explore later) then select **OK**.
+6. Select  **Next: Additional Settings >**  
+
+7. On the **Additional settings**  tab, set the  **Use existing data**  option to  **Sample**  (this will create a sample database that you can explore later) then select **OK**.
     
 7. Select  **Review + Create**, and then select  **Create**  to create your Azure SQL database.
     
-8. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
-    >**Note:** deployment will take some time.
-
-   ![Screenshot of the Azure portal showing the SQL Database page.](images//sql-database-portal.png)
+8. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this
+    
+    ![Screenshot of the Azure portal showing the SQL Database page.](images//sql-database-portal.png)
     
 9. In the pane on the left side of the page, select  **Query editor (preview)**, and then sign in using the administrator login and password you specified for your server, then select **OK**.
     
-    _If an error message stating that the client IP address isn't allowed is displayed, select the  **Allowlist IP ...**  link at the end of the message to allow access and try to sign in again (you previously added you own computer's client IP address to the firewall rules, but the query editor may connect from a different address depending on your network configuration.)_
+    >**Note:** _If an error message stating that the client IP address isn't allowed is displayed, select the  **Allowlist IP ...**  link at the end of the message to allow access and try to sign in again (you previously added you own computer's client IP address to the firewall rules, but the query editor may connect from a different address depending on your network configuration.)_
     
    The query editor looks like this:
     
@@ -83,3 +89,5 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+**You have successfully completed the lab.**
