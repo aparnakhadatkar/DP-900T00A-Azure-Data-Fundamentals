@@ -12,7 +12,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     
 2. Review the Azure SQL options that are available, and then in the  **SQL databases**  tile, ensure  **Single database**  is selected and select  **Create**.
     
-    ![Screenshot of the Azure portal showing the Azure SQL page.](images//azure-sql-portal.png)
+    ![Screenshot of the Azure portal showing the Azure SQL page.](images//DP-900sql.png)
     
 3. Enter the following values on the  **Create SQL Database**  page:
     
