@@ -1,4 +1,4 @@
-# Explore Azure Storage
+# Module 02: Explore Azure Storage
 
 In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
 
@@ -12,24 +12,31 @@ In this exercise you'll provision an Azure Storage account in your Azure subscri
 
 The first step in using Azure Storage is to provision an Azure Storage account in your Azure subscription.
 
-1.  If you haven't already done so, sign into the  [Azure portal](https://portal.azure.com/)  at  `https://portal.azure.com`. Then on the Azure portal home page, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Storage account_. Then in the resulting  **Storage account**  page, select  **Create**.
+1.  If you are not logged in already, click on the **Azure portal** shortcut that is available on the desktop and log in with the Azure credentials as shown below:
+  
+   - Username: <inject key="Username" enableCopy="false" />
+   - Password: <inject key="Password" enableCopy="false" /> 
+  
+2.  On the Azure portal home page, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Storage account_. Then in the resulting  **Storage account**  page, select  **Create**.
+
+     ![Screenshot of Azure Database for PostgreSQL deployment options](images/Dp900m2-01.png)
     
-2.  Enter the following values on the  **Create a storage account**  page:
+3.  Enter the following values on the  **Create a storage account**  page:
     
-    -   **Subscription**: If you're using a sandbox, select  _Concierge Subscription_. Otherwise, select your Azure subscription.
-    -   **Resource group**: If you're using a sandbox, select the existing resource group (which will have a name like  _learn-xxxx..._). Otherwise, choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/>**
-    -   **Storage account name**: Enter a unique name for your storage account using lower-case letters and numbers.
+    -   **Subscription**: Select your Azure subscription.
+    -   **Resource group**:Choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/>**
+    -   **Storage account name**: **str<inject key="DeploymentID" enableCopy="false"/>**.
     -   **Region**: Select any available location.
     -   **Performance**:  _Standard_
     -   **Redundancy**:  _Locally-redundant storage (LRS)_
 
-3.  Select  **Next: Advanced >**  and view the advanced configuration options. Then select  **Next: Networking >**  to view the networking options for your storage account.
+4.  Select  **Next: Advanced >**  and view the advanced configuration options. Then select  **Next: Networking >**  to view the networking options for your storage account.
     
-4.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
+5.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
     
-5.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
+6.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
     
-6.  Wait for deployment to complete. Then go to the resource that was deployed.
+7.  Wait for deployment to complete. Then go to the resource that was deployed.
     
 
 ### Task 2 : Explore blob storage
