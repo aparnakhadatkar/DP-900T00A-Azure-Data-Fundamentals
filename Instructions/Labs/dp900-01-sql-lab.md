@@ -73,6 +73,8 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
         ON p.ProductCategoryID = c.ProductCategoryID;
     ```
 
+    ![Screenshot of the Azure portal showing the Azure SQL page.](images//DP-900(result).png)
+
 15. Close the query editor pane, discarding your edits.
   
 
