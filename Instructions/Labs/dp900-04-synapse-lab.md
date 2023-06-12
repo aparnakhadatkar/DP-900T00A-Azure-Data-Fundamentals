@@ -14,13 +14,13 @@ The exercise is designed to familiarize you with some key elements of a modern d
 2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings and click  **Create**.
 
      - **Subscription**: Select **Azure subscription**
-        - **Resource group**: Select **DP-900-Module-4-<inject key="DeploymentID" enableCopy="false"/>**.
+        - **Resource group**: Select **DP-900-Module-4-<inject key="Deployment-id" enableCopy="false"/>**.
         - **Managed resource group**: Leave Blank
-     - **Workspace name**: Enter **synapse-<inject key="DeploymentID" enableCopy="false"/>**.
+     - **Workspace name**: Enter **synapse-<inject key="Deployment-id" enableCopy="false"/>**.
      - **Region**: Select resource group region.
       - **Select Data Lake Storage Gen 2**: From subscription
-        - **Account name**: Click on Create new then enter **datalake<inject key="DeploymentID" enableCopy="false"/>**.
-        - **File system name**: Click on Create new then enter **fs<inject key="DeploymentID" enableCopy="false"/>**.
+        - **Account name**: Click on Create new then enter **datalake<inject key="Deployment-id" enableCopy="false"/>**.
+        - **File system name**: Click on Create new then enter **fs<inject key="Deployment-id" enableCopy="false"/>**.
 
    > **Note**: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
     
@@ -32,7 +32,14 @@ The exercise is designed to familiarize you with some key elements of a modern d
 8.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
     
     ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio-dp900-lab4.png)
-    
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+**You have successfully completed the lab.**  
 
 ### Task 2 : Ingest data
 
@@ -45,7 +52,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
 3.  On the  **Source**  step, in the  **Dataset**  substep, select the following settings and click  **Create**.
     
     -   **Source type**: All
-    -   **Connection**:  Create a new connection, and in the **New connection** pane that appears, on the **Generic protocol** tab, select **HTTP**. Then continue    
+    -   **Connection**:  Create a new connection by selecting **+ New Connection**, and in the **New connection** pane that appears, on the **Generic protocol** tab, select **HTTP**. Then continue    
     -   create a connection to a data file using the following settings:
         -   **Name**: AdventureWorks Products
         -   **Description**: Product list via HTTP
@@ -62,6 +69,8 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     -   **Request timeout**:  _Leave blank_
     -   **Max concurrent connections**:  _Leave blank_
 5.  On the  **Source**  step, in the  **Configuration**  substep, select  **Preview data**  to see a preview of the product data your pipeline will ingest, then close the preview.
+
+    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/DP-900-preview.png)
     
 6.  After previewing the data, on the  **Source/Configuration**  step, ensure the following settings are selected, and then select  **Next >**:
     
@@ -70,26 +79,26 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
     -   **Row delimiter**: Line feed (\n)
     -   **First row as header**: Selected
     -   **Compression type**: None
-7.  On the  **Destination**  step, in the  **Dataset**  substep, select the following settings:
+7.  On the  **Destination**  step, in the  **Dataset**  substep, select the following settings, and select **Create**:
     
     -   **Destination type**: Azure Data Lake Storage Gen 2 
-    -   **Connection**:  _Create a new connection with the following properties:_
+    -   **Connection**:  _Create a new connection by selecting **+ New Connection** with the following properties:_
         -   **Name**: Products
         -   **Description**: Product list
         -   **Connect via integration runtime**: AutoResolveIntegrationRuntime
         -   **Authentication method**: Account key
-        -   **Account selection method**: From subscription
+        -   **Account selection method**: From azure subscription
             -   **Azure subscription**:  _select your subscription_
             -   **Storage account name**:  _Select your storage account_
         -   **Test connection**: To linked service
 8.  After creating the connection, on the  **Destination/Dataset**  step, ensure the following settings are selected, and then select  **Next >**:
     
-    -   **Folder path**:  Browse to your file system folder and select **fs<inject key="DeploymentID" enableCopy="false"/>**.
+    -   **Folder path**:  Browse to your file system folder and select **fs<inject key="Deployment-id" enableCopy="false"/>**.
     -   **File name**: products.csv
     -   **Copy behavior**: None
     -   **Max concurrent connections**:  _Leave blank_
     -   **Block size (MB)**:  _Leave blank_
-9.  On the  **Target**  step, in the  **Configuration**  substep, ensure that the following properties are selected. Then select  **Next >**:
+9.  On the  **Destination/Configuration**  step, ensure that the following properties are selected. Then select  **Next >**:
     
     -   **File format**: DelimitedText
     -   **Column delimiter**: Comma (,)
@@ -146,15 +155,10 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 4.  On the toolbar, use the  **▷ Run**  button to run the SQL code, and review the results, which should look similar to this:
     
-    | C1     | c2 | c3     | c4       | 
-    | :---        |    :----:   |    :----:     |  ---:       |
-    | ProductID      | ProductName       | Category   | ListPrice |
-    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
-    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
-    | ...   | ...        | ...      |  ...   |
+    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/DP-900result(1).png)
 
 
-5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  with **datalake<inject key="DeploymentID" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system), and then rerun the query:
+5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  with **datalake<inject key="Deployment-id" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="Deployment-id" enableCopy="false"/>** the names of your data lake storage account and file system), and then rerun the query:
 
     ```SQL
     SELECT
@@ -170,14 +174,11 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
     Now the results look like this:
 
-    | ProductID      | ProductName       | Category   | ListPrice |
-    | :---        |    :----:   |    :----:     |  ---:       |
-    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
-    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
-    | ...   | ...        | ...      |  ...   |
+    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/DP-900result(2).png)
+
     
     
-6.  Modify the query as follows (replacing  _datalakexx_  with **datalake<inject key="DeploymentID" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
+6.  Modify the query as follows (replacing  _datalakexx_  with **datalake<inject key="Deployment-id" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="Deployment-id" enableCopy="false"/>** the names of your data lake storage account and file system):
     
 
     ```SQL
@@ -196,10 +197,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     
 7.  Run the modified query, which should return a resultset that contains the number products in each category, like this:
     
-    | Category      | ProductCount      |
-    | :---        |  ---:       |
-    | Bib Shorts	   | 3        | 
-    | Bike Racks	   | 1        | 
+    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/DP-900result(3).png)
      
 8.  In the  **Properties**  pane for  **SQL Script 1**, change the  **Name**  to  **Count Products by Category**. Then in the toolbar, select  **Publish**  to save the script.
     
@@ -231,7 +229,7 @@ While SQL is a common language for querying structured datasets, many data analy
 
 1. In Synapse Studio, select the **Manage** page.
 2. Select the **Apache Spark pools** tab, and then use the **&#65291; New** icon to create a new Spark pool with the following settings:
-    - **Apache Spark pool name**: Enter **spark<inject key="DeploymentID" enableCopy="false"/>**.
+    - **Apache Spark pool name**: Enter **spark<inject key="Deployment-id" enableCopy="false"/>**.
     - **Node size family**: Memory Optimized
     - **Node size**: Small (4 vCores / 32 GB)
     - **Autoscale**: Enabled
@@ -260,11 +258,7 @@ While SQL is a common language for querying structured datasets, many data analy
 
 5.  Eventually, the results should appear below the cell, and they should be similar to this:
     
-    | c0     | c1 | c2     | c3       | 
-    | :---        |    :----:   |    :----:     |  ---:       |
-    | ProductID      | ProductName       | Category   | ListPrice |
-    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
-    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
+    ![Image showing the product count chart view](images/DP-900result(4).png)
     
 6.  Uncomment the  **header=True**  line (because the products.csv file has the column headers in the first line), so your code looks like this:
     
@@ -278,16 +272,12 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     
     ```
-    >**Note**: Modify the query as follows (replacing  _fsxx_ with **fs<inject key="DeploymentID" enableCopy="false"/>** and _datalakexx_ with **datalake<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
+    >**Note**: Modify the query as follows (replacing  _fsxx_ with **fs<inject key="Deployment-id" enableCopy="false"/>** and _datalakexx_ with **datalake<inject key="Deployment-id" enableCopy="false"/>** the names of your data lake storage account and file system):
 
 
 7.  Rerun the cell and verify that the results look like this:
     
-    | ProductID      | ProductName       | Category   | ListPrice |
-    | :---        |    :----:   |    :----:     |  ---:       |
-    | 771   | Mountain-100 Silver, 38        | Mountain Bikes      |  3399.9900   |
-    | 772   | Mountain-100 Silver, 42        | Mountain Bikes      |  3399.9900   |
-    
+    ![Image showing the product count chart view](images/DP-900result(5).png)
     
     > Notice that running the cell again takes less time, because the Spark pool is already started.
     
@@ -302,10 +292,7 @@ While SQL is a common language for querying structured datasets, many data analy
     
 10.  Run the new code cell by clicking its  **▷**  icon, and review the results, which should look similar to this:
 
-       | Category    | Count     |
-       | :---        |  ---:     |
-       | Headsets	   | 3       | 
-       | Wheels	   | 14      | 
+       ![Image showing category count chart view](images/DP-900result(6).png) 
      
 11.  In the results output for the cell, select the  **Chart**  view. The resulting chart should resemble this:
     
@@ -314,12 +301,10 @@ While SQL is a common language for querying structured datasets, many data analy
 12.  Close the  **Notebook 1**  pane and discard your changes.
 
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
- - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
- 
- - Hit the Validate button for the corresponding task.
- 
- - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
- 
- - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+**You have successfully completed the lab.**
