@@ -1,11 +1,13 @@
 
-# Explore Azure Synapse Data Explorer
+# Module 5(b): Explore Azure Synapse Data Explorer
 
 In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
-## Provision a Synapse Analytics workspace
+## Exercise
 
-1.  Open the resource group **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false" />**  that was precreated for you and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
+### Task 1: Provision a Synapse Analytics workspace
+
+1.  Open the resource group **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false" />**  that was precreated for you from the Resource Group tab and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
     
 2.  Select your Synapse workspace, and in its  **Overview**  page, in  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
     
@@ -18,7 +20,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
        
      ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/failed.png)
     
-## Create a Data Explorer pool
+### Task 2: Create a Data Explorer pool
 
 1. In Synapse Studio, select the **Manage** page.
 1. Select the **Data Explorer pools** tab, and then use the **&#65291; New** icon to create a new pool with the following settings:
@@ -28,7 +30,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 1. Select **Next: Additional Settings >** and enable the **Streaming ingestion** setting - this enables Data Explorer to ingest new data from a streaming source, such as Azure Event Hubs.
 1. Select **Review and create** to create the Data Explorer pool, and then wait for it to be deployed (which may take 15 minutes or longer - the status will change from *Creating* to *Online*).
 
-## Create a database and ingest data
+### Task 3: Create a database and ingest data
 
 1. In Synapse Studio, select the **Data** page.
 1. Ensure that the **Workspace** tab is selected, and if necessary, select the **&#8635;** icon at the top-left of the page to refresh the view so that **Data Explorer databases** is listed.
@@ -38,8 +40,10 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
     ![Data Explorer](images/dataexplorer-1.png)
     
     ![Data Explorer](images/dataexplorer-2.png)
-
-1. While waiting for the database to be created, download **devices.csv** from [https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv?azure-portal=true), saving it in any folder on your local computer.
+    
+    >**Note:** You will not be able to create the Data Explorer Database until the Data Explorer pool is created.
+    
+1. While waiting for the database to be created, download **devices.csv** from [https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv?azure-portal=true), saving it in any folderin the lab.
 1. In Synapse Studio, wait for the database to be created if necessary, and then in the **...** menu for the new **iot-data** database, select **Open in Azure Data Explorer**.
 1. In the new browser tab containing Azure Data Explorer, on the **Data** tab, select **Ingest new data**.
 1. In the **Destination** page, select the following settings:
@@ -74,7 +78,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
     > **Tip**: In this example, you imported a very small amount of batch data from a file, which is fine for the purposes of this exercise. In reality, you can use Data Explorer to analyze much larger volumes of data; and since you enabled stream ingestion, you could also have configured Data Explorer to ingest data into the table from a streaming source such as Azure Event Hubs.
 
-## Use Kusto query language to query the table in Synapse Studio
+### Task 4: Use Kusto query language to query the table in Synapse Studio
 
 1. Close the Azure Data Explorer browser tab and return to the tab containing Synapse Studio.
 1. On the **Data** page, expand the **iot-data** database and its **Tables** folder. Then in the **...** menu for the **devices** table, select **New KQL Script** > **Take 1000 rows**.
@@ -121,12 +125,10 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
     
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+ > - Hit the Validate button for the corresponding task.
+ > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide
+ > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
- - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
- 
- - Hit the Validate button for the corresponding task.
- 
- - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
- 
- - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+### You have successfully completed this lab.
