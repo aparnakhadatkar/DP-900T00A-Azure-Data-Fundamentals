@@ -43,7 +43,7 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
     
     >**Note:** You will not be able to create the Data Explorer Database until the Data Explorer pool is created.
     
-1. While waiting for the database to be created, download **devices.csv** from [https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv?azure-portal=true), saving it in any folderin the lab.
+1. While waiting for the database to be created, download **devices.csv** from [https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv?azure-portal=true), saving it in any folder in the lab.
 1. In Synapse Studio, wait for the database to be created if necessary, and then in the **...** menu for the new **iot-data** database, select **Open in Azure Data Explorer**.
 1. In the new browser tab containing Azure Data Explorer, on the **Data** tab, select **Ingest new data**.
 1. In the **Destination** page, select the following settings:
