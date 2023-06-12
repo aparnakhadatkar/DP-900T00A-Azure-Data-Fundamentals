@@ -14,13 +14,13 @@ The exercise is designed to familiarize you with some key elements of a modern d
 2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings and click  **Create**.
 
      - **Subscription**: Select **Azure subscription**
-        - **Resource group**: Select **DP-900-Module-4-<inject key="Deployment-id" enableCopy="false"/>**.
+        - **Resource group**: Select **DP-900-Module-4-<inject key="DeploymentID" enableCopy="false"/>**.
         - **Managed resource group**: Leave Blank
-     - **Workspace name**: Enter **synapse-<inject key="Deployment-id" enableCopy="false"/>**.
+     - **Workspace name**: Enter **synapse-<inject key="DeploymentID" enableCopy="false"/>**.
      - **Region**: Select resource group region.
       - **Select Data Lake Storage Gen 2**: From subscription
-        - **Account name**: Click on Create new then enter **datalake<inject key="Deployment-id" enableCopy="false"/>**.
-        - **File system name**: Click on Create new then enter **fs<inject key="Deployment-id" enableCopy="false"/>**.
+        - **Account name**: Click on Create new then enter **datalake<inject key="DeploymentID" enableCopy="false"/>**.
+        - **File system name**: Click on Create new then enter **fs<inject key="DeploymentID" enableCopy="false"/>**.
 
    > **Note**: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
     
@@ -93,7 +93,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define  
         -   **Test connection**: To linked service
 8.  After creating the connection, on the  **Destination/Dataset**  step, ensure the following settings are selected, and then select  **Next >**:
     
-    -   **Folder path**:  Browse to your file system folder and select **fs<inject key="Deployment-id" enableCopy="false"/>**.
+    -   **Folder path**:  Browse to your file system folder and select **fs<inject key="DeploymentID" enableCopy="false"/>**.
     -   **File name**: products.csv
     -   **Copy behavior**: None
     -   **Max concurrent connections**:  _Leave blank_
@@ -158,7 +158,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/DP-900result(1).png)
 
 
-5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  with **datalake<inject key="Deployment-id" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="Deployment-id" enableCopy="false"/>** the names of your data lake storage account and file system), and then rerun the query:
+5.  Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing  _datalakexx_  with **datalake<inject key="DeploymentID" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system), and then rerun the query:
 
     ```SQL
     SELECT
@@ -178,7 +178,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
     
     
-6.  Modify the query as follows (replacing  _datalakexx_  with **datalake<inject key="Deployment-id" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="Deployment-id" enableCopy="false"/>** the names of your data lake storage account and file system):
+6.  Modify the query as follows (replacing  _datalakexx_  with **datalake<inject key="DeploymentID" enableCopy="false"/>** and  _fsxx_  with **fs<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
     
 
     ```SQL
@@ -229,7 +229,7 @@ While SQL is a common language for querying structured datasets, many data analy
 
 1. In Synapse Studio, select the **Manage** page.
 2. Select the **Apache Spark pools** tab, and then use the **&#65291; New** icon to create a new Spark pool with the following settings:
-    - **Apache Spark pool name**: Enter **spark<inject key="Deployment-id" enableCopy="false"/>**.
+    - **Apache Spark pool name**: Enter **spark<inject key="DeploymentID" enableCopy="false"/>**.
     - **Node size family**: Memory Optimized
     - **Node size**: Small (4 vCores / 32 GB)
     - **Autoscale**: Enabled
@@ -272,7 +272,7 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     
     ```
-    >**Note**: Modify the query as follows (replacing  _fsxx_ with **fs<inject key="Deployment-id" enableCopy="false"/>** and _datalakexx_ with **datalake<inject key="Deployment-id" enableCopy="false"/>** the names of your data lake storage account and file system):
+    >**Note**: Modify the query as follows (replacing  _fsxx_ with **fs<inject key="DeploymentID" enableCopy="false"/>** and _datalakexx_ with **datalake<inject key="DeploymentID" enableCopy="false"/>** the names of your data lake storage account and file system):
 
 
 7.  Rerun the cell and verify that the results look like this:
