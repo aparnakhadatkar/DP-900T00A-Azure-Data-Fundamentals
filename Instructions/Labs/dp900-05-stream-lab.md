@@ -1,4 +1,4 @@
-# Explore Azure Stream Analytics
+# Module 5 : Explore Azure Stream Analytics
 
 In this exercise, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
 Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud shell environment for your Azure subscription.
@@ -61,12 +61,10 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
     If all three of these resources are not listed, click the  **↻ Refresh**  button until they appear.
     
-> **Note**: If you are using the learn sandbox, the resource group may also contain a second  _Storage account_  named  **cloudshell_xxxxxxxx_**, which is used to store data for the Azure Cloud Shell you used to run the setup script.
-    
 3.  Select the **streamxxxxxxxxxxxxx**  Stream Analytics job and view the information on its  **Overview**  page, note the following details:
     
-    -   The job has one  _input_  named  **iotinput**, and one  _output_  named  **bloboutput**. These reference the IoT Hub and Storage account created by the setup script.
-    -   The job has a  _query_, which reads data from the  **iotinput**  input, and aggregates it by counting the number of messages processed every 10 seconds; writing the results to the  **bloboutput**  output.
+    -   The job has one  _input_ (Select **Inputs** under Job topology on the left hand pane)  named  **iotinput**, and one  _output_ (Select **Outputs** under Job topology on the left hand pane) named  **bloboutput**. These reference the IoT Hub and Storage account created by the setup script.
+    -   The job has a  _query_(Select **Query** under Job topology on the left hand pane), which reads data from the  **iotinput**  input, and aggregates it by counting the number of messages processed every 10 seconds; writing the results to the  **bloboutput**  output.
 
 ## Use the resources to analyze streaming data
 
@@ -118,9 +116,11 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     
 15.  At the top of the Stream Analytics job page, use the  **⬜ Stop**  button to stop the job, confirming when prompted.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-     > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+**You have successfully completed the lab.**
 
