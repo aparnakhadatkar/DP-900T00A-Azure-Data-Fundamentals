@@ -20,7 +20,9 @@ In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in 
     - **Select Data Lake Storage Gen 2**: From subscription
         - **Account name**: *Create a new account with a unique name, for example "datalake<inject key="DeploymentID" enableCopy="false"/>"*.
         - **File system name**: *Create a new file system with a unique name, for example "fs<inject key="DeploymentID" enableCopy="false"/>"*.
-
+    
+    ![](images/DP900_lab5a_1.png)
+    
 4. When you've entered these details, select **Review + create**, and then select **Create** to create the workspace.
 5. Wait for the workspace to be created - this may take five minutes or so.
 6. When deployment is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and a Data Lake storage account.
@@ -44,7 +46,8 @@ To use Spark to process streaming data, you need to add a Spark pool to your Azu
     - **Autoscale**: Enabled
     - **Number of nodes** 3----3
 3. Review and create the Spark pool, and then wait for it to be deployed (which may take a few minutes).
-
+   
+   ![](images/DP900_lab5a_2.png)
 
 ### Task 3:Explore stream processing
 
