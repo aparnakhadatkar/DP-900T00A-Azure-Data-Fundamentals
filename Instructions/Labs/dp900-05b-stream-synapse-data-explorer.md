@@ -3,9 +3,9 @@
 
 In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
-## Exercise
+## Exercise: Provision a Synapse Analytics workspace
 
-### Task 1: Provision a Synapse Analytics workspace
+### Task 1: Create a Synapse Analytics workspace
 
 1.  Open the resource group **DP-900-Module-5-<inject key="DeploymentID" enableCopy="false" />**  that was precreated for you from the Resource Group tab and notice that it contains your Synapse Analytics workspace, a Data Lake storage account and an Apache Spark pool.
     
