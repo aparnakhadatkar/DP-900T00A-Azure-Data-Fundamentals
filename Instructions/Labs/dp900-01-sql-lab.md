@@ -1,4 +1,4 @@
-# Module 1: Explore Azure SQL Database
+# Module 1 : Explore Azure SQL Database
 
 In this exercise, you'll provision an Azure SQL Database resource in your Azure subscription, and then use SQL to query the tables in a relational database. 
 
