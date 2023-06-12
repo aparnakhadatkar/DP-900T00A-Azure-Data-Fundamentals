@@ -16,7 +16,7 @@ In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in 
     - **Subscription**: *Your Azure subscription*
         - **Resource group**: *Select existing resource group, like "DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>"*
     - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<inject key="DeploymentID" enableCopy="false"/>"*.
-    - **Region**: *Select resource group region*.
+    - **Region**: *Select any available location*.
     - **Select Data Lake Storage Gen 2**: From subscription
         - **Account name**: *Create a new account with a unique name, for example "datalake<inject key="DeploymentID" enableCopy="false"/>"*.
         - **File system name**: *Create a new file system with a unique name, for example "fs<inject key="DeploymentID" enableCopy="false"/>"*.
