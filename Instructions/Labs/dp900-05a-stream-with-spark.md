@@ -2,9 +2,9 @@
 
 In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in Azure Synapse Analytics to process streaming data.
 
-## Exercise
+## Exercise: Provision a Synapse Analytics workspace and Spark Pool
 
-### Task 1: Provision a Synapse Analytics workspace
+### Task 1: Create a Synapse Analytics workspace
 
 1. If you have not yet signed in, Open the Azure portal at [Azure portal](https://portal.azure.com?azure-portal=true), and sign in using the credentials associated with your Azure subscription.
     
