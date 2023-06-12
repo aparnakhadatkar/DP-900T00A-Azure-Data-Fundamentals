@@ -3,7 +3,7 @@
 
 In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
-## Exercise: Provision a Synapse Analytics workspace
+## Exercise: Provision a Synapse Analytics workspace and Data Explorer pool
 
 ### Task 1: Create a Synapse Analytics workspace
 
