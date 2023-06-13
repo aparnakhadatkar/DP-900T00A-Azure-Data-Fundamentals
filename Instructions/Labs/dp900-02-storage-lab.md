@@ -12,16 +12,11 @@ In this exercise you'll provision an Azure Storage account in your Azure subscri
 
 The first step in using Azure Storage is to provision an Azure Storage account in your Azure subscription.
 
-1.  If you are not logged in already, click on the **Azure portal** shortcut that is available on the desktop and log in with the Azure credentials as shown below:
-  
-   - Username: <inject key="Username" enableCopy="false" />
-   - Password: <inject key="Password" enableCopy="false" /> 
-  
-2.  On the Azure portal home page, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Storage account_. Then in the resulting  **Storage account**  page, select  **Create**.
+1.  On the Azure portal home page, select  **＋ Create a resource**  from the upper left-hand corner and search for  _Storage account_. Then in the resulting  **Storage account**  page, select  **Create**.
 
      ![Screenshot of Azure Database for PostgreSQL deployment options](images/Dp900m2-01.png)
     
-3.  Enter the following values on the  **Create a storage account**  page:
+2.  Enter the following values on the  **Create a storage account**  page:
     
     -   **Subscription**: Select your Azure subscription.
     -   **Resource group**:Choose the existing resource group **DP-900-Module2-<inject key="DeploymentID" enableCopy="false"/>**
@@ -30,13 +25,13 @@ The first step in using Azure Storage is to provision an Azure Storage account i
     -   **Performance**:  _Standard_
     -   **Redundancy**:  _Locally-redundant storage (LRS)_
 
-4.  Select  **Next: Advanced >**  and view the advanced configuration options. Then select  **Next: Networking >**  to view the networking options for your storage account.
+3.  Select  **Next: Advanced >**  and view the advanced configuration options. Then select  **Next: Networking >**  to view the networking options for your storage account.
     
-5.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
+4.  Select  **Next: Data protection >**  and then in the  **Recovery**  section,  deselect all of the  **Enable soft delete...**  options. These options retain deleted files for subsequent recovery, but can cause issues later.
     
-6.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
+5.  Continue through the remaining  **Next >**  pages without changing any of the default settings, and then on the  **Review**  page, wait for your selections to be validated and select  **Create**  to create your Azure Storage account.
     
-7.  Wait for deployment to complete. Then go to the resource that was deployed.
+6.  Wait for deployment to complete. Then go to the resource that was deployed.
     
 
 #### Task 2 : Explore blob storage
@@ -57,7 +52,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
     
 6.  In the storage browser page, select  **Blob containers**  and verify that your  **data**  container is listed.
 
-       ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp900-mod2-str.png)  
+    ![Screenshot of Azure Database for PostgreSQL deployment options](images/dp900-mod2-str.png)  
     
 7.  Select the  **data**  container, and note that it's empty.
     
