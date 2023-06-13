@@ -1,8 +1,8 @@
-# Module 5(a): Explore Spark Streaming in Azure Synapse Analytics
+# Module 05A: Explore Spark Streaming in Azure Synapse Analytics
 
 In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in Azure Synapse Analytics to process streaming data.
 
-## Exercise: Provision a Synapse Analytics workspace and Spark Pool
+## Exercise 1: Provision a Synapse Analytics workspace and Spark Pool
 
 ### Task 1: Create a Synapse Analytics workspace
 

@@ -1,8 +1,8 @@
-# Module 1b: Explore Azure Database for MySQL
+# Module 01b: Explore Azure Database for MySQL
 
 In this exercise you'll provision an Azure Database for MySQL resource in your Azure subscription.
 
-### Exercise: Provision an Azure Database for MySQL resource
+### Exercise 1: Provision an Azure Database for MySQL resource
 
 In this exercise, you'll provision an Azure Database for MySQL resource.
 

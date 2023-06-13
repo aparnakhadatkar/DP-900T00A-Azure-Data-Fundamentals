@@ -1,14 +1,14 @@
-# Module 4 : Explore Azure Synapse Analytics
+# Module 04: Explore Azure Synapse Analytics
 
 In this exercise, you'll use the already provisioned Azure Synapse Analytics workspace in your Azure subscription, to ingest and query data.
 
-## Exercise 1 : Provision an Azure Synapse Analytics workspace
+## Exercise 1: Provision an Azure Synapse Analytics workspace
 
 In this exercise, you'll use the Azure Synapse Analytics workspace to ingest and analyze some data.
 
 The exercise is designed to familiarize you with some key elements of a modern data warehousing solution, not as a comprehensive guide to performing advanced data analysis with Azure Synapse Analytics. 
 
-### Task 1 : Explore an Azure Synapse Analytics workspace
+### Task 1: Explore an Azure Synapse Analytics workspace
 
 1. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 2. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings and click  **Create**.

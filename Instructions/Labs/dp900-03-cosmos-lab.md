@@ -1,12 +1,12 @@
-# Module 3 : Explore Azure Cosmos DB
+# Module 03: Explore Azure Cosmos DB
 
 In this exercise, you'll provision an Azure Cosmos DB database in your Azure subscription, and explore the various ways you can use it to store non-relational data.
 
-### Exercise 1 : Explore Azure Cosmos DB
+### Exercise 1: Explore Azure Cosmos DB
 
 To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
 
-#### Task 1 : Create a Cosmos DB account
+#### Task 1: Create a Cosmos DB account
 
 1.  In the Azure portal, select  **+ Create a resource** (1)  at the top left, and search for  **Azure Cosmos DB** (2). In the results, select  **Azure Cosmos DB** (3) and select  **Create** (4).
 

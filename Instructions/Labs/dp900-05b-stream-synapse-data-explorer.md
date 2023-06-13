@@ -1,9 +1,9 @@
 
-# Module 5(b): Explore Azure Synapse Data Explorer
+# Module 05B: Explore Azure Synapse Data Explorer
 
 In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
-## Exercise: Provision a Synapse Analytics workspace and Data Explorer pool
+## Exercise 1: Provision a Synapse Analytics workspace and Data Explorer pool
 
 ### Task 1: Create a Synapse Analytics workspace
 
