@@ -1,10 +1,10 @@
-# Visualize data with Power BI
+# Module 06: Visualize data with Power BI
 
 In this exercise, you'll use Microsoft Power BI Desktop to create a data model and a report containing interactive data visualizations.
 
-## Exercise 1 : Visualize data with Power BI
+## Exercise 1: Visualize data with Power BI
 
-### Task 1 : Import data
+### Task 1: Import data
 
 1.  Open Power BI Desktop. The application interface should look similar to this, select **Get Started**, if it is asking for the Email, select cancel. :
     

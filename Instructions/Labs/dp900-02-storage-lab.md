@@ -6,9 +6,9 @@ In this exercise you'll provision an Azure Storage account in your Azure subscri
 
 In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
 
-## Exercise 1 : Explore Azure Storage
+## Exercise 1: Explore Azure Storage
 
-#### Task 1 : Provision an Azure Storage account
+#### Task 1: Provision an Azure Storage account
 
 The first step in using Azure Storage is to provision an Azure Storage account in your Azure subscription.
 
