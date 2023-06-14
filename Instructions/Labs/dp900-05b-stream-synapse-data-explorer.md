@@ -11,14 +11,13 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
     
 2.  Select your Synapse workspace, and in its  **Overview**  page, in  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
     
-3.  On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
+3. On the left side of Synapse Studio, use the  **››**  icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
     
     ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/synapse-studio-dp900-lab4.png)
-    
-    >
+   
     >**Note:** Ignore if you receive any pop-up like **Failed to load** as shown below by clicking on **OK**.
        
-     ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/failed.png)
+      ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](images/failed.png)
     
 ### Task 2: Create a Data Explorer pool
 
