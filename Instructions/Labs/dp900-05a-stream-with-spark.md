@@ -5,13 +5,8 @@ In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in 
 ## Exercise 1: Provision a Synapse Analytics workspace and Spark Pool
 
 ### Task 1: Create a Synapse Analytics workspace
-
-1. If you have not yet signed in, Open the Azure portal at [Azure portal](https://portal.azure.com?azure-portal=true), and sign in using the credentials associated with your Azure subscription.
     
-    - Username: <inject key="Username" enableCopy="false" />
-    - Password: <inject key="Password" enableCopy="false" /> 
-    
-2. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
+2. On the Azure portal **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 3. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
         - **Resource group**: *Select existing resource group, like "DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>"*
