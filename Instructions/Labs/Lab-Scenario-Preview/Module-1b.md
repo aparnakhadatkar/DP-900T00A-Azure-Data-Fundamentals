@@ -11,3 +11,7 @@ After you complete this lab, you will be able to:
 - Create Azure Database for MYSQL Flexible Server. 
 
 ## Architecture Diagram
+
+
+Now that you know what the lab is going to be all about, you can launch next item **Hands-on Lab** which includes lab environment and lab guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/2a2e75a0-f8f2-4221-8c1e-01ea9757000b) if you want to go through detailed guide prior to launching lab environment. 
+
