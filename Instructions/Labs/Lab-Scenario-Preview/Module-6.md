@@ -15,5 +15,5 @@ After you complete this lab, you will be able to:
 ## Architecture Diagram
 
 
-
+https://experience.cloudlabs.ai/#/labguidepreview/bf5aff03-d567-4752-ab04-33c0a4bfbc26
 
