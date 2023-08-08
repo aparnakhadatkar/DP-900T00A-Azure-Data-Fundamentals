@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Module 05: Explore Azure Stream Analytics
+# Lab Scenario Preview: Lab 05: Explore Azure Stream Analytics
 
 ## Lab overview
 
