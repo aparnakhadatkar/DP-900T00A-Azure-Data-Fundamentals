@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Module 01: Explore Azure SQL Database
+# Lab Scenario Preview: Lab 01: Explore Azure SQL Database
 
 ## Lab overview
 
