@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Module 05B: Explore Azure Synapse Data Explorer
+# Lab Scenario Preview: Lab 05b: Explore Azure Synapse Data Explorer
 
 ## Lab overview
 
