@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Module 02: Explore Azure Storage
+# Lab Scenario Preview: lab 02: Explore Azure Storage
 
 ## Lab overview
 
