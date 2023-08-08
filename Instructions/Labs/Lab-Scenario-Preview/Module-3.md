@@ -1,4 +1,4 @@
-# Lab Scenario Preview: lab 03: Explore Azure Cosmos DB
+# Lab Scenario Preview: Lab 03: Explore Azure Cosmos DB
 
 ## Lab overview
 
