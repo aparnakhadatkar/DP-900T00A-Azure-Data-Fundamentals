@@ -1,4 +1,4 @@
-# Module 05: Explore Azure Stream Analytics
+# Lab 05: Explore Azure Stream Analytics
 
 In this exercise, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
 Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud shell environment for your Azure subscription.
