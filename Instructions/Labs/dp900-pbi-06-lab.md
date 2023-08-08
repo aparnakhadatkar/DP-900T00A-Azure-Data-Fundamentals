@@ -1,4 +1,4 @@
-# Module 06: Visualize data with Power BI
+# Lab 06: Visualize data with Power BI
 
 In this exercise, you'll use Microsoft Power BI Desktop to create a data model and a report containing interactive data visualizations.
 

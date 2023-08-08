@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Module 01b: Explore Azure Database for MySQL
+# Lab Scenario Preview: Lab 01b: Explore Azure Database for MySQL
 
 ## Lab overview
 

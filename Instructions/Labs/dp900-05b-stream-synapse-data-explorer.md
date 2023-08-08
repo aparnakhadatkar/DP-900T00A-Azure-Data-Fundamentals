@@ -1,5 +1,5 @@
 
-# Module 05B: Explore Azure Synapse Data Explorer
+# Lab 05b: Explore Azure Synapse Data Explorer
 
 In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
 

@@ -1,4 +1,4 @@
-# Module 03: Explore Azure Cosmos DB
+# Lab 03: Explore Azure Cosmos DB
 
 In this exercise, you'll provision an Azure Cosmos DB database in your Azure subscription, and explore the various ways you can use it to store non-relational data.
 

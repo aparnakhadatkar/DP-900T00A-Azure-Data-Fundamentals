@@ -1,4 +1,4 @@
-# Module 02: Explore Azure Storage
+# Lab 02: Explore Azure Storage
 
 In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
 

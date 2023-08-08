@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Module 1A: Explore Azure Database for PostgreSQL
+# Lab Scenario Preview: Lab 01a: Explore Azure Database for PostgreSQL
 
 ## Lab overview
 

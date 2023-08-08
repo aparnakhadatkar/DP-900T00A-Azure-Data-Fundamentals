@@ -1,4 +1,4 @@
-# Lab Scenario Preview: Module 06: Visualize data with Power BI
+# Lab Scenario Preview: Lab 06: Visualize data with Power BI
 
 ## Lab overview
 

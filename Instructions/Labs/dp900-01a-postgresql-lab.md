@@ -1,4 +1,4 @@
-# Module 1A: Explore Azure Database for PostgreSQL
+# Lab 01a: Explore Azure Database for PostgreSQL
 
 In this exercise, you'll provision an Azure Database for PostgreSQL resources in your Azure subscription.
 
