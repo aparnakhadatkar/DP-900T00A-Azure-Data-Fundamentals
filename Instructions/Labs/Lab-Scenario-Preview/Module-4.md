@@ -1,4 +1,4 @@
-# Lab Scenario Preview: lab 04: Explore Azure Synapse Analytics
+# Lab Scenario Preview: Lab 04: Explore Azure Synapse Analytics
 
 ## Lab overview
 
