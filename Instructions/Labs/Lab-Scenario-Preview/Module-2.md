@@ -8,11 +8,9 @@ In this lab, you'll learn how to provision an Azure Storage account in your Azur
 
 After you complete this lab, you will be able to:
 
-- Create Azure Storage
-- Create blob storage
-- Upload files to Azure Data Lake Storage Gen2
-- Create Azure Files
-- Create Azure Tables
+- Create Azure Storage account and blob storage.
+- Upload files to Azure Data Lake Storage Gen2.
+- Create Azure Files and Azure Tables.
 
 ## Architecture Diagram
 
