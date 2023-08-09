@@ -10,8 +10,7 @@ After you complete this lab, you will be able to:
 
 - Create Azure Synapse Analytics workspace
 - Ingest data
-- Use a SQL pool to analyze data
-- Use a Spark pool to analyze data
+- Use a SQL pool to analyze data and use a Spark pool to analyze data
   
 ## Architecture Diagram
 
