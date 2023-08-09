@@ -8,9 +8,8 @@ In this lab, you'll learn how to provision an Azure Stream Analytics job in your
 
 After you complete this lab, you will be able to:
 
-- Analyze streaming data
-- Explore the Azure resources
-- Use the resources to analyze streaming data
+- Create and explore Azure resources.
+- Use the resources to analyze streaming data.
     
 ## Architecture Diagram
 
