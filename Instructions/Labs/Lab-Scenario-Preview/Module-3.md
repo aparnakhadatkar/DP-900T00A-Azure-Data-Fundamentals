@@ -10,7 +10,7 @@ After you complete this lab, you will be able to:
 
 - Create a Cosmos DB account
 - Create a sample database
-- View and create items
+- View and create item
 - Query the database
   
 ## Architecture Diagram
