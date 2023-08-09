@@ -3,7 +3,7 @@
 In this exercise, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
 Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud shell environment for your Azure subscription.
     
-2.  Inside Azure Portal, use the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell, if prompted to select either Bash or PowerShell, select **Bash** and if you get **You have no storage mounted** click on **create storage**.The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+1.  Inside Azure Portal, use the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell, if prompted to select either Bash or PowerShell, select **Bash** and if you get **You have no storage mounted** click on **create storage**.The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
     
     
     ![Azure portal with a cloud shell pane](images/cloud-shell(1).png)
