@@ -4,7 +4,7 @@
 
 In this lab, you will learn how to provision an Azure SQL Database resource in your Azure subscription, and then use SQL to query the tables in a relational database.
 
-## Objectives
+## Objective
 
 After you complete this lab, you will be able to provision Azure relational database services
   
