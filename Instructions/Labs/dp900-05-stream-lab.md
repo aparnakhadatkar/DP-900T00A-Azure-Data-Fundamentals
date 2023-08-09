@@ -47,7 +47,7 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     4.  Creates a  _Azure Storage Account_, which will be used to store processed data.
     5.  Creates a  _Azure Stream Analytics_  job, which will process the incoming device data in real-time, and write the results to the storage account.
 
-## Explore the Azure resources
+### Task 2: Explore the Azure resources
 
 1.  In the  [Azure portal](https://portal.azure.com/), on the home page, select  **Resource groups**  to see the resource groups in your subscription. This should include the  ****learnxxxxxxxxxxxxxxxxx...**** resource group identified by the setup script.
     
@@ -64,7 +64,7 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
     -   The job has one  _input_ (Select **Inputs** under Job topology on the left hand pane)  named  **iotinput**, and one  _output_ (Select **Outputs** under Job topology on the left hand pane) named  **bloboutput**. These reference the IoT Hub and Storage account created by the setup script.
     -   The job has a  _query_(Select **Query** under Job topology on the left hand pane), which reads data from the  **iotinput**  input, and aggregates it by counting the number of messages processed every 10 seconds; writing the results to the  **bloboutput**  output.
 
-## Use the resources to analyze streaming data
+### Task 3:  Use the resources to analyze streaming data
 
 1.  At the top of the  **Overview**  page of the Stream Analytics job, select the  **▷ Start**  button, and then in the  **Start job**  pane, select  **Start**  to start the job.
     
