@@ -8,9 +8,8 @@ In this lab, you'll use Spark Structured Streaming and delta tables in Azure Syn
 
 After you complete this lab, you will be able to:
 
-- Create a Synapse Analytics workspace
-- Create a Spark pool
-- Explore stream processing
+- Create a Synapse Analytics workspace and a Spark pool.
+- Explore stream processing.
     
 ## Architecture Diagram
 
