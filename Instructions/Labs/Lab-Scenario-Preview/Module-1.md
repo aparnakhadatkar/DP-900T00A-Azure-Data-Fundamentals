@@ -6,10 +6,8 @@ In this lab, you will learn how to provision an Azure SQL Database resource in y
 
 ## Objectives
 
-After you complete this lab, you will be able to:
-
-- Provision a database service on Azure
-
+After you complete this lab, you will be able to provision Azure relational database services
+  
 ## Architecture Diagram
 
  ![](../images/sc900module1.png)  
