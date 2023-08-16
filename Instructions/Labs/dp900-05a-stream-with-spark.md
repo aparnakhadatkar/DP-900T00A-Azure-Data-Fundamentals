@@ -29,7 +29,7 @@ In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in 
     ![Synapse Studio](images/synapse-studio1.png)
     
  
- ### Task 2:Create a Spark pool
+ ### Task 2: Create a Spark pool
 
 To use Spark to process streaming data, you need to add a Spark pool to your Azure Synapse workspace.
 
@@ -44,7 +44,7 @@ To use Spark to process streaming data, you need to add a Spark pool to your Azu
    
    ![](images/DP900_lab5a_2.png)
 
-### Task 3:Explore stream processing
+### Task 3: Explore stream processing
 
 To explore stream processing with Spark, you'll use a notebook that contains Python code and notes to help you perform some basic stream processing with Spark Structured Streaming and delta tables.
 
