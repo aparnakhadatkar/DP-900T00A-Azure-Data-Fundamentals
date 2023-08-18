@@ -1,6 +1,18 @@
 # Lab 01a: Explore Azure Database for PostgreSQL
 
 In this exercise, you'll provision an Azure Database for PostgreSQL resources in your Azure subscription.
+## Objectives
+
+In this lab, you will complete the following task:
+
++ Task 1: Provision an Azure Database for PostgreSQL resource
+  
+## Estimated timing: 5 minutes
+
+## Architecture diagram
+
+![](../images/az900lab22.png)
+
 
 ### Exercise 1: Explore Azure Database for PostgreSQL
 
@@ -47,4 +59,8 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resources.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-**You have successfully completed the lab.**
+### Review
+In this lab, you have completed:
+- Provision an Azure Database for PostgreSQL resource
+  
+## You have successfully completed this lab.
