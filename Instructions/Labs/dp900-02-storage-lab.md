@@ -2,11 +2,25 @@
 
 In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
 
-## Explore Azure Storage
+## Objectives
 
-In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
+In this lab, you will complete the following task:
+
++ Task 1: Provision an Azure Storage account
++ Task 2: Explore blob storage
++ Task 3: Explore Azure Data Lake Storage Gen2
++ Task 4: Explore Azure Files
++ Task 5: Explore Azure Tables
+  
+## Estimated timing: 15 minutes
+
+## Architecture diagram
+
+![](../images/az900lab22.png)
 
 ## Exercise 1: Explore Azure Storage
+
+In this exercise you'll provision an Azure Storage account in your Azure subscription, and explore the various ways you can use it to store data.
 
 #### Task 1: Provision an Azure Storage account
 
@@ -187,4 +201,12 @@ Azure Tables provide a keyvalue store for applications that need to store data v
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed this lab.
+### Review
+In this lab, you have completed:
+- Provision an Azure Storage account
+- Explore blob storage
+- Explore Azure Data Lake Storage Gen2
+- Explore Azure Files
+- Explore Azure Tables
+  
+## You have successfully completed this lab.
