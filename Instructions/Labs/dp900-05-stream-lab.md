@@ -11,7 +11,7 @@ In this lab, you will complete the following tasks:
 + Task 2: Explore the Azure resources
 + Task 3: Use the resources to analyze streaming data
   
-## Estimated timing: 5 minutes
+## Estimated timing: 15 minutes
 
 ## Architecture diagram
 
