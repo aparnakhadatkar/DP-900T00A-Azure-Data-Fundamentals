@@ -2,16 +2,28 @@
 
 In this exercise, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
 Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud shell environment for your Azure subscription.
-    
-1.  Inside Azure Portal, use the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell, if prompted to select either Bash or PowerShell, select **Bash** and if you get **You have no storage mounted** click on **create storage**.The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
-    
-    
-    ![Azure portal with a cloud shell pane](images/cloud-shell(1).png)
-    
+
+ ## Objectives
+
+In this lab, you will complete the following tasks:
+
++ Task 1: Create Azure resources
++ Task 2: Explore the Azure resources
++ Task 3: Use the resources to analyze streaming data
+  
+## Estimated timing: 5 minutes
+
+## Architecture diagram
+
+![](../images/az900lab22.png)
 
 ## Exercise 1: Analyze streaming data
 
 ### Task 1: Create Azure resources
+
+1.  Inside Azure Portal, use the  **[>_]**  button to the right of the search bar at the top of the page to create a new Cloud Shell, if prompted to select either Bash or PowerShell, select **Bash** and if you get **You have no storage mounted** click on **create storage**.The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+     
+    ![Azure portal with a cloud shell pane](images/cloud-shell(1).png)
 
 1.  In the Azure Cloud Shell, enter the following command to download the files you'll need for this exercise.
     
@@ -120,4 +132,11 @@ Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud 
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed the lab.
+### Review
+In this lab, you have completed:
+- Create Azure resources
+- Explore the Azure resources
+- Use the resources to analyze streaming data
+  
+## You have successfully completed this lab.
+
