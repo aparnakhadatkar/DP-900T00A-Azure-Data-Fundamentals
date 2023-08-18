@@ -6,7 +6,7 @@ In this exercise, you'll learn how to provision an Azure Database for PostgreSQL
 
 ## Objective
 
-After you complete this lab, you will be able to provision Azure Database for PostgreSQL Flexible Server. 
+After you complete this lab, you will be able to provision Azure Database for PostgreSQL Flexible Server 
 
 ## Architecture Diagram
 
