@@ -5,11 +5,11 @@
     "BaseURL": "https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/tree/prod-new/Instructions/Labs",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/alwinvw23/CloudLabs/master/LabIntro.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/LabIntro.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod-new/Instructions/Labs/dp900-01-sql-lab.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Labs/dp900-01-sql-lab.md",
         "Order": 2
       }
 
