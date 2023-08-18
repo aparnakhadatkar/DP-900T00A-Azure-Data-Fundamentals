@@ -11,8 +11,7 @@ In this lab, you will complete the following task:
 
 ## Architecture diagram
 
-![](../images/az900lab22.png)
-
+![](images/sc900module1a.png)  
 
 ### Exercise 1: Explore Azure Database for PostgreSQL
 
