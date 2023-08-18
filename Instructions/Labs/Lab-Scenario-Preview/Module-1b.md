@@ -6,7 +6,7 @@ In this lab, you'll learn how to provision an Azure Database for MySQL resource 
 
 ## Objective
 
-After you complete this lab, you will be able to provision Azure Database for MYSQL Flexible Server. 
+After you complete this lab, you will be able to provision Azure Database for MYSQL Flexible Server 
 
 ## Architecture Diagram
 
