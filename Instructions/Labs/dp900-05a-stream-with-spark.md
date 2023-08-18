@@ -14,7 +14,7 @@ In this lab, you will complete the following tasks:
 
 ## Architecture diagram
 
-![](../images/az900lab22.png)
+![](images/dp900module(5a).png)
 
 ## Exercise 1: Provision a Synapse Analytics workspace and Spark Pool
 
