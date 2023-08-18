@@ -14,7 +14,7 @@ In this lab, you will complete the following tasks:
 
 ## Architecture diagram
 
-![](../images/az900lab22.png)
+![](images/sc900module6.png)
 
 ## Exercise 1: Visualize data with Power BI
 
