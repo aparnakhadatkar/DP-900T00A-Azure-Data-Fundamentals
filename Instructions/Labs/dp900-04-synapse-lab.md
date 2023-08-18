@@ -15,7 +15,7 @@ In this lab, you will complete the following tasks:
 
 ## Architecture diagram
 
-![](../images/az900lab22.png)
+![](images/dp900lab4.png)  
 
 ## Exercise 1: Provision an Azure Synapse Analytics workspace
 
