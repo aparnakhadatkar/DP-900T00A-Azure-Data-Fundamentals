@@ -12,7 +12,7 @@ In this lab, you will complete the following exercise:
 
 ## Architecture diagram
 
-![](../images/az900lab22.png)
+![](images/sc900module1b.png)  
 
 ### Exercise 1: Provision an Azure Database for MySQL resource
 
