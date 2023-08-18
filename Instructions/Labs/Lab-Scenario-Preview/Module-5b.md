@@ -8,10 +8,9 @@ In this lab, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
 After you complete this lab, you will be able to:
 
-- Create a Synapse Analytics workspace
-- Create a Data Explorer pool
-- Create a database and ingest data
-- Use Kusto query language to query the table in Synapse Studio
+- Create Synapse Analytics workspace and Data Explorer pool.
+- Create database and ingest data.
+- Use Kusto query language to query the table in Synapse Studio.
     
 ## Architecture Diagram
 

@@ -4,11 +4,9 @@
 
 In this lab, you'll learn how to provision an Azure Database for MySQL resource in your Azure subscription.
 
-## Objectives
+## Objective
 
-After you complete this lab, you will be able to:
-
-- Create Azure Database for MYSQL Flexible Server. 
+After you complete this lab, you will be able to provision Azure Database for MYSQL Flexible Server 
 
 ## Architecture Diagram
 

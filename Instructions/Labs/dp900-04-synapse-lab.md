@@ -2,6 +2,21 @@
 
 In this exercise, you'll use the already provisioned Azure Synapse Analytics workspace in your Azure subscription, to ingest and query data.
 
+## Objectives
+
+In this lab, you will complete the following tasks:
+
++ Task 1: Explore an Azure Synapse Analytics workspace
++ Task 2: Ingest data
++ Task 3: Use a SQL pool to analyze data
++ Task 4: Use a Spark pool to analyze data
+  
+## Estimated timing: 30 minutes
+
+## Architecture diagram
+
+![](images/dp900lab4.png)  
+
 ## Exercise 1: Provision an Azure Synapse Analytics workspace
 
 In this exercise, you'll use the Azure Synapse Analytics workspace to ingest and analyze some data.
@@ -306,5 +321,13 @@ While SQL is a common language for querying structured datasets, many data analy
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed this lab.
+### Review
+In this lab, you have completed:
+- Explore an Azure Synapse Analytics workspace
+- Ingest data
+- Use a SQL pool to analyze data
+- Use a Spark pool to analyze data
+  
+## You have successfully completed this lab.
+
 

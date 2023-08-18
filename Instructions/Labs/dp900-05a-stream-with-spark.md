@@ -2,6 +2,20 @@
 
 In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in Azure Synapse Analytics to process streaming data.
 
+## Objectives
+
+In this lab, you will complete the following tasks:
+
++ Task 1: Create a Synapse Analytics workspace
++ Task 2: Create a Spark pool
++ Task 3: Explore stream processing
+  
+## Estimated timing: 15 minutes
+
+## Architecture diagram
+
+![](images/dp900module(5a).png)
+
 ## Exercise 1: Provision a Synapse Analytics workspace and Spark Pool
 
 ### Task 1: Create a Synapse Analytics workspace
@@ -59,4 +73,11 @@ To explore stream processing with Spark, you'll use a notebook that contains Pyt
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed this lab.
+### Review
+In this lab, you have completed:
+- Create a Synapse Analytics workspace
+- Create a Spark pool
+- Explore stream processing
+  
+## You have successfully completed this lab.
+

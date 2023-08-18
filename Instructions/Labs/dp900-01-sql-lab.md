@@ -2,6 +2,18 @@
 
 In this exercise, you'll provision an Azure SQL Database resource in your Azure subscription, and then use SQL to query the tables in a relational database. 
 
+## Objectives
+
+In this lab, you will complete the following task:
+
++ Task 1: Provision an Azure SQL Database resource
+
+## Estimated timing: 15 minutes
+
+## Architecture diagram
+
+![](images/sc900module1.png)
+
 ### Exercise 1: Provision Azure relational database services
 
 In this exercise, you'll provision and test an Azure SQL Database resource.
@@ -83,11 +95,14 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 
 15. Close the query editor pane, discarding your edits.
   
-
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-**You have successfully completed the lab.**
+### Review
+In this lab, you have completed:
+- Provision an Azure SQL Database resource
+  
+## You have successfully completed this lab.

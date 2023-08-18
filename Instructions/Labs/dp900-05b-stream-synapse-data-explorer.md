@@ -3,6 +3,21 @@
 
 In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
+## Objectives
+
+In this lab, you will complete the following tasks:
+
++ Task 1: Create a Synapse Analytics workspace
++ Task 2: Create a Data Explorer pool
++ Task 3: Create a database and ingest data
++ Task 4: Use Kusto query language to query the table in Synapse Studio
+  
+## Estimated timing: 25 minutes
+
+## Architecture diagram
+
+![](images/dp900module(5b).png)
+
 ## Exercise 1: Provision a Synapse Analytics workspace and Data Explorer pool
 
 ### Task 1: Create a Synapse Analytics workspace
@@ -122,12 +137,18 @@ In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series 
 
 1. Close the KQL query tab, discarding your changes.
 
-    
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
- > - Hit the Validate button for the corresponding task.
- > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide
- > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+### Review
+In this lab, you have completed:
+- Create a Synapse Analytics workspace
+- Create a Data Explorer pool
+- Create a database and ingest data
+- Use Kusto query language to query the table in Synapse Studio
+  
+## You have successfully completed this lab.
 
-### You have successfully completed this lab.

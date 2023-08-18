@@ -2,6 +2,21 @@
 
 In this exercise, you'll provision an Azure Cosmos DB database in your Azure subscription, and explore the various ways you can use it to store non-relational data.
 
+## Objectives
+
+In this lab, you will complete the following tasks:
+
++ Task 1: Create a Cosmos DB account
++ Task 2: Create a sample database
++ Task 3: View and create items
++ Task 4: Query the database
+
+## Estimated timing: 15 minutes
+
+## Architecture diagram
+
+![](images/dp900lab3.png)
+
 ### Exercise 1: Explore Azure Cosmos DB
 
 To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
@@ -80,12 +95,19 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
     
     You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
     
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-**You have successfully completed the lab.**
 
+### Review
+In this lab, you have completed:
+- Create a Cosmos DB account
+- Create a sample database
+- View and create items
+- Query the database
+  
+## You have successfully completed this lab.
 
