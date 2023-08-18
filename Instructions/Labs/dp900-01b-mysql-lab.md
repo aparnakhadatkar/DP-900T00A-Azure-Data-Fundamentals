@@ -2,6 +2,18 @@
 
 In this exercise you'll provision an Azure Database for MySQL resource in your Azure subscription.
 
+## Objectives
+
+In this lab, you will complete the following exercise:
+
++ Task 1: Provision an Azure Database for MySQL resource
+  
+## Estimated timing: 5 minutes
+
+## Architecture diagram
+
+![](../images/az900lab22.png)
+
 ### Exercise 1: Provision an Azure Database for MySQL resource
 
 In this exercise, you'll provision an Azure Database for MySQL resource.
@@ -40,12 +52,11 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
 
 1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
 
-    ![Screenshot of the Azure portal showing the Azure Database for MySQL page.](images/DP-900-resource.png)
+   ![Screenshot of the Azure portal showing the Azure Database for MySQL page.](images/DP-900-resource.png)
     
    >**Note**: The deployment might take a minute or two.
 
 1. Review the options for managing your Azure Database for MySQL resource.
-
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
@@ -53,4 +64,8 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed the Lab.
+### Review
+In this lab, you have completed:
+- Provision an Azure Database for MySQL resource
+  
+## You have successfully completed this lab.
