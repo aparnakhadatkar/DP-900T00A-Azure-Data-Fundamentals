@@ -12,7 +12,7 @@ In this lab, you will complete the following tasks:
 + Task 3: Create a database and ingest data
 + Task 4: Use Kusto query language to query the table in Synapse Studio
   
-## Estimated timing: 25 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
