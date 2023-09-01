@@ -7,7 +7,7 @@ In this lab, you will complete the following task:
 
 + Task 1: Provision an Azure Database for PostgreSQL resource
   
-## Estimated timing: 5 minutes
+## Estimated timing: 15 minutes
 
 ## Architecture diagram
 
