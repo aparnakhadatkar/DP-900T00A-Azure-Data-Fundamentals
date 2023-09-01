@@ -8,7 +8,7 @@ In this lab, you will complete the following exercise:
 
 + Task 1: Provision an Azure Database for MySQL resource
   
-## Estimated timing: 5 minutes
+## Estimated timing: 15 minutes
 
 ## Architecture diagram
 
