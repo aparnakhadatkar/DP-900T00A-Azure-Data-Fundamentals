@@ -10,7 +10,7 @@ In this lab, you will complete the following tasks:
 + Task 2: Explore a data model
 + Task 2: Create a report
   
-## Estimated timing: 20 minutes
+## Estimated timing: 30 minutes
 
 ## Architecture diagram
 
