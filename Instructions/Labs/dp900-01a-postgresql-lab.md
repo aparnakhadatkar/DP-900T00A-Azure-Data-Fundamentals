@@ -3,7 +3,7 @@
 ## Lab scenario
 In this lab, you'll provision an Azure Database for PostgreSQL resources in your Azure subscription.
 
-## Lab objectives
+## Lab objective
 
 In this lab, you will perform:
 
