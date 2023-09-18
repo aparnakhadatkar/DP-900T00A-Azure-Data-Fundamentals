@@ -110,5 +110,5 @@ In this lab, you have completed:
 - View and create items
 - Query the database
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
 
