@@ -64,4 +64,4 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resources.
 In this lab, you have completed:
 - Provision an Azure Database for PostgreSQL resource
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
