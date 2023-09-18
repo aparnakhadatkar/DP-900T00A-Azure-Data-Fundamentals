@@ -1,11 +1,12 @@
 
 # Lab 05b: Explore Azure Synapse Data Explorer
 
-In this exercise, you'll use Azure Synapse Data Explorer to analyze time-series data.
+## Lab scenario
+In this lab, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
-## Objectives
+## Lab objectives
 
-In this lab, you will complete the following tasks:
+In this lab, you will perform the following tasks:
 
 + Task 1: Create a Synapse Analytics workspace
 + Task 2: Create a Data Explorer pool
@@ -143,12 +144,12 @@ In this lab, you will complete the following tasks:
    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Review
+## Review
 In this lab, you have completed:
 - Create a Synapse Analytics workspace
 - Create a Data Explorer pool
 - Create a database and ingest data
 - Use Kusto query language to query the table in Synapse Studio
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
 

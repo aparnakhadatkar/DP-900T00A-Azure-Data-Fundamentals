@@ -1,9 +1,10 @@
 # Lab 05: Explore Azure Stream Analytics
 
-In this exercise, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
+## Lab scenario
+In this lab, you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to process a stream of real-time data.
 Before starting the exercise on Microsoft Learn, you'll need to prepare a cloud shell environment for your Azure subscription.
 
- ## Objectives
+## Lab objectives
 
 In this lab, you will complete the following tasks:
 
@@ -33,7 +34,7 @@ In this lab, you will complete the following tasks:
     
     ```
     
-2.  Wait for the command to complete, and then enter the following command to change the current directory to the folder containing the files for this exercise.
+1.  Wait for the command to complete, and then enter the following command to change the current directory to the folder containing the files for this exercise.
     
 
     
@@ -42,7 +43,7 @@ In this lab, you will complete the following tasks:
     
     ```
     
-3.  Enter the following command to run a script that creates the Azure resources you will need in this exercise.
+1.  Enter the following command to run a script that creates the Azure resources you will need in this exercise.
     
 
     
@@ -132,11 +133,11 @@ In this lab, you will complete the following tasks:
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Review
+## Review
 In this lab, you have completed:
 - Create Azure resources
 - Explore the Azure resources
 - Use the resources to analyze streaming data
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
 
