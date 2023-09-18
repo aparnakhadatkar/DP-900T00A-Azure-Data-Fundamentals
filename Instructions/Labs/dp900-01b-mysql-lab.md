@@ -69,4 +69,4 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
 In this lab, you have completed:
 - Provision an Azure Database for MySQL resource
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
