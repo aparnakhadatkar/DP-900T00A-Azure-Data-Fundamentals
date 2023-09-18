@@ -202,7 +202,7 @@ Azure Tables provide a keyvalue store for applications that need to store data v
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Review
+## Review
 In this lab, you have completed:
 - Provision an Azure Storage account
 - Explore blob storage
