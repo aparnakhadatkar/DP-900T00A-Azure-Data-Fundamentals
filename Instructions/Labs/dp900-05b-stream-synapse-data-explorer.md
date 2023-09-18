@@ -1,9 +1,10 @@
 
 # Lab 05b: Explore Azure Synapse Data Explorer
 
+## Lab scenario
 In this lab, you'll use Azure Synapse Data Explorer to analyze time-series data.
 
-## Objectives
+## Lab objectives
 
 In this lab, you will perform the following tasks:
 
