@@ -107,4 +107,4 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
 In this lab, you have completed:
 - Provision an Azure SQL Database resource
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
