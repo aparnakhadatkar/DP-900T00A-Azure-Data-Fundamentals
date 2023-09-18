@@ -151,5 +151,5 @@ In this lab, you have completed:
 - Create a database and ingest data
 - Use Kusto query language to query the table in Synapse Studio
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
 
