@@ -1,9 +1,11 @@
 # Lab 01a: Explore Azure Database for PostgreSQL
 
-In this exercise, you'll provision an Azure Database for PostgreSQL resources in your Azure subscription.
-## Objectives
+## Lab scenario
+In this lab, you'll provision an Azure Database for PostgreSQL resources in your Azure subscription.
 
-In this lab, you will complete the following task:
+## Lab objectives
+
+In this lab, you will perform:
 
 + Task 1: Provision an Azure Database for PostgreSQL resource
   
