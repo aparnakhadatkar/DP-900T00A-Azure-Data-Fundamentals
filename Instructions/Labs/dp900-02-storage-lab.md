@@ -210,4 +210,4 @@ In this lab, you have completed:
 - Explore Azure Files
 - Explore Azure Tables
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
