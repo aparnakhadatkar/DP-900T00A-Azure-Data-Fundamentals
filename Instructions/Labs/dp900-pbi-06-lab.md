@@ -163,7 +163,7 @@ Now you're almost ready to create a report. First you need to check some setting
      > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Review
+## Review
 In this lab, you have completed:
 - Import data
 - Explore a data model
