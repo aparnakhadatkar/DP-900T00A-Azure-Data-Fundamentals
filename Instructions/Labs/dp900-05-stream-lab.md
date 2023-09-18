@@ -139,5 +139,5 @@ In this lab, you have completed:
 - Explore the Azure resources
 - Use the resources to analyze streaming data
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
 
