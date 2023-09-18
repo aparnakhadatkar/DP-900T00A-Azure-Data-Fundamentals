@@ -328,4 +328,4 @@ In this lab, you have completed:
 - Use a SQL pool to analyze data
 - Use a Spark pool to analyze data
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
