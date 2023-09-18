@@ -4,7 +4,7 @@
 
 In this lab, you'll provision an Azure SQL Database resource in your Azure subscription, and then use SQL to query the tables in a relational database. 
 
-## Lab objectives
+## Lab objective
 
 In this lab, you will perform:
 
