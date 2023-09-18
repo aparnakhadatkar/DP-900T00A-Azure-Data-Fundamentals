@@ -169,5 +169,5 @@ In this lab, you have completed:
 - Explore a data model
 - Create a report
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
 
