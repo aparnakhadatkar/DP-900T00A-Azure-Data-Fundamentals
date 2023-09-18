@@ -1,10 +1,11 @@
 # Lab 01b: Explore Azure Database for MySQL
 
-In this exercise you'll provision an Azure Database for MySQL resource in your Azure subscription.
+## Lab scenario
+In this lab, you'll provision an Azure Database for MySQL resource in your Azure subscription.
 
-## Objectives
+## Lab objective
 
-In this lab, you will complete the following exercise:
+In this lab, you will perform:
 
 + Task 1: Provision an Azure Database for MySQL resource
   
