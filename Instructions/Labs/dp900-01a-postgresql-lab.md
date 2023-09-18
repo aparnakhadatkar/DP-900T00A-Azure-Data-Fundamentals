@@ -60,7 +60,7 @@ In this exercise, you'll provision an Azure Database for PostgreSQL resources.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Review
+## Review
 In this lab, you have completed:
 - Provision an Azure Database for PostgreSQL resource
   
