@@ -80,5 +80,5 @@ In this lab, you have completed:
 - Create a Spark pool
 - Explore stream processing
   
-## You have successfully completed this lab.
+## You have successfully completed this lab
 
