@@ -22,19 +22,22 @@ In this lab, you will perform the following tasks:
 ### Task 1: Create a Synapse Analytics workspace
     
 1. On the Azure portal **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
+
 1. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
-        - **Resource group**: *Select existing resource group, like "DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>"*
+    - **Resource group**: *Select existing resource group, like "DP-900-Module-5-<inject key="DeploymentID" enableCopy="false"/>"*
     - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<inject key="DeploymentID" enableCopy="false"/>"*.
     - **Region**: *Select any available location*.
     - **Select Data Lake Storage Gen 2**: From subscription
-        - **Account name**: *Create a new account with a unique name, for example "datalake<inject key="DeploymentID" enableCopy="false"/>"*.
-        - **File system name**: *Create a new file system with a unique name, for example "fs<inject key="DeploymentID" enableCopy="false"/>"*.
+    - **Account name**: *Create a new account with a unique name, for example "datalake<inject key="DeploymentID" enableCopy="false"/>"*.
+    - **File system name**: *Create a new file system with a unique name, for example "fs<inject key="DeploymentID" enableCopy="false"/>"*.
     
     ![](images/DP900_lab5a_1.png)
     
 1. When you've entered these details, select **Review + create**, and then select **Create** to create the workspace.
+
 1. Wait for the workspace to be created - this may take five minutes or so.
+
 1. When deployment is complete, go to the resource group that was created and notice that it contains your Synapse Analytics workspace and a Data Lake storage account.
    
 1.  Select your Synapse workspace, and in its  **Overview**  page, scroll down to the  **Open Synapse Studio**  card, select  **Open**  to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
@@ -49,6 +52,7 @@ In this lab, you will perform the following tasks:
 To use Spark to process streaming data, you need to add a Spark pool to your Azure Synapse workspace.
 
 1. In Synapse Studio, select the **Manage** page.
+
 1. Select the **Apache Spark pools** tab, and then use the **&#65291; New** icon to create a new Spark pool with the following settings:
     - **Apache Spark pool name**: "sparkpool<inject key="DeploymentID" enableCopy="false"/>"
     - **Node size family**: Memory Optimized
@@ -64,8 +68,11 @@ To use Spark to process streaming data, you need to add a Spark pool to your Azu
 To explore stream processing with Spark, you'll use a notebook that contains Python code and notes to help you perform some basic stream processing with Spark Structured Streaming and delta tables.
 
 1. Download the [Structured Streaming and Delta Tables.ipynb](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/Spark%20Structured%20Streaming%20and%20Delta%20Tables.ipynb) notebook to the lab (if the notebook is opened as a text file in your browser, save it to a local folder then open the downloaded file in **File Explorer** then click on **View** check the box of **File name extensions** then rename it as **Structured Streaming and Delta Tables.ipynb** if .txt extension is there remove it)
+
 1. In Synapse Studio, select the **Develop** page.
+
 1. On the **&#65291;** menu, select **&#8612; Import**, and select the **Structured Streaming and Delta Tables.ipynb** file in the file explorer.
+
 1. Follow the instructions in the notebook to attach it to your Spark pool and run the code cells it contains to explore various ways to use Spark for stream processing.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
