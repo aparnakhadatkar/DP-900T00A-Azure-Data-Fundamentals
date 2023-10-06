@@ -1,4 +1,4 @@
-# Lab 04: Explore Azure Synapse Analytics
+# Lab 04: Explore data analytics in Azure with Azure Synapse Analytics
 
 ## Lab scenario
 
