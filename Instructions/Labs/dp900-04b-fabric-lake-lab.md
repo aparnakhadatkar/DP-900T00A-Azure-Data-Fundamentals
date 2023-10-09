@@ -24,8 +24,10 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com).
 
     >**Note:** If it asks you for the Username enter <inject key="AzureAdUserEmail"></inject>, and password enter <inject key="AzureAdUserPassword"></inject>.
+
+    >**Note:** If **You've selected Microsoft Fabric free** page appears, then select **Continue**. In **Business phone number** provide any number, and select **Get Started**.
     
-3. In the menu bar on the left, select **My workspaces**.
+2. In the menu bar on the left, select **My workspaces**.
 
 ## Exercise 2: Create a lakehouse
 
@@ -79,6 +81,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     >**Note:** When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
 
 1. In the hub menu bar on the left, select your lakehouse.
+
 1. On the **Home** page, in the **Lakehouse explorer** pane, expand **Tables** and verify that the **dimension_stock_item** table has been created.
 
     >**Note**: If the new table is listed as *unidentified*, use the **Refresh** button in the lakehouse toolbar to refresh the view.
