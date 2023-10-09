@@ -9,7 +9,7 @@ In this exercise you'll explore data ingestion and analytics in a Microsoft Fabr
 
 In this lab, you will perform:
 
-+ Exercise 1: Create a workspace
++ Exercise 1: Select the workspace
 + Exercise 2: Create a lakehouse
 + Exercise 3: Ingest data
 + Exercise 4: Query data in a lakehouse
@@ -17,7 +17,7 @@ In this lab, you will perform:
 
 ## Estimated Timing: 25 minutes
 
-## Exercise 1: Create a workspace
+## Exercise 1: Select the workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -134,7 +134,7 @@ Microsoft Fabric lakehouses organize all tables in a data model, which you can u
 
 ## Review
 In this lab, you have completed:
-- Created a workspace
+- Selected the workspace
 - Created a lakehouse
 - Ingested data
 - Queried data in a lakehouse
