@@ -1,4 +1,4 @@
-# Module 04-B: Explore data analytics in Microsoft Fabric
+# Module 04b: Explore data analytics in Microsoft Fabric
 
 ## Lab scenario
 In this exercise you'll explore data ingestion and analytics in a Microsoft Fabric Lakehouse.
