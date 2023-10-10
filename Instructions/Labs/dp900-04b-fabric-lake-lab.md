@@ -24,7 +24,9 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com). Enter the username <inject key="AzureAdUserEmail"></inject>, and password enter <inject key="AzureAdUserPassword"></inject>. Then on the **Microsoft Fabric**, select **Power BI**.
 
     >**Note:** If **You've selected Microsoft Fabric free** page appears, then select **Continue**. In **Business phone number** provide any number, and select **Get Started**.
-    
+
+    ![](images//msfabric.png)
+   
 2. In the menu bar on the left, select **My workspaces**.
 
 ## Exercise 2: Create a lakehouse
