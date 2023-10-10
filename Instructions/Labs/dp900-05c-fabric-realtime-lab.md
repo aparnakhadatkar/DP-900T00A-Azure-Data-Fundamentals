@@ -7,14 +7,14 @@ In this exercise you'll explore real-time analytics in Microsoft Fabric.
 
 In this lab, you will perform:
 
-+ Exercise 1: Select the workspace
-+ Exercise 2: Create a KQL database
-+ Exercise 3: Create an eventstream
-+ Exercise 4: Query real-time data in a KQL database
++ Task 1: Select the workspace
++ Task 2: Create a KQL database
++ Task 3: Create an eventstream
++ Task 4: Query real-time data in a KQL database
 
 ## Estimated timing: 25 minutes
 
-## Exercise 1: Select the workspace
+## Task 1: Select the workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -30,7 +30,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 2. In the menu bar on the left, select **My workspaces**.
 
-## Exercise 2: Create a KQL database
+## Task 2: Create a KQL database
 
 Now that you have a workspace, you can create a KQL database to store real-time data.
 
@@ -50,7 +50,7 @@ Now that you have a workspace, you can create a KQL database to store real-time 
 
     Currently, there are no tables in the database.
 
-## Exercise 3: Create an eventstream
+## Task 3: Create an eventstream
 
 Eventstreams provide a scalable and flexible way to ingest real-time data from a streaming source.
 
@@ -93,7 +93,7 @@ Eventstreams provide a scalable and flexible way to ingest real-time data from a
 
     ![Screenshot of a completed Eventstream.](./images/complete-eventstream.png)
 
-## Exercise 4: Query real-time data in a KQL database
+## Task 4: Query real-time data in a KQL database
 
 Your eventstream continuously populates a table in your KQL database, enabling you to query the real-time data.
 
