@@ -22,6 +22,10 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com). Enter the username <inject key="AzureAdUserEmail"></inject>, and password enter <inject key="AzureAdUserPassword"></inject>. Then on the **Microsoft Fabric**, select **Power BI**.
 
+    >**Note:** If you are getting popup **save password**, then select **Save & Turn on** option.
+   > In the pop-up for *Help us protect your account*, select **Skip for now (14 days until this is required)**.
+   > If you see the pop-up **Stay Signed in?**, click Yes
+    
     >**Note:** If **You've selected Microsoft Fabric free** page appears, then select **Continue**. In **Business phone number** provide any number, and select **Get Started**.
 
      ![](images//msfabric.png)
