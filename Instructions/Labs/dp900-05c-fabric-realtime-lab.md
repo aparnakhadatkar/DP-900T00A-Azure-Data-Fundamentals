@@ -16,6 +16,10 @@ In this lab, you will perform:
 
 ## Estimated timing: 25 minutes
 
+## Architecture diagram
+
+![](images/new2.png)
+
 ## Exercise 1: Select the workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
