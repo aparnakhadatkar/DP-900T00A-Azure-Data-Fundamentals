@@ -16,6 +16,10 @@ In this lab, you will perform:
 
 ## Task 1: Select the workspace
 
+## Architecture diagram
+
+![](images/new2.png)
+
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
 1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com). Enter the username <inject key="AzureAdUserEmail"></inject>, and password enter <inject key="AzureAdUserPassword"></inject>. Then on the **Microsoft Fabric**, select **Power BI**.

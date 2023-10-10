@@ -1,4 +1,4 @@
-# Module 04-B: Explore data analytics in Microsoft Fabric
+# Module 04b: Explore data analytics in Microsoft Fabric
 
 ## Lab scenario
 In this exercise you'll explore data ingestion and analytics in a Microsoft Fabric Lakehouse.
@@ -16,6 +16,10 @@ In this lab, you will perform:
 ## Estimated Timing: 25 minutes
 
 ## Task 1: Select the workspace
+
+## Architecture diagram
+
+ ![](images/new1.png)  
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
