@@ -7,15 +7,15 @@ In this exercise you'll explore data ingestion and analytics in a Microsoft Fabr
 
 In this lab, you will perform:
 
-+ Exercise 1: Select the workspace
-+ Exercise 2: Create a lakehouse
-+ Exercise 3: Ingest data
-+ Exercise 4: Query data in a lakehouse
-+ Exercise 5: Visualize data in a lakehouse
++ Task 1: Select the workspace
++ Task 2: Create a lakehouse
++ Task 3: Ingest data
++ Task 4: Query data in a lakehouse
++ Task 5: Visualize data in a lakehouse
 
 ## Estimated Timing: 25 minutes
 
-## Exercise 1: Select the workspace
+## Task 1: Select the workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
@@ -31,7 +31,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
    
 1. In the menu bar on the left, select **My workspaces**.
 
-## Exercise 2: Create a lakehouse
+## Task 2: Create a lakehouse
 
 Now that you have a workspace, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse for your data files.
 
@@ -53,7 +53,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     
       >**Note:** Currently, there are no tables or files in the lakehouse.
 
-## Exercise 3: Ingest data
+## Task 3: Ingest data
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
 
@@ -92,7 +92,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
     ![Screenshot of the dimension_stock_item table.](./images/dimProduct.png)
 
-## Exercise 4: Query data in a lakehouse
+## Task 4: Query data in a lakehouse
 
 Now that you have ingested data into a table in the lakehouse, you can use SQL to query it.
 
@@ -112,7 +112,7 @@ Now that you have ingested data into a table in the lakehouse, you can use SQL t
 
     ![Screenshot of a SQL query.](./images/sql-query.png)
 
-## Exercise 5: Visualize data in a lakehouse
+## Task 5: Visualize data in a lakehouse
 
 Microsoft Fabric lakehouses organize all tables in a data model, which you can use to create visualizations and reports.
 
