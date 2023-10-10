@@ -3,8 +3,6 @@
 ## Lab scenario
 In this exercise you'll explore data ingestion and analytics in a Microsoft Fabric Lakehouse.
 
-> **Note**: You'll need a Microsoft Fabric license to complete this exercise. See [Getting started with Fabric](https://learn.microsoft.com/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license. You will need a Microsoft *school* or *work* account to do this. If you don't have one, you can [sign up for a trial of Microsoft Office 365 E3 or higher](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans).
-
 ## Lab Objectives
 
 In this lab, you will perform:
