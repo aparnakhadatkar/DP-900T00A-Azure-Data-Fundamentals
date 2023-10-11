@@ -7,7 +7,7 @@ In this exercise you'll explore data ingestion and analytics in a Microsoft Fabr
 
 In this lab, you will perform:
 
-+ Task 1: Select the workspace
++ Task 1: Create the workspace
 + Task 2: Create a lakehouse
 + Task 3: Ingest data
 + Task 4: Query data in a lakehouse
@@ -15,25 +15,45 @@ In this lab, you will perform:
 
 ## Estimated Timing: 25 minutes
 
-## Task 1: Select the workspace
-
 ## Architecture diagram
 
  ![](images/new1.png)  
 
+## Task 1: Create the workspace
+
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com). Enter the username <inject key="AzureAdUserEmail"></inject>, and password enter <inject key="AzureAdUserPassword"></inject>. Then on the **Microsoft Fabric**, select **Power BI**.
+1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com).
 
-   >**Note:** If you are getting popup **save password**, then select **Save & Turn on** option.
-   > In the pop-up for *Help us protect your account*, select **Skip for now (14 days until this is required)**.
+1. Enter the email <inject key="AzureAdUserEmail"></inject> in the **Email** section, and select **Submit**.
+
+    ![Screenshot of the experience switcher menu.](./images/DP-900-email.png)
+
+1. On the **You've selected Microsoft Fabric free** page, select **Sign-In**. Enter the Password: <inject key="AzureAdUserPassword"></inject>
+
+   ![Screenshot of the experience switcher menu.](./images/DP-900-signin.png)
+   
+    >**Note:** If you see the pop-up **Action Required**, select **Ask later**..
    > If you see the pop-up **Stay Signed in?**, click Yes
-   
-    >**Note:** If **You've selected Microsoft Fabric free** page appears, then select **Continue**. In **Business phone number** provide any number, and select **Get Started**.
 
-    ![](images//msfabric.png)
-   
+1.  In **Business phone number** provide any number (rest keep everything as default), and select **Get Started**.
+
+1. On the **Power BI** home page, select the **Account manager for ODL_User <inject key="DeploymentID" enableCopy="false"/>**, select **Start trial** option.
+
+   ![](images//DP-900-accountmanager.png)
+
+   ![](images//DP-900-trial2.png)
+
+1. If prompted, agree to the terms and then select **Start trial**.
+
+1. Now it will given you an option, to select **Fabric home page** or you want to be on the **Current page**, select **Fabric home page**.
+
+1. On  **Microsoft Fabric** home page, select **Power BI**.
+
+   ![](images//msfabric.png)
+
 1. In the menu bar on the left, select **My workspaces**.
+
 
 ## Task 2: Create a lakehouse
 
