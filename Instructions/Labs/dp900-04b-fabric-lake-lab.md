@@ -77,6 +77,13 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
     
       >**Note:** Currently, there are no tables or files in the lakehouse.
 
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+
 ## Task 3: Ingest data
 
 A simple way to ingest data is to use a **Copy Data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
@@ -111,10 +118,6 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 1. On the **Home** page, in the **Lakehouse explorer** pane, expand **Tables** and verify that the **dimension_stock_item** table has been created.
 
     >**Note**: If the new table is listed as *unidentified*, use the **Refresh** button in the lakehouse toolbar to refresh the view.
-
-1. Select the **dimension_stock_item** table to view its contents.
-
-    ![Screenshot of the dimension_stock_item table.](./images/dimProduct.png)
 
 ## Task 4: Query data in a lakehouse
 
@@ -160,6 +163,13 @@ Microsoft Fabric lakehouses organize all tables in a data model, which you can u
 1. On the **File** menu, select **Save** to save the report as **Brand Quantity Report** in your Fabric workspace.
 
     You can now close the browser tab contaning the report to return to your lakehouse. You can find the report in the page for your workspace in the Microsoft Fabric portal.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
 ## Review
 In this lab, you have completed:
