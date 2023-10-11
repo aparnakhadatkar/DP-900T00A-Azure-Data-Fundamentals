@@ -65,7 +65,7 @@ Now that you have a workspace, it's time to switch to the *Data engineering* exp
 
     >**Note:** The data engineering home page includes tiles to create commonly used data engineering assets.
 
-2. In the **Data engineering** home page, select **Lakehouse(Preview). On the **New Lakehouse** page, enter the name of your choice, and select **Create**.
+2. In the **Data engineering** home page, select **Lakehouse(Preview)**. On the **New Lakehouse** page, enter the name of your choice, and select **Create**.
 
    ![Screenshot of a new lakehouse.](./images/DP-900-lakehouse.png)
 
