@@ -17,7 +17,7 @@ In this lab, you will perform:
 
 ## Architecture diagram
 
- ![](images/new1.png)  
+ ![](images/dp900-1.png)  
 
 ## Task 1: Create the workspace
 
