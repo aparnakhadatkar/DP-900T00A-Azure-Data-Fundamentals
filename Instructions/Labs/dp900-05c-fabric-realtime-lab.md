@@ -22,36 +22,17 @@ In this lab, you will perform:
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com).
-
-1. Enter the email <inject key="AzureAdUserEmail"></inject> in the **Email** section, and select **Submit**.
-
-    ![Screenshot of the experience switcher menu.](./images/DP-900-email.png)
-
-1. On the **You've selected Microsoft Fabric free** page, select **Sign-In**. Enter the Password: <inject key="AzureAdUserPassword"></inject>
-
-   ![Screenshot of the experience switcher menu.](./images/DP-900-signin.png)
-   
-    >**Note:** If you see the pop-up **Action Required**, select **Ask later**..
-   > If you see the pop-up **Stay Signed in?**, click Yes
-
-1.  In **Business phone number** provide any number (rest keep everything as default), and select **Get Started**.
-
-1. On the **Power BI** home page, select the **Account manager for ODL_User <inject key="DeploymentID" enableCopy="false"/>**, select **Start trial** option.
-
-   ![](images//DP-900-accountmanager.png)
-
-   ![](images//DP-900-trial2.png)
-
-1. If prompted, agree to the terms and then select **Start trial**.
-
-1. Now it will given you an option, to select **Fabric home page** or you want to be on the **Current page**, select **Fabric home page**.
-
 1. On  **Microsoft Fabric** home page, select **Power BI**.
 
-   ![](images//msfabric.png)
+    ![](images//msfabric.png)
 
-1. In the menu bar on the left, select **My workspaces**.
+1. In the menu bar on the left, select Workspaces (the icon looks similar to 🗇). Select +New Workspace.
+   
+1. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (Trial, Premium, or Fabric), and click on Apply.
+
+1. When your new workspace opens, it should be empty.
+
+   ![](images//new-workspace-u.png)
 
 ## Task 2: Create a KQL database
 
@@ -148,7 +129,7 @@ Your eventstream continuously populates a table in your KQL database, enabling y
 
 ## Review
 In this lab, you have completed:
-- Selected the workspace
+- Created the workspace
 - Created a KQL database
 - Created an eventstream
 - Queried real-time data in a KQL database
