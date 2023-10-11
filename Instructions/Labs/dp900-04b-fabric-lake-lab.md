@@ -1,4 +1,4 @@
-![image](https://github.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/assets/27498287/532ce974-8e37-467e-a6bc-4830ef18edc3)# Module 04b: Explore data analytics in Microsoft Fabric
+# Module 04b: Explore data analytics in Microsoft Fabric
 
 ## Lab scenario
 In this exercise you'll explore data ingestion and analytics in a Microsoft Fabric Lakehouse.
