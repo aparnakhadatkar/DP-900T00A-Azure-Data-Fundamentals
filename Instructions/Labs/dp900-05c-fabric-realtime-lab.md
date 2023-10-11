@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ## Architecture diagram
 
-![](images/new2.png)
+![](images/2.png)
 
 ## Exercise 1: Select the workspace
 
