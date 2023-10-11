@@ -19,7 +19,7 @@ In this lab, you will perform:
 
 ## Architecture diagram
 
- ![](images/1.png)  
+ ![](images/dp900-1.png)  
 
 ## Exercise 1: Select the workspace
 
