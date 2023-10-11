@@ -7,7 +7,7 @@ In this exercise you'll explore real-time analytics in Microsoft Fabric.
 
 In this lab, you will perform:
 
-+ Task 1: Select the workspace
++ Task 1: Create the workspace
 + Task 2: Create a KQL database
 + Task 3: Create an eventstream
 + Task 4: Query real-time data in a KQL database
@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ![](images/new2.png)
 
-## Task 1: Select the workspace
+## Task 1: Create the workspace
 
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
