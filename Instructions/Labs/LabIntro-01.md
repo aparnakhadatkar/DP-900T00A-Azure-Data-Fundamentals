@@ -37,5 +37,10 @@
 
 1. If prompted, agree to the terms and then select **Start trial**.
 
+     ![](images//start-trial.png)
+
 1. Now it will given you an option, to select **Fabric home page** or you want to be on the **Current page**, select **Fabric home page**.
+   
+     ![](images//fabrichomepage.png)
+
 
