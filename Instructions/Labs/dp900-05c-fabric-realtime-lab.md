@@ -14,25 +14,44 @@ In this lab, you will perform:
 
 ## Estimated timing: 25 minutes
 
-## Task 1: Select the workspace
-
 ## Architecture diagram
 
 ![](images/new2.png)
 
+## Task 1: Select the workspace
+
 Before working with data in Fabric, create a workspace with the Fabric trial enabled.
 
-1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com). Enter the username <inject key="AzureAdUserEmail"></inject>, and password enter <inject key="AzureAdUserPassword"></inject>. Then on the **Microsoft Fabric**, select **Power BI**.
+1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com).
 
-    >**Note:** If you are getting popup **save password**, then select **Save & Turn on** option.
-   > In the pop-up for *Help us protect your account*, select **Skip for now (14 days until this is required)**.
+1. Enter the email <inject key="AzureAdUserEmail"></inject> in the **Email** section, and select **Submit**.
+
+    ![Screenshot of the experience switcher menu.](./images/DP-900-email.png)
+
+1. On the **You've selected Microsoft Fabric free** page, select **Sign-In**. Enter the Password: <inject key="AzureAdUserPassword"></inject>
+
+   ![Screenshot of the experience switcher menu.](./images/DP-900-signin.png)
+   
+    >**Note:** If you see the pop-up **Action Required**, select **Ask later**..
    > If you see the pop-up **Stay Signed in?**, click Yes
-    
-    >**Note:** If **You've selected Microsoft Fabric free** page appears, then select **Continue**. In **Business phone number** provide any number, and select **Get Started**.
 
-     ![](images//msfabric.png)
+1.  In **Business phone number** provide any number (rest keep everything as default), and select **Get Started**.
 
-2. In the menu bar on the left, select **My workspaces**.
+1. On the **Power BI** home page, select the **Account manager for ODL_User <inject key="DeploymentID" enableCopy="false"/>**, select **Start trial** option.
+
+   ![](images//DP-900-accountmanager.png)
+
+   ![](images//DP-900-trial2.png)
+
+1. If prompted, agree to the terms and then select **Start trial**.
+
+1. Now it will given you an option, to select **Fabric home page** or you want to be on the **Current page**, select **Fabric home page**.
+
+1. On  **Microsoft Fabric** home page, select **Power BI**.
+
+   ![](images//msfabric.png)
+
+1. In the menu bar on the left, select **My workspaces**.
 
 ## Task 2: Create a KQL database
 
@@ -46,11 +65,13 @@ Now that you have a workspace, you can create a KQL database to store real-time 
 
 2. In the real time analytics home page, select **KQL Database (Preview)**, and create a new **KQL Database** with a name of your choice.
 
+   >**Note:** If **Upgrade to a free Microsoft Fabric (preview) trial** pop-ups, select **Upgrade**.
+   
+   >**Note:**  on the **Successfully upgraded to a free Microsoft Fabric (preview) trial** page, select **OK**.
+
     After a minute or so, a new KQL database will be created:
 
     ![Screenshot of a new KQL database.](./images/kql-database.png)
-
-    >**Note:**  on the **Successfully upgraded to a free Microsoft Fabric (preview) trial** page, select **OK**.
 
     Currently, there are no tables in the database.
 
@@ -68,7 +89,7 @@ Eventstreams provide a scalable and flexible way to ingest real-time data from a
 
     The visual designer canvas shows a source that connects to your eventstream, which in turn is connected to a destination.
 
-1. On the designer canvas, select the **New source** drop-downlist, select **Sample data**. Then in the **Sample data** pane, specify the following configurations,
+1. On the designer canvas, select the **New source** drop-down, select **Sample data**. Then in the **Sample data** pane, specify the following configurations,
 
    - Source name: **taxis** 
    - Sample data: **Yellow Taxi**
