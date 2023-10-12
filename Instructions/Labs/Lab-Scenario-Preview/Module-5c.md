@@ -8,7 +8,7 @@ In this lab, you'll explore real-time analytics in Microsoft Fabric.
 
 After you complete this lab, you will be able to:
 
-+ Select the workspace
++ Create the workspace
 + Create a KQL database
 + Create an eventstream
 + Query real-time data in a KQL database
