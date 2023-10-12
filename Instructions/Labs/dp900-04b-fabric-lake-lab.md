@@ -146,28 +146,15 @@ Microsoft Fabric lakehouses organize all tables in a data model, which you can u
 
     You can now close the browser tab contaning the report to return to your lakehouse. You can find the report in the page for your workspace in the Microsoft Fabric portal.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-
-1. Code Block Inject Key test
-
-   ```
-   Connect-AzAccount
-   $securePassword = $password | convertto-securestring -AsPlainText -Force
-   $UserCredential = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $userName, <inject key="LabVM Admin Username" />
-   Login-AzAccount -Credential <inject key="AzureAdUserEmail" />
-   $context =  Select-AzSubscription -SubscriptionId jumpvm-<inject key="DeploymentID" />
-   
-   
-   ```
-
 ## Review
 In this lab, you have completed:
-- Selected the workspace
+- Create the workspace
 - Created a lakehouse
 - Ingested data
 - Queried data in a lakehouse
