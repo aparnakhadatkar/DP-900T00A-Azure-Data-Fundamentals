@@ -28,7 +28,7 @@ Before working with data in Fabric, create a workspace with the Fabric trial ena
 
 1. In the menu bar on the left, select Workspaces (the icon looks similar to 🗇). Select +New Workspace.
    
-1. Create a new workspace with a name of your choice, select a licensing mode that includes Fabric capacity (Trial, Premium, or Fabric), and click on Apply.
+1. Create a new workspace with a name **Fabricworkspace<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. When your new workspace opens, it should be empty.
 
