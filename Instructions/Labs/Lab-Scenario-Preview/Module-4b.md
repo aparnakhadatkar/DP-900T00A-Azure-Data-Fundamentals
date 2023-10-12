@@ -8,7 +8,7 @@ In this lab, you'll explore data ingestion and analytics in a Microsoft Fabric L
 
 After you complete this lab, you will be able to:
 
-+ Select the workspace
++ Create the workspace
 + Create a lakehouse
 + Ingest data
 + Query data in a lakehouse
