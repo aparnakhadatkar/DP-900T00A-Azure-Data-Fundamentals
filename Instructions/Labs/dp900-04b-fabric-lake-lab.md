@@ -129,6 +129,8 @@ Microsoft Fabric lakehouses organize all tables in a data model, which you can u
 
 1. In the toolbar, select **New report** to open a new browser tab containing the Power BI report designer.
 
+  >**Note:** If they ask for login, login with your credentials.
+
    >**Note:** If an **Action Required** page appears, select **Ask later**.
 
 1. In the report designer:
