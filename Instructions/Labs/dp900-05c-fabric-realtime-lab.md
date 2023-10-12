@@ -1,7 +1,7 @@
 # Module 05c: Explore real-time analytics in Microsoft Fabric
 
 ## Lab scenario
-In this exercise you'll explore real-time analytics in Microsoft Fabric.
+In this lab you'll explore real-time analytics in Microsoft Fabric.
 
 ## Lab objective
 
