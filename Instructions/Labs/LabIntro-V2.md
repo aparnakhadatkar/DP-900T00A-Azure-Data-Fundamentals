@@ -1,14 +1,23 @@
-## Instructions
-
-### Getting Started with Lab
+# Getting Started
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) on the left and lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
 
     ![](images//start2.png)
 
-1. To get the lab environment details, you can select the **Lab Environment** tab, you can locate the **Lab Environment** tab on the upper right corner. Additionally, the credentials will also be emailed to your email address provided during registration.
+1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your email address provided at registration.
 
     ![](images//env.png)
+
+1. You can also open the Lab Guide on a separate full window by selecting the **Split Window** button from the top right corner.
+
+    ![](images/splitw.png)
+
+1. To hide the lab guide, click on **>** symbol and to expose the lab guide, click on **<** symbol.   
+
+1. Also, you can **start, stop and restart** the virtual machines from the **Resources** tab.
+
+    ![](images/res.png)
+
 
 ### Task 1: Log in to Azure Portal
 
