@@ -86,6 +86,6 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 7. Now it will given you an option, to select **Fabric home page** or you want to be on the **Current page**, select **Fabric home page**.
    
-![](images//fabrichomepage.png)
+![](images//fabrichomepage-1.png)
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
