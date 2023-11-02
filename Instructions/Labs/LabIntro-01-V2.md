@@ -56,5 +56,36 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 6. Click "Next" from the bottom right corner to embark on your Lab journey!
  
 ![Start Your Azure Journey](images/sc900-image(3).png)
+
+## Sign up for Microsoft Fabric free trial
  
+1. Open an Edge browser, sign into [Microsoft Fabric](https://app.fabric.microsoft.com).
+
+2. Enter the email <inject key="AzureAdUserEmail"></inject> in the **Email** section, and select **Submit**.
+
+![Screenshot of the experience switcher menu.](./images/DP-900-email.png)
+
+3. On the **You've selected Microsoft Fabric free** page, select **Sign-In**. Enter the Password: <inject key="AzureAdUserPassword"></inject>
+
+![Screenshot of the experience switcher menu.](./images/DP-900-signin.png)
+   
+   >**Note:** If you see the pop-up **Action Required**, select **Ask later**..
+   > If you see the pop-up **Stay Signed in?**, click Yes
+
+4.  In **Business phone number** provide any number (rest keep everything as default), and select **Get Started**.
+
+5. On the **Power BI** home page, select the **Account manager for ODL_User <inject key="DeploymentID" enableCopy="false"/>**, select **Start trial** option.
+
+![](images//DP-900-accountmanager.png)
+
+![](images//DP-900-trial2.png)
+
+6. If prompted, agree to the terms and then select **Start trial**.
+
+![](images//start-trial.png)
+
+7. Now it will given you an option, to select **Fabric home page** or you want to be on the **Current page**, select **Fabric home page**.
+   
+![](images//fabrichomepage-1.png)
+
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
