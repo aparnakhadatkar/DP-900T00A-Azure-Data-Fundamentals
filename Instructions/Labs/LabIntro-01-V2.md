@@ -69,7 +69,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 ![Screenshot of the experience switcher menu.](./images/DP-900-signin.png)
    
-    >**Note:** If you see the pop-up **Action Required**, select **Ask later**..
+   >**Note:** If you see the pop-up **Action Required**, select **Ask later**..
    > If you see the pop-up **Stay Signed in?**, click Yes
 
 4.  In **Business phone number** provide any number (rest keep everything as default), and select **Get Started**.
