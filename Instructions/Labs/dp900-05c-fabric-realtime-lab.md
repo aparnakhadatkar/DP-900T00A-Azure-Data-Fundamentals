@@ -50,17 +50,30 @@ Now that you have a workspace, you can create a KQL database to store real-time 
 
     >**Note:** The real time analytics home page includes tiles to create commonly used assets for real-time data analyis
 
-2. In the real time analytics home page, select **KQL Database (Preview)**, and create a new **KQL Database** with a name of your choice.
+2. In the real time analytics home page, create a new **KQL Database** with a name of your choice.
+
+     ![Screenshot of the experience switcher menu.](./images/create-kql-db.png)
 
    >**Note:** If **Upgrade to a free Microsoft Fabric (preview) trial** pop-ups, select **Upgrade**.
    
    >**Note:**  on the **Successfully upgraded to a free Microsoft Fabric (preview) trial** page, select **OK**.
+   
+    You will see a dashboard screen and then select the KQL Database button at the top.
+   
+     ![Screenshot of a new KQL database.](./images/kql-database.png)
 
+   Once selected you will be given a ***New KQL Database*** dialog box where you will give your KQL Database a name.
+
+   - name the database, in this scenario, it is: `my_kql_db`
+   - click, ***Create***
+  
     After a minute or so, a new KQL database will be created:
 
-    ![Screenshot of a new KQL database.](./images/kql-database.png)
-
     Currently, there are no tables in the database.
+
+   ![Screenshot of a new KQL database name dialog.](./images/name-kql-db.png)
+
+    After a minute or so, a new KQL database will be created.
 
 ## Task 3: Create an eventstream
 
@@ -128,7 +141,7 @@ Your eventstream continuously populates a table in your KQL database, enabling y
     ```kql
     // This query returns the number of taxi pickups per hour
     ['taxi-data']
-    | summarize PickupCount = count() by bin(tpep_pickup_datetime, 1h)
+    | summarize PickupCount = count() by bin(todatetime(tpep_pickup_datetime), 1h)
     ```
 
 1. Use the **&#9655; Run** button to run the query and review the results, which show the number of taxi pickups for each hour.
