@@ -103,7 +103,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
 Now that you have ingested data into a table in the lakehouse, you can use SQL to query it.
 
-1. At the top right of the Lakehouse page, switch to the **SQL endpoint** for your lakehouse.
+1. At the top right of the Lakehouse page, switch to the **SQL analytics endpoint** for your lakehouse.
 
     ![Screenshot of the SQL endpoint menu.](./images/DP-900-sql.png)
 
