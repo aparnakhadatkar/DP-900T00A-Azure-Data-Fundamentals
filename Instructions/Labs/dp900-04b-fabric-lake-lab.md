@@ -129,9 +129,9 @@ Microsoft Fabric lakehouses organize all tables in a data model, which you can u
 
 1. In the toolbar, select **New report** to open a new browser tab containing the Power BI report designer.
 
-  >**Note:** If they ask for login, login with your credentials.
+    >**Note:** If they ask for login, login with your credentials.
 
-   >**Note:** If an **Action Required** page appears, select **Ask later**.
+    >**Note:** If an **Action Required** page appears, select **Ask later**.
 
 1. In the report designer:
     1. In the **Data** pane, expand the **dimension_stock_item** table and select the **Brand** and **StockItemKey** fields.
