@@ -64,8 +64,11 @@ In this lab, you will perform the following tasks:
 1. Seclect the **Local File**, click on **New table** and type **devices**.
     ![Data Explorer](images/dataexplorer1ss.png)
     ![Data Explorer](images/dataexplorer2ss.png)
+
 1. Click on **Browse the file** and here upload your downloded file **deviecs.csv**.
-    ![Data Explorer](images/dataexplorer3ss.png)
+   
+   ![Data Explorer](images/dataexplorer3ss.png)
+
 1. Now click on **Next**, **Finish** and then **Close**.
 
 1. In Azure Data Explorer, on the **Query** tab, ensure that the **iot-data** database is selected and then in the query pane, enter the following query.
