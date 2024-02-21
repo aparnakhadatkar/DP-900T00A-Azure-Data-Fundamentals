@@ -60,21 +60,17 @@ In this lab, you will perform the following tasks:
     
 1. While waiting for the database to be created, download **devices.csv** from [https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/streaming/data/devices.csv?azure-portal=true), saving it in any folder in the lab.
 1. In Synapse Studio, wait for the database to be created if necessary, and then in the **...** menu for the new **iot-data** database, select **Open in Azure Data Explorer**.
-1. In the new browser tab containing Azure Data Explorer, on the **Data** tab, select **Ingest new data**.
-1. In the **Destination** page, select the following settings:
-    - **Cluster**: *The **dxpool<inject key="DeploymentID" enableCopy="false" />** Data Explorer pool in your Azure Synapse workspace*
-    - **Database**: iot-data
-    - **Table**: Create a new table named **devices**
-1. Select **Next: Source** and on the **Source** page, select the following options:
-    - **Source type**: File
-    - **Files**: Upload the **devices.csv** file from your local computer.
-1. Select **Next: Schema** and on the **Schema** page, ensure the following settings are correct:
-    - **Compression type**: Uncompressed
-    - **Data format**: CSV
-    - **Ignore the first record**:  selected
-    - **Mapping**: devices_mapping
-1. Ensure the column data types have been correctly identified as *Time (datetime)*, *Device (string)*, and *Value (long)*). Then select **Next: Start Ingestion**.
-1. When ingestion is complete, select **Close**.
+
+1. Seclect the **Local File**, click on **New table** and type **devices**.
+    ![Data Explorer](images/dataexplorer1ss.png)
+    ![Data Explorer](images/dataexplorer2ss.png)
+
+1. Click on **Browse the file** and here upload your downloded file **deviecs.csv**.
+   
+   ![Data Explorer](images/dataexplorer3ss.png)
+
+1. Now click on **Next**, **Finish** and then **Close**.
+
 1. In Azure Data Explorer, on the **Query** tab, ensure that the **iot-data** database is selected and then in the query pane, enter the following query.
 
     ```kusto
